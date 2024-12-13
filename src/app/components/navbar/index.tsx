@@ -11,7 +11,6 @@ import { BsMailbox } from "react-icons/bs";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Array of menu links
   const navLinks = [
     { name: "Home", route: ROUTES.home, icon: <FaHome /> },
     { name: "Services", route: ROUTES.services, icon: <FaGear /> },
@@ -22,23 +21,8 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 right-0 left-0 z-10">
-      {/* Header Section */}
-      {/* <nav className="w-full bg-secondary-950 flex justify-center items-center p-2">
-        <div className="w-[90%]">
-          <Image
-            alt="Custom Cabinets and Closets"
-            src={IMAGES.logoHeader}
-            width={500}
-            height={60}
-            className="w-[340px] sm:w-[380px] md:w-[420px] lg:w-[460px] xl:w-[500px] h-auto"
-          />
-        </div>
-      </nav> */}
-
-      {/* Navbar Section */}
       <nav className="w-full bg-secondary-500 flex justify-center items-center p-2 border-b-4 border-primary-100">
         <div className="flex items-center justify-between w-[90%]">
-          {/* Logo */}
           <Link href={ROUTES.home}>
             <Image
               alt="Custom Cabinets and Closets"
@@ -49,7 +33,6 @@ export default function Navbar() {
             />
           </Link>
 
-          {/* Hamburger Menu */}
           <button
             className="lg:hidden flex flex-col gap-1 focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
@@ -71,7 +54,6 @@ export default function Navbar() {
             ></span>
           </button>
 
-          {/* Menu Items */}
           <div
             className={`absolute -z-10 lg:z-10 lg:static top-full left-0 w-full lg:w-auto bg-secondary-500 p-5 lg:p-0 shadow-lg lg:shadow-none transform transition-transform duration-500 ease-in-out ${
               isOpen ? "translate-y-0" : "-translate-y-full"
@@ -83,6 +65,7 @@ export default function Navbar() {
                   <Link
                     href={link.route}
                     className="text-secondary-100 text-lg hover:text-secondary-50 duration-300 ease-in-out"
+                    onClick={() => setIsOpen(false)}
                   >
                     <div className="flex items-center gap-2">
                       {link.icon} {link.name}

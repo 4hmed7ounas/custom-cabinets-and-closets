@@ -128,8 +128,8 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="bg-secondary-900 text-center text-white py-4 mt-8">
-        <p>&copy; {new Date().getFullYear()} Your Company. All rights reserved.</p>
+      <div className="bg-secondary-900 text-center text-white py-4">
+        <p>&copy; {new Date().getFullYear()} Custom Cabinets & Closets. All rights reserved.</p>
       </div>
     </footer>
   );
