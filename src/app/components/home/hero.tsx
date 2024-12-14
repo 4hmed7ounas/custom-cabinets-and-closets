@@ -4,6 +4,7 @@ import { IMAGES } from "../../../../share/assets";
 import Button from "../button";
 import { useRouter } from "next/navigation";
 import { ROUTES } from "../../../../share/routes";
+import { HOMECARDSECTION } from "../../../../share/data";
 
 const Hero = () => {
   const router = useRouter();
@@ -12,32 +13,9 @@ const Hero = () => {
     router.push(ROUTES.contactUs);
   };
 
-  const sections = [
-    {
-      title: "Hello",
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quam esse, eius id perspiciatis accusantium quis nostrum officiis a quisquam eveniet dolor quod placeat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus sit minima perspiciatis, libero neque ipsum totam facilis placeat nihil modi doloribus eius illo unde! Doloribus.",
-      image: IMAGES.landingImage,
-    },
-    {
-      title: "Welcome",
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quam esse, eius id perspiciatis accusantium quis nostrum officiis a quisquam eveniet dolor quod placeat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus sit minima perspiciatis, libero neque ipsum totam facilis placeat nihil modi doloribus eius illo unde! Doloribus.",
-      image: IMAGES.landingImage,
-    },
-    {
-      title: "Greetings",
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quam esse, eius id perspiciatis accusantium quis nostrum officiis a quisquam eveniet dolor quod placeat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus sit minima perspiciatis, libero neque ipsum totam facilis placeat nihil modi doloribus eius illo unde! Doloribus.",
-      image: IMAGES.landingImage,
-    },
-  ];
-
   return (
     <section className="relative">
-      {/* Hero Banner */}
       <div className="mt-12 w-full relative">
-        
         <div
           className="flex flex-col items-center justify-center bg-cover text-center bg-center p-10 bg-no-repeat"
           style={{
@@ -46,7 +24,12 @@ const Hero = () => {
             backgroundAttachment: "fixed",
           }}
         >
-          <link rel="preload" href={IMAGES.logoMain} as="image" />
+          <link
+            rel="preload"
+            href={IMAGES.logoMain}
+            className="w-auto h-auto"
+            as="image"
+          />
           <Image
             alt="Main Logo"
             src={IMAGES.logoMain}
@@ -64,31 +47,34 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Content Sections */}
-      {sections.map((section, index) => (
-        <div
-          key={index}
-          className="flex flex-wrap justify-center items-center my-8 px-4 lg:px-8"
-        >
-          <div className="w-full lg:w-1/2 mb-4 lg:mb-0 px-2">
-            <h1 className="text-xl md:text-2xl font-bold mb-4">
-              {section.title}
-            </h1>
-            <p className="text-sm md:text-base text-gray-700 leading-relaxed">
-              {section.content}
-            </p>
+      <div className="flex justify-center items-center flex-wrap">
+        {HOMECARDSECTION.slice(0, 3).map((card, index) => (
+          <div
+            key={index}
+            className="flex flex-col justify-center items-center w-[90%] my-4"
+          >
+            <h1 className="text-3xl font-bold">{card.heading}</h1>
+            <div className="flex flex-wrap justify-center items-start mt-2">
+              <div className="w-full lg:w-[50%] mb-4 lg:mb-0 px-2">
+                <h1 className="text-xl md:text-2xl font-bold mb-2">
+                  {card.title}
+                </h1>
+                <p className="text-sm text-gray-800 leading-relaxed text-justify">
+                  {card.description}
+                </p>
+              </div>
+              <Image
+                alt="cardImages"
+                src={card.imageUrl}
+                width={100}
+                height={400}
+                className="w-[100%] sm:w-[45%] md:w-[50%] "
+                priority
+              />
+            </div>
           </div>
-          <div className="w-full lg:w-1/2 px-2">
-            <Image
-              alt={section.title}
-              src={section.image}
-              width={1000}
-              height={100}
-              className="rounded-md"
-            />
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </section>
   );
 };

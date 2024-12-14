@@ -5,5 +5,5 @@ export const IMAGES = {
   logo: `${ASSETS_BASE_URL}/logo.svg`,
   landingImage: `${ASSETS_BASE_URL}/landing-image.svg`,
   logoMain: `${ASSETS_BASE_URL}/logo-main.svg`,
-  
+  cardImg1: `${ASSETS_BASE_URL}/card-img-1.svg`,
 };

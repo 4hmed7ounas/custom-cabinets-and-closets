@@ -5,7 +5,4 @@ export const ROUTES = {
   ourteam: "/our-team/",
   services: "/services/",
   aboutUs: "/about-us/",
-
 };
-
-
