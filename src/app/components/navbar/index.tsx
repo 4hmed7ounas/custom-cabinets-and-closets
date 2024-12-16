@@ -1,22 +1,65 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { IMAGES } from "../../../../share/assets";
 import Link from "next/link";
 import { ROUTES } from "../../../../share/routes";
 import { NAVLINKS } from "../../../../share/data";
-import { responsiveTextClass, transitionClass500, transitionClass300 } from "../styles/classes";
+import {
+  responsiveTextClass,
+  transitionClass500,
+  transitionClass300,
+} from "../styles/classes";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [progress, setProgress] = useState(0);
+
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+
+  useEffect(() => {
+    if (loading) {
+      let progressInterval = 0;
+      intervalRef.current = setInterval(() => {
+        progressInterval += 1;
+        setProgress(() => {
+          if (progressInterval <= 30) return 30;
+          if (progressInterval <= 50) return 50;
+          if (progressInterval <= 70) return 70;
+          if (progressInterval <= 100) return 100;
+
+          // When progress reaches 100%, reset and start over
+
+          clearInterval(intervalRef.current as NodeJS.Timeout); // Clear the interval
+          return 100;
+        });
+      }, 5);
+    }
+
+    setProgress(0);
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    };
+  }, [loading]);
+
+  const handleLinkClick = () => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  };
 
   return (
     <header className="fixed top-0 right-0 left-0 z-10">
-      <nav className="w-full bg-secondary-500 flex justify-center items-center p-2 border-b-4 border-primary-100">
+      <nav className="w-full bg-secondary-500 flex justify-center items-center p-2 pt-3">
         <div className="flex items-center justify-between w-[90%]">
           <Link
             href={ROUTES.home}
             className={`text-primary-50 ${transitionClass500}`}
+            onClick={handleLinkClick}
           >
             <Image
               alt="Custom Cabinets and Closets"
@@ -48,6 +91,8 @@ export default function Navbar() {
             ></span>
           </button>
 
+          {/* Progress bar */}
+
           <div
             className={`absolute -z-10 p-1 lg:z-10 lg:static top-full left-0 w-full lg:w-auto bg-secondary-500 lg:p-0 shadow-lg lg:shadow-none ${transitionClass500} ${
               isOpen ? "translate-y-0" : "-translate-y-full"
@@ -58,7 +103,10 @@ export default function Navbar() {
                 <Link
                   href={link.route}
                   key={index}
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => {
+                    setIsOpen(false); // Close the menu when a link is clicked
+                    handleLinkClick(); // Trigger loading state
+                  }}
                 >
                   <li
                     className={`${responsiveTextClass} text-primary-50 p-2 rounded-md hover:bg-primary-50 hover:text-secondary-500 md:${transitionClass500}`}
@@ -73,6 +121,16 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
+      {loading && (
+        <div className=" w-full">
+          <div className="w-full h-1 bg-secondary-800">
+            <div
+              className="h-full bg-primary-50 transition-all duration-500"
+              style={{ width: `${progress}%` }}
+            ></div>
+          </div>
+        </div>
+      )}
     </header>
   );
 }
