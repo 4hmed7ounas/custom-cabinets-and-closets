@@ -21,11 +21,11 @@ export default function Button({
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={`px-6 py-3 rounded-md transition-all duration-300 ease-in-out 
+      className={`py-1 md:py-3 px-4 rounded-md 
         ${
           disabled
-            ? "bg-gray-400 text-gray-800 cursor-not-allowed"
-            : "bg-blue-500 text-white hover:bg-secondary-500 active:bg-secondary-600"
+            ? " bg-secondary-400 text-secondary-800 cursor-not-allowed"
+            : "bg-secondary-500 text-secondary-50 hover:bg-secondary-50 hover:text-secondary-500"
         }
         ${className}`}
     >

@@ -5,6 +5,7 @@ import Button from "../button";
 import { useRouter } from "next/navigation";
 import { ROUTES } from "../../../../share/routes";
 import { HOMECARDSECTION } from "../../../../share/data";
+import { responsiveTextClass, transitionClass300 } from "../styles/classes";
 
 const Hero = () => {
   const router = useRouter();
@@ -17,7 +18,7 @@ const Hero = () => {
     <section className="relative">
       <div className="mt-12 w-full relative">
         <div
-          className="flex flex-col items-center justify-center bg-cover text-center bg-center p-10 bg-no-repeat"
+          className="flex flex-col items-center bg-cover bg-center py-10 bg-no-repeat"
           style={{
             backgroundImage: `url(${IMAGES.landingImage})`,
             backgroundSize: "cover",
@@ -35,15 +36,23 @@ const Hero = () => {
             src={IMAGES.logoMain}
             width={100}
             height={400}
-            className="w-[90%] sm:w-[45%] md:w-[50%]"
+            className="w-[90%] sm:w-[45%] md:w-[50%] xl:w-[35%] 2xl:w-[30%]"
             priority
           />
-
-          <Button
-            text="Contact us"
-            onClick={handleClick}
-            className="mt-4 py-1 md:py-3 px-4 bg-secondary-500 text-white rounded-md hover:bg-secondary-600 transition-all duration-300"
-          />
+          <div className="bg-primary-50 mt-4 pt-6 pb-3 px-2 bg-opacity-50 shadow-lg text-secondary-950 shadow-secondary-900 w-[90%] md:w-[70%] 2xl:w-[90%]">
+            <h1 className="text-3xl font-bold">Discover, Design, Implement</h1>
+            <p className={`${responsiveTextClass} font-normal text-left`}>
+              Discover custom cabinets and closets designed to maximize space,
+              enhance organization, and complement your style. Tailored to your
+              needs with high-quality materials and smart features for ultimate
+              functionality and aesthetic appeal.
+            </p>
+            <Button
+              text="Contact us"
+              onClick={handleClick}
+              className={`${responsiveTextClass} mt-4 ${transitionClass300}`}
+            />
+          </div>
         </div>
       </div>
 
@@ -54,23 +63,30 @@ const Hero = () => {
             className="flex flex-col justify-center items-center w-[90%] my-4"
           >
             <h1 className="text-3xl font-bold">{card.heading}</h1>
-            <div className="flex flex-wrap justify-center items-start mt-2">
+            <div className="flex flex-wrap justify-center items-stretch mt-2">
+              {/* Text Section */}
               <div className="w-full lg:w-[50%] mb-4 lg:mb-0 px-2">
                 <h1 className="text-xl md:text-2xl font-bold mb-2">
                   {card.title}
                 </h1>
-                <p className="text-sm text-gray-800 leading-relaxed text-justify">
-                  {card.description}
-                </p>
+                <p
+                  className={`${responsiveTextClass} text-gray-800 leading-relaxed`}
+                  dangerouslySetInnerHTML={{ __html: card.description }}
+                ></p>
               </div>
-              <Image
-                alt="cardImages"
-                src={card.imageUrl}
-                width={100}
-                height={400}
-                className="w-[100%] sm:w-[45%] md:w-[50%] "
-                priority
-              />
+
+              {/* Image Section */}
+              <div className="w-full sm:w-[45%] md:w-[50%] flex">
+                <Image
+                  alt="cardImages"
+                  src={card.imageUrl}
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                  className="w-full h-auto object-cover"
+                  priority
+                />
+              </div>
             </div>
           </div>
         ))}

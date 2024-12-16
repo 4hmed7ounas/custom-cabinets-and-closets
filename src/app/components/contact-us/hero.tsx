@@ -1,9 +1,84 @@
+import Image from "next/image";
+import { IMAGES } from "../../../../share/assets";
+import { responsiveTextClass } from "../styles/classes";
+import { HOMECARDSECTION } from "../../../../share/data";
 
 
 const Hero = () => {
   return (
     <div>
-      Hello I am contactUS page Hero Section
+      <section className="relative">
+            <div className="mt-12 w-full relative">
+              <div
+                className="flex flex-col items-center bg-cover bg-center py-10 bg-no-repeat"
+                style={{
+                  backgroundImage: `url(${IMAGES.landingImage})`,
+                  backgroundSize: "cover",
+                  backgroundAttachment: "fixed",
+                }}
+              >
+                <link
+                  rel="preload"
+                  href={IMAGES.logoMain}
+                  className="w-auto h-auto"
+                  as="image"
+                />
+                <Image
+                  alt="Main Logo"
+                  src={IMAGES.logoMain}
+                  width={100}
+                  height={400}
+                  className="w-[90%] sm:w-[45%] md:w-[50%] xl:w-[35%] 2xl:w-[30%]"
+                  priority
+                />
+                <div className="bg-primary-50 mt-4 pt-6 pb-3 px-2 bg-opacity-50 shadow-lg text-secondary-950 shadow-secondary-900 w-[90%] md:w-[70%] 2xl:w-[90%]">
+                  <h1 className="text-3xl font-bold">Contact us</h1>
+                  <p className={`${responsiveTextClass} font-normal text-left`}>
+                    Discover custom cabinets and closets designed to maximize space,
+                    enhance organization, and complement your style. Tailored to your
+                    needs with high-quality materials and smart features for ultimate
+                    functionality and aesthetic appeal.
+                  </p>
+                </div>
+              </div>
+            </div>
+      
+            <div className="flex justify-center items-center flex-wrap">
+              {HOMECARDSECTION.slice(0, 3).map((card, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col justify-center items-center w-[90%] my-4"
+                >
+                  <h1 className="text-3xl font-bold">{card.heading}</h1>
+                  <div className="flex flex-wrap justify-center items-stretch mt-2">
+                    {/* Text Section */}
+                    <div className="w-full lg:w-[50%] mb-4 lg:mb-0 px-2">
+                      <h1 className="text-xl md:text-2xl font-bold mb-2">
+                        {card.title}
+                      </h1>
+                      <p
+                        className={`${responsiveTextClass} text-gray-800 leading-relaxed`}
+                        dangerouslySetInnerHTML={{ __html: card.description }}
+                      ></p>
+                    </div>
+      
+                    {/* Image Section */}
+                    <div className="w-full sm:w-[45%] md:w-[50%] flex">
+                      <Image
+                        alt="cardImages"
+                        src={card.imageUrl}
+                        layout="responsive"
+                        width={100}
+                        height={100}
+                        className="w-full h-auto object-cover"
+                        priority
+                      />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
     </div>
   );
 };

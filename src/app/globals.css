@@ -9,17 +9,18 @@
 
 /* @media (prefers-color-scheme: dark) {
   :root {
-    --background: #f0ece4;
-    --foreground: #ededed;
+    --background: #171717;
+    --foreground: #f0ece4;
   }
 } */
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-kanit), sans-serif;
+  /* font-family: var(--font-jockey_one); */
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }

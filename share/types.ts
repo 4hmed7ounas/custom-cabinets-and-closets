@@ -24,3 +24,10 @@ export interface contactInfo{
   url: string;
   value: string;
 }
+
+export type MetadataType = {
+  [key: string]: {
+    title: string;
+    description: string;
+  };
+};

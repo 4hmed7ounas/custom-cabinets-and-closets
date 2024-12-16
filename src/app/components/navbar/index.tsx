@@ -5,6 +5,7 @@ import { IMAGES } from "../../../../share/assets";
 import Link from "next/link";
 import { ROUTES } from "../../../../share/routes";
 import { NAVLINKS } from "../../../../share/data";
+import { responsiveTextClass, transitionClass500, transitionClass300 } from "../styles/classes";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,10 @@ export default function Navbar() {
     <header className="fixed top-0 right-0 left-0 z-10">
       <nav className="w-full bg-secondary-500 flex justify-center items-center p-2 border-b-4 border-primary-100">
         <div className="flex items-center justify-between w-[90%]">
-          <Link href={ROUTES.home} className="text-primary-50 transition-all duration-500 ease-in-out">
+          <Link
+            href={ROUTES.home}
+            className={`text-primary-50 ${transitionClass500}`}
+          >
             <Image
               alt="Custom Cabinets and Closets"
               src={IMAGES.logo}
@@ -28,40 +32,42 @@ export default function Navbar() {
             onClick={() => setIsOpen(!isOpen)}
           >
             <span
-              className={`h-1 w-6 bg-secondary-100 transform transition-transform duration-300 ease-in-out ${
+              className={`h-1 w-6 bg-secondary-100 transform ${transitionClass300} ${
                 isOpen ? "rotate-45 translate-y-2" : ""
               }`}
             ></span>
             <span
-              className={`h-1 w-6 bg-secondary-100 transition-opacity duration-300 ease-in-out ${
+              className={`h-1 w-6 bg-secondary-100 ${transitionClass300} ${
                 isOpen ? "opacity-0" : ""
               }`}
             ></span>
             <span
-              className={`h-1 w-6 bg-secondary-100 transform transition-transform duration-300 ease-in-out ${
+              className={`h-1 w-6 bg-secondary-100 transform ${transitionClass300} ${
                 isOpen ? "-rotate-45 -translate-y-2" : ""
               }`}
             ></span>
           </button>
 
           <div
-            className={`absolute -z-10 p-1 lg:z-10 lg:static top-full left-0 w-full lg:w-auto bg-secondary-500 lg:p-0 shadow-lg lg:shadow-none transform transition-all duration-500 ease-in-out ${
+            className={`absolute -z-10 p-1 lg:z-10 lg:static top-full left-0 w-full lg:w-auto bg-secondary-500 lg:p-0 shadow-lg lg:shadow-none ${transitionClass500} ${
               isOpen ? "translate-y-0" : "-translate-y-full"
             } lg:translate-y-0 lg:opacity-100`}
           >
             <ul className="flex flex-col lg:flex-row lg:justify-between lg:gap-10">
               {NAVLINKS.map((link, index) => (
-                <li key={index} className="text-primary-50 p-2 rounded-md hover:bg-primary-50 hover:text-secondary-500 transition-all md:duration-500 ease-in-out">
-                  <Link
-                    href={link.route}
-                    className=""
-                    onClick={() => setIsOpen(false)}
+                <Link
+                  href={link.route}
+                  key={index}
+                  onClick={() => setIsOpen(false)}
+                >
+                  <li
+                    className={`${responsiveTextClass} text-primary-50 p-2 rounded-md hover:bg-primary-50 hover:text-secondary-500 md:${transitionClass500}`}
                   >
                     <div className="flex items-center gap-2">
                       <link.icon /> {link.name}
                     </div>
-                  </Link>
-                </li>
+                  </li>
+                </Link>
               ))}
             </ul>
           </div>

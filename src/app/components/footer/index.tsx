@@ -8,6 +8,7 @@ import {
   NAVLINKS,
   SOCIALLINKS,
 } from "../../../../share/data";
+import { responsiveTextClass, transitionClass500 } from "../styles/classes";
 
 export default function Footer() {
   return (
@@ -16,7 +17,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul>
+            <ul className="w-1/3 sm:w-1/2">
               {NAVLINKS.map((link, index) => (
                 <li key={index}>
                   <Link
@@ -25,10 +26,11 @@ export default function Footer() {
                     onClick={() =>
                       window.scrollTo({ top: 0, behavior: "smooth" })
                     }
+                    className={`${responsiveTextClass} text-primary-50 hover:text-secondary-500 ${transitionClass500}`}
                   >
-                    <div className="w-[29%] flex items-center gap-2 text-primary-50 hover:text-secondary-500 transition-all duration-500 ease-in-out">
+                    <span className="flex items-center gap-2">
                       <link.icon /> {link.name}
-                    </div>
+                    </span>
                   </Link>
                 </li>
               ))}
@@ -45,7 +47,7 @@ export default function Footer() {
                     rel="preload"
                     href={info.url}
                     target="_blank"
-                    className="text-primary-50 hover:text-secondary-500 transition-all duration-500 ease-in-out"
+                    className={`${responsiveTextClass} text-primary-50 hover:text-secondary-500 ${transitionClass500}`}
                   >
                     {info.value}
                   </Link>
@@ -63,25 +65,12 @@ export default function Footer() {
                   href={media.url}
                   target="_blank"
                   aria-label={media.label}
-                  className="text-primary-50 rounded-md bg-secondary-500 hover:text-secondary-500 hover:bg-primary-50 p-2 text-2xl transition-all duration-500 ease-in-out"
+                  className={`text-2xl text-primary-50 rounded-md bg-secondary-500 hover:text-secondary-500 hover:bg-primary-50 p-2 ${transitionClass500}`}
                 >
                   <media.icon />
                 </Link>
               ))}
             </div>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Newsletter</h3>
-            <p>Sign up for our newsletter to get the latest updates.</p>
-            <input
-              type="email"
-              className="mt-2 px-4 py-2 rounded text-black w-full sm:w-64"
-              placeholder="Your email"
-            />
-            <button className="mt-2 bg-secondary-500 text-white hover:bg-secondary-600 px-4 py-2 rounded w-full sm:w-auto transition-all duration-500 ease-in-out">
-              Subscribe
-            </button>
           </div>
         </div>
       </div>
@@ -98,8 +87,8 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="bg-secondary-900 text-center text-primary-50 py-4">
-        <p>
+      <div className="bg-secondary-900 w-full text-center text-primary-50 py-4">
+        <p className={`${responsiveTextClass}`}>
           &copy; {CURR_YEAR} Custom Cabinets & Closets. All rights reserved.
         </p>
       </div>
