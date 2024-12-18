@@ -51,6 +51,14 @@ export default {
           "950": "#2b221d",
         },
       },
+      fontFamily: {
+        kanit: ["Kanit", "sans-serif"], // Kanit font
+        roboto: ["Roboto", "sans-serif"], // Roboto font
+        openSans: ["Open Sans", "sans-serif"], // Open Sans font
+        lora: ["Lora", "serif"], // Lora font
+        poppins: ["Poppins", "sans-serif"], // Poppins font
+        montserrat: ["Montserrat", "sans-serif"], // Montserrat font
+      },
     },
   },
   plugins: [],

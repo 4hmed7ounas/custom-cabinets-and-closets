@@ -8,14 +8,28 @@ import {
 } from "react-icons/fa";
 import { IMAGES } from "./assets";
 import { ROUTES } from "./routes";
-import { FaGear, FaPeopleGroup, FaXTwitter } from "react-icons/fa6";
+import {
+  FaGear,
+  FaPeopleGroup,
+  FaXTwitter,
+  FaKitchenSet,
+} from "react-icons/fa6";
 import { BsMailbox } from "react-icons/bs";
+import { BiCabinet, BiCloset } from "react-icons/bi";
+import { IoHome } from "react-icons/io5";
+import {
+  MdOutlineBathroom,
+  MdOutlineBathtub,
+  MdOutlineLocalLaundryService,
+} from "react-icons/md";
+import { GiWoodenChair } from "react-icons/gi";
 import {
   cardSection,
   navLinks,
   socialLinks,
   contactInfo,
   MetadataType,
+  serviceSection,
 } from "./types";
 
 export const METADATA: MetadataType = {
@@ -61,20 +75,144 @@ export const EMBED_MAP =
 
 export const CURR_YEAR = new Date().getFullYear();
 
+// export const HOMECARDSECTION: cardSection[] = [
+//   {
+//     heading: "About us",
+//     title: "Who are we?",
+//     description:
+//       "At Custom Cabinets and Closets, we are passionate creators, builders, and designers dedicated to transforming spaces into functional works of art. Founded with a vision to bring high-quality craftsmanship into every home and office, we specialize in custom cabinetry and storage solutions that reflect your style and needs. <br> With years of experience in interior design and woodworking, we’ve built a reputation for excellence, precision, and trust. From consultation to installation, our team works hand-in-hand with you to deliver personalized solutions that maximize space and beauty.",
+//     imageUrl: IMAGES.cardImg1,
+//   },
+//   {
+//     heading: "Why Choose Us",
+//     title: "Why Custom Cabinets and Closets",
+//     description:
+//       "At Custom Cabinets and Closets, we are passionate creators, builders, and designers dedicated to transforming spaces into functional works of art. Founded with a vision to bring high-quality craftsmanship into every home and office, we specialize in custom cabinetry and storage solutions that reflect your style and needs. <br> With years of experience in interior design and woodworking, we’ve built a reputation for excellence, precision, and trust. From consultation to installation, our team works hand-in-hand with you to deliver personalized solutions that maximize space and beauty.",
+//     imageUrl: IMAGES.cardImg1,
+//   },
+// ];
+
 export const HOMECARDSECTION: cardSection[] = [
   {
     heading: "About us",
-    title: "Who are we?",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quam esse, <br> eius id perspiciatis accusantium quis nostrum officiis a quisquam eveniet dolor quod placeat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus sit minima perspiciatis, libero neque ipsum totam facilis placeat nihil modi doloribus eius illo unde! Doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quam esse, eius id perspiciatis accusantium quis nostrum officiis a quisquam eveniet dolor quod placeat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus sit minima perspiciatis, libero neque ipsum totam facilis placeat nihil modi doloribus eius illo unde! Doloribus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus sit minima perspiciatis, libero neque ipsum totam facilis placeat nihil modi doloribus eius illo unde! Doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quam esse, eius id perspiciatis accusantium quis nostrum officiis a quisquam eveniet dolor quod placeat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus sit minima perspiciatis, libero neque ipsum totam facilis placeat nihil modi doloribus eius illo unde! Doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quam esse, eius id perspiciatis accusantium quis nostrum officiis a quisquam eveniet dolor quod placeat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus sit minima perspiciatis, libero neque ipsum totam facilis placeat nihil modi doloribus eius illo unde! Doloribus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus sit minima perspiciatis, libero neque ipsum totam facilis placeat nihil modi doloribus eius illo unde! Doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quam esse, eius id perspiciatis accusantium quis nostrum officiis a quisquam eveniet dolor quod placeat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus sit minima perspiciatis, libero neque ipsum totam facilis placeat nihil modi doloribus eius illo unde! Doloribus.",
-    imageUrl: IMAGES.landingImage,
+    titles: ["Who are we?", "What we do?", "Our Values"],
+    descriptions: [
+      "At Custom Cabinets and Closets, we are passionate creators, builders, and designers dedicated to transforming spaces into functional works of art. Founded with a vision to bring high-quality craftsmanship into every home and office, we specialize in custom cabinetry and storage solutions that reflect your style and needs.",
+      "Our services range from consultation to installation, and our team ensures every detail is crafted to your specifications. We believe in providing solutions that maximize space while enhancing the aesthetic of your home or office.",
+      "Integrity, precision, and trust are at the core of our business. We work closely with clients to understand their unique needs and deliver products that are functional, beautiful, and long-lasting.",
+    ],
+    imageUrl: IMAGES.cardImg1,
   },
   {
     heading: "Why Choose Us",
-    title: "Why Custom Cabinets and Closets",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quam esse, eius id perspiciatis accusantium quis nostrum officiis a quisquam eveniet dolor quod placeat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus sit minima perspiciatis, libero neque ipsum totam facilis placeat nihil modi doloribus eius illo unde! Doloribus.",
-    imageUrl: IMAGES.landingImage,
+    titles: [
+      "Quality Craftsmanship",
+      "Tailored Solutions",
+      "Customer Satisfaction",
+    ],
+    descriptions: [
+      "At Custom Cabinets and Closets, we offer top-quality craftsmanship. Our team is highly skilled in woodworking and interior design, ensuring that every project meets the highest standards.",
+      "We provide custom, tailored solutions that perfectly suit your space. Whether it's a small closet or an entire kitchen overhaul, our designs are made to maximize storage while maintaining a stylish and modern aesthetic.",
+      "Our commitment to customer satisfaction is unwavering. We take pride in the long-term relationships we've built with our clients, ensuring their needs are met at every stage of the process.",
+    ],
+    imageUrl: IMAGES.cardImg2,
+  },
+  {
+    heading: "Why Choose Us",
+    titles: [
+      "Quality Craftsmanship",
+      "Tailored Solutions",
+      "Customer Satisfaction",
+    ],
+    descriptions: [
+      "At Custom Cabinets and Closets, we offer top-quality craftsmanship. Our team is highly skilled in woodworking and interior design, ensuring that every project meets the highest standards.",
+      "We provide custom, tailored solutions that perfectly suit your space. Whether it's a small closet or an entire kitchen overhaul, our designs are made to maximize storage while maintaining a stylish and modern aesthetic.",
+      "Our commitment to customer satisfaction is unwavering. We take pride in the long-term relationships we've built with our clients, ensuring their needs are met at every stage of the process.",
+    ],
+    imageUrl: IMAGES.cardImg2,
+  },
+];
+
+export const SERVICESECTION: serviceSection[] = [
+  {
+    url: ROUTES.services,
+    icon: FaKitchenSet,
+    label: "Custom Kitchen Cabinets",
+  },
+  {
+    url: ROUTES.services,
+    icon: BiCabinet,
+    label: "Wooden Cabinets",
+  },
+  {
+    url: ROUTES.services,
+    icon: MdOutlineBathroom,
+    label: "Bathroom Storage",
+  },
+  {
+    url: ROUTES.services,
+    icon: MdOutlineBathtub,
+    label: "Bathtub Surrounds",
+  },
+  {
+    url: ROUTES.services,
+    icon: MdOutlineLocalLaundryService,
+    label: "Laundry Room Storage",
+  },
+  {
+    url: ROUTES.services,
+    icon: IoHome,
+    label: "Home Organization",
+  },
+  {
+    url: ROUTES.services,
+    icon: BiCloset,
+    label: "Custom Closets",
+  },
+  {
+    url: ROUTES.services,
+    icon: GiWoodenChair,
+    label: "Custom Furniture",
+  },
+  {
+    url: ROUTES.services,
+    icon: BiCabinet,
+    label: "Storage Solutions",
+  },
+  {
+    url: ROUTES.services,
+    icon: BiCabinet,
+    label: "Commercial Cabinets",
+  },
+  {
+    url: ROUTES.services,
+    icon: GiWoodenChair,
+    label: "Built-In Furniture",
+  },
+  {
+    url: ROUTES.services,
+    icon: BiCabinet,
+    label: "Office Cabinets",
+  },
+  {
+    url: ROUTES.services,
+    icon: BiCabinet,
+    label: "Storage Solutions",
+  },
+  {
+    url: ROUTES.services,
+    icon: BiCabinet,
+    label: "Commercial Cabinets",
+  },
+  {
+    url: ROUTES.services,
+    icon: GiWoodenChair,
+    label: "Built-In Furniture",
+  },
+  {
+    url: ROUTES.services,
+    icon: BiCabinet,
+    label: "Office Cabinets",
   },
 ];
 

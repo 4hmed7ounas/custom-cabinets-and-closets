@@ -17,8 +17,6 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-kanit), sans-serif;
-  /* font-family: var(--font-jockey_one); */
 }
 
 html {

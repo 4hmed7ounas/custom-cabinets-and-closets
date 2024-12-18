@@ -1,10 +1,16 @@
 import { IconType } from "react-icons";
 
+export interface serviceSection {
+  url: string;
+  label: string;
+  icon: IconType;
+}
+
 export interface cardSection {
-  heading: string
+  heading: string;
   imageUrl: string;
-  title: string;
-  description: string;
+  titles: string[]; // Changed from 'title' to an array of titles
+  descriptions: string[]; // Changed from 'description' to an array of descriptions
 }
 
 export interface navLinks {
@@ -19,7 +25,7 @@ export interface socialLinks {
   icon: IconType;
 }
 
-export interface contactInfo{
+export interface contactInfo {
   label: string;
   url: string;
   value: string;
