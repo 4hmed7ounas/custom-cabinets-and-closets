@@ -4,6 +4,7 @@ export interface serviceSection {
   url: string;
   label: string;
   icon: IconType;
+  imageUrl: string;
 }
 
 export interface cardSection {
@@ -13,7 +14,7 @@ export interface cardSection {
   descriptions: string[]; // Changed from 'description' to an array of descriptions
 }
 
-export interface navLinks {
+export interface Links {
   name: string;
   route: string;
   icon: IconType;

@@ -1,17 +1,14 @@
 "use client";
-import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
-import { IMAGES } from "../../../../share/assets";
 import Link from "next/link";
-import { ROUTES } from "../../../../share/routes";
-import { NAVLINKS } from "../../../../share/data";
+import { SERVICELINKS } from "../../../../share/data";
 import {
   responsiveTextClass,
   transitionClass500,
   transitionClass300,
 } from "../styles/classes";
 
-export default function Navbar() {
+export default function ServiceNav() {
   const [isOpen, setIsOpen] = useState(false);
   const [loading, setLoading] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -51,23 +48,9 @@ export default function Navbar() {
   };
 
   return (
-    <header className="fixed top-0 right-0 left-0 z-10">
+    <header className="fixed top-[3rem] sm:top-[3.2rem] lg:top-14 right-0 left-0 z-[9]">
       <nav className="w-full bg-secondary-500 flex justify-center items-center p-2 pt-3">
         <div className="flex items-center justify-between w-[90%]">
-          <Link
-            href={ROUTES.home}
-            className={`text-primary-50 ${transitionClass500}`}
-            onClick={handleLinkClick}
-          >
-            <Image
-              alt="Custom Cabinets and Closets"
-              src={IMAGES.logo}
-              width={41}
-              height={40}
-              className="w-[28px] sm:w-[31px] md:w-[34px] lg:w-[48px] xl:w-[41px] h-auto"
-            />
-          </Link>
-
           <button
             className="lg:hidden flex flex-col gap-1 focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
@@ -95,13 +78,13 @@ export default function Navbar() {
             } lg:translate-y-0 lg:opacity-100`}
           >
             <ul className="flex flex-col lg:flex-row lg:justify-between lg:gap-10">
-              {NAVLINKS.map((link, index) => (
+              {SERVICELINKS.map((link, index) => (
                 <Link
                   href={link.route}
                   key={index}
                   onClick={() => {
-                    setIsOpen(false);
-                    handleLinkClick();
+                    setIsOpen(false); // Close the menu when a link is clicked
+                    handleLinkClick(); // Trigger loading state
                   }}
                 >
                   <li

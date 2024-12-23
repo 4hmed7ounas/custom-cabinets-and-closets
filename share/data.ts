@@ -17,15 +17,11 @@ import {
 import { BsMailbox } from "react-icons/bs";
 import { BiCabinet, BiCloset } from "react-icons/bi";
 import { IoHome } from "react-icons/io5";
-import {
-  MdOutlineBathroom,
-  MdOutlineBathtub,
-  MdOutlineLocalLaundryService,
-} from "react-icons/md";
+import { MdOutlineBathtub, MdOutlineLocalLaundryService } from "react-icons/md";
 import { GiWoodenChair } from "react-icons/gi";
 import {
   cardSection,
-  navLinks,
+  Links,
   socialLinks,
   contactInfo,
   MetadataType,
@@ -58,6 +54,41 @@ export const METADATA: MetadataType = {
     description:
       "Explore our range of services designed to create functional and beautiful spaces. From design to installation, we cover it all.",
   },
+  "/services/kitchen": {
+    title: "Kitchen | Custom Cabinets and Closets",
+    description:
+      "Explore our range of services designed to create functional and beautiful spaces. From design to installation, we cover it all.",
+  },
+  "/services/bathroom-storage": {
+    title: "Bathroom Storage | Custom Cabinets and Closets",
+    description:
+      "Explore our range of services designed to create functional and beautiful spaces. From design to installation, we cover it all.",
+  },
+  "/services/built-in": {
+    title: "Built In | Custom Cabinets and Closets",
+    description:
+      "Explore our range of services designed to create functional and beautiful spaces. From design to installation, we cover it all.",
+  },
+  "/services/cabinets": {
+    title: "Cabinets | Custom Cabinets and Closets",
+    description:
+      "Explore our range of services designed to create functional and beautiful spaces. From design to installation, we cover it all.",
+  },
+  "/services/closets": {
+    title: "Closets | Custom Cabinets and Closets",
+    description:
+      "Explore our range of services designed to create functional and beautiful spaces. From design to installation, we cover it all.",
+  },
+  "/services/home-organization": {
+    title: "Home Organization | Custom Cabinets and Closets",
+    description:
+      "Explore our range of services designed to create functional and beautiful spaces. From design to installation, we cover it all.",
+  },
+  "/services/laundry-storage": {
+    title: "Laundry Storage | Custom Cabinets and Closets",
+    description:
+      "Explore our range of services designed to create functional and beautiful spaces. From design to installation, we cover it all.",
+  },
   "/about-us": {
     title: "About Us | Custom Cabinets and Closets",
     description:
@@ -74,23 +105,6 @@ export const EMBED_MAP =
   "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3403.243980827476!2d74.358398!3d31.462474000000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDI3JzQ0LjkiTiA3NMKwMjEnMzAuMiJF!5e0!3m2!1sen!2s!4v1734048538900!5m2!1sen!2s";
 
 export const CURR_YEAR = new Date().getFullYear();
-
-// export const HOMECARDSECTION: cardSection[] = [
-//   {
-//     heading: "About us",
-//     title: "Who are we?",
-//     description:
-//       "At Custom Cabinets and Closets, we are passionate creators, builders, and designers dedicated to transforming spaces into functional works of art. Founded with a vision to bring high-quality craftsmanship into every home and office, we specialize in custom cabinetry and storage solutions that reflect your style and needs. <br> With years of experience in interior design and woodworking, we’ve built a reputation for excellence, precision, and trust. From consultation to installation, our team works hand-in-hand with you to deliver personalized solutions that maximize space and beauty.",
-//     imageUrl: IMAGES.cardImg1,
-//   },
-//   {
-//     heading: "Why Choose Us",
-//     title: "Why Custom Cabinets and Closets",
-//     description:
-//       "At Custom Cabinets and Closets, we are passionate creators, builders, and designers dedicated to transforming spaces into functional works of art. Founded with a vision to bring high-quality craftsmanship into every home and office, we specialize in custom cabinetry and storage solutions that reflect your style and needs. <br> With years of experience in interior design and woodworking, we’ve built a reputation for excellence, precision, and trust. From consultation to installation, our team works hand-in-hand with you to deliver personalized solutions that maximize space and beauty.",
-//     imageUrl: IMAGES.cardImg1,
-//   },
-// ];
 
 export const HOMECARDSECTION: cardSection[] = [
   {
@@ -115,7 +129,7 @@ export const HOMECARDSECTION: cardSection[] = [
       "We provide custom, tailored solutions that perfectly suit your space. Whether it's a small closet or an entire kitchen overhaul, our designs are made to maximize storage while maintaining a stylish and modern aesthetic.",
       "Our commitment to customer satisfaction is unwavering. We take pride in the long-term relationships we've built with our clients, ensuring their needs are met at every stage of the process.",
     ],
-    imageUrl: IMAGES.cardImg2,
+    imageUrl: IMAGES.cardImg1,
   },
   {
     heading: "Why Choose Us",
@@ -129,100 +143,134 @@ export const HOMECARDSECTION: cardSection[] = [
       "We provide custom, tailored solutions that perfectly suit your space. Whether it's a small closet or an entire kitchen overhaul, our designs are made to maximize storage while maintaining a stylish and modern aesthetic.",
       "Our commitment to customer satisfaction is unwavering. We take pride in the long-term relationships we've built with our clients, ensuring their needs are met at every stage of the process.",
     ],
-    imageUrl: IMAGES.cardImg2,
+    imageUrl: IMAGES.cardImg1,
   },
 ];
 
 export const SERVICESECTION: serviceSection[] = [
   {
-    url: ROUTES.services,
+    url: ROUTES.kitchen,
     icon: FaKitchenSet,
-    label: "Custom Kitchen Cabinets",
+    label: "Wooden Kitchen",
+    imageUrl: IMAGES.cardImg1,
   },
   {
-    url: ROUTES.services,
+    url: ROUTES.kitchen,
+    icon: FaKitchenSet,
+    label: "Wooden Kitchen",
+    imageUrl: IMAGES.cardImg1,
+  },
+  {
+    url: ROUTES.cabinets,
     icon: BiCabinet,
     label: "Wooden Cabinets",
+    imageUrl: IMAGES.serviceCabinets,
   },
   {
-    url: ROUTES.services,
-    icon: MdOutlineBathroom,
-    label: "Bathroom Storage",
+    url: ROUTES.cabinets,
+    icon: BiCabinet,
+    label: "Wooden Cabinets",
+    imageUrl: IMAGES.serviceCabinets,
   },
   {
-    url: ROUTES.services,
+    url: ROUTES.bathroomStorage,
     icon: MdOutlineBathtub,
-    label: "Bathtub Surrounds",
+    label: "Bathroom Storage",
+    imageUrl: IMAGES.serviceBathroom,
   },
   {
-    url: ROUTES.services,
-    icon: MdOutlineLocalLaundryService,
-    label: "Laundry Room Storage",
+    url: ROUTES.bathroomStorage,
+    icon: MdOutlineBathtub,
+    label: "Bathroom Storage",
+    imageUrl: IMAGES.serviceBathroom,
   },
   {
-    url: ROUTES.services,
+    url: ROUTES.homeOrg,
     icon: IoHome,
     label: "Home Organization",
+    imageUrl: IMAGES.serviceHomeOrg,
   },
   {
-    url: ROUTES.services,
+    url: ROUTES.homeOrg,
+    icon: IoHome,
+    label: "Home Organization",
+    imageUrl: IMAGES.serviceHomeOrg,
+  },
+  {
+    url: ROUTES.closets,
     icon: BiCloset,
     label: "Custom Closets",
+    imageUrl: IMAGES.serviceCloset,
   },
   {
-    url: ROUTES.services,
-    icon: GiWoodenChair,
-    label: "Custom Furniture",
+    url: ROUTES.closets,
+    icon: BiCloset,
+    label: "Custom Closets",
+    imageUrl: IMAGES.serviceCloset,
   },
   {
-    url: ROUTES.services,
-    icon: BiCabinet,
-    label: "Storage Solutions",
-  },
-  {
-    url: ROUTES.services,
+    url: ROUTES.cabinets,
     icon: BiCabinet,
     label: "Commercial Cabinets",
+    imageUrl: IMAGES.serviceComCabinets,
   },
   {
-    url: ROUTES.services,
-    icon: GiWoodenChair,
-    label: "Built-In Furniture",
-  },
-  {
-    url: ROUTES.services,
-    icon: BiCabinet,
-    label: "Office Cabinets",
-  },
-  {
-    url: ROUTES.services,
-    icon: BiCabinet,
-    label: "Storage Solutions",
-  },
-  {
-    url: ROUTES.services,
+    url: ROUTES.cabinets,
     icon: BiCabinet,
     label: "Commercial Cabinets",
+    imageUrl: IMAGES.serviceComCabinets,
   },
   {
-    url: ROUTES.services,
+    url: ROUTES.laundryStorage,
+    icon: MdOutlineLocalLaundryService,
+    label: "Laundary Storage",
+    imageUrl: IMAGES.serviceLaundary,
+  },
+  {
+    url: ROUTES.laundryStorage,
+    icon: MdOutlineLocalLaundryService,
+    label: "Laundary Storage",
+    imageUrl: IMAGES.serviceLaundary,
+  },
+  {
+    url: ROUTES.builtIn,
     icon: GiWoodenChair,
     label: "Built-In Furniture",
+    imageUrl: IMAGES.serviceBuiltIns,
   },
   {
-    url: ROUTES.services,
-    icon: BiCabinet,
-    label: "Office Cabinets",
+    url: ROUTES.builtIn,
+    icon: GiWoodenChair,
+    label: "Built-In Furniture",
+    imageUrl: IMAGES.serviceBuiltIns,
   },
 ];
 
-export const NAVLINKS: navLinks[] = [
+export const NAVLINKS: Links[] = [
   { name: "Home", route: ROUTES.home, icon: FaHome },
   { name: "About us", route: ROUTES.aboutUs, icon: FaAddressBook },
   { name: "Services", route: ROUTES.services, icon: FaGear },
   { name: "Our Team", route: ROUTES.ourteam, icon: FaPeopleGroup },
   { name: "News", route: ROUTES.news, icon: FaNewspaper },
   { name: "Contact us", route: ROUTES.contactUs, icon: BsMailbox },
+];
+
+export const SERVICELINKS: Links[] = [
+  { name: "Kitchen", route: ROUTES.kitchen, icon: FaKitchenSet },
+  { name: "Cabinets", route: ROUTES.cabinets, icon: BiCabinet },
+  { name: "Closets", route: ROUTES.closets, icon: BiCloset },
+  {
+    name: "Bathroom Storage",
+    route: ROUTES.bathroomStorage,
+    icon: MdOutlineBathtub,
+  },
+  {
+    name: "Laundry Storage",
+    route: ROUTES.laundryStorage,
+    icon: MdOutlineLocalLaundryService,
+  },
+  { name: "Built-In", route: ROUTES.builtIn, icon: GiWoodenChair },
+  { name: "Home Organization", route: ROUTES.homeOrg, icon: IoHome },
 ];
 
 export const SOCIALLINKS: socialLinks[] = [

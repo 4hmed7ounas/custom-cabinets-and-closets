@@ -5,4 +5,11 @@ export const ROUTES = {
   ourteam: "/our-team/",
   services: "/services/",
   aboutUs: "/about-us/",
+  kitchen: "/services/kitchen",
+  bathroomStorage: "/services/bathroom-storage",
+  builtIn: "/services/built-in",
+  cabinets: "/services/cabinets",
+  closets: "/services/closets",
+  homeOrg: "/services/home-organization",
+  laundryStorage: "/services/laundry-storage",
 };
