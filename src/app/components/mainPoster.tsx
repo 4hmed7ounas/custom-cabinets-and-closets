@@ -1,9 +1,10 @@
+"use client";
 import React from "react";
 import Image from "next/image";
-import Button from "../button";
+import Button from "./button";
 import { usePathname, useRouter } from "next/navigation";
-import { IMAGES } from "../../../../share/assets";
-import { ROUTES } from "../../../../share/routes";
+import { IMAGES } from "../../../share/assets";
+import { ROUTES } from "../../../share/routes";
 
 interface MainPosterProps {
   image: string;
@@ -47,12 +48,6 @@ export default function MainPoster({
       >
         {!noLogoPaths.includes(pathname) && (
           <>
-            <link
-              rel="preload"
-              href={IMAGES.logoMain}
-              className="w-auto h-auto"
-              as="image"
-            />
             <Image
               alt="Main Logo"
               src={IMAGES.logoMain}

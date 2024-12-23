@@ -11,6 +11,6 @@ export const IMAGES = {
   serviceBuiltIns: `${ASSETS_BASE_URL}/built-ins.svg`,
   serviceCabinets: `${ASSETS_BASE_URL}/cabinets.svg`,
   serviceComCabinets: `${ASSETS_BASE_URL}/commercial-cabinets.svg`,
-  serviceLaundary: `${ASSETS_BASE_URL}/laundary.svg`,
+  serviceLaundary: `${ASSETS_BASE_URL}/laundry.svg`,
   serviceHomeOrg: `${ASSETS_BASE_URL}/home-org.svg`,
 };

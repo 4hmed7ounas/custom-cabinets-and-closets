@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import { IMAGES } from "../../../../share/assets";
 import Link from "next/link";
 import { ROUTES } from "../../../../share/routes";
@@ -13,42 +13,6 @@ import {
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const [progress, setProgress] = useState(0);
-
-  const intervalRef = useRef<NodeJS.Timeout | null>(null);
-
-  useEffect(() => {
-    if (loading) {
-      let progressInterval = 0;
-      intervalRef.current = setInterval(() => {
-        progressInterval += 1;
-        setProgress(() => {
-          if (progressInterval <= 30) return 30;
-          if (progressInterval <= 50) return 50;
-          if (progressInterval <= 70) return 70;
-          if (progressInterval <= 100) return 100;
-
-          clearInterval(intervalRef.current as NodeJS.Timeout);
-          return 100;
-        });
-      }, 5);
-    }
-
-    setProgress(0);
-    return () => {
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-      }
-    };
-  }, [loading]);
-
-  const handleLinkClick = () => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 1000);
-  };
 
   return (
     <header className="fixed top-0 right-0 left-0 z-10">
@@ -57,7 +21,6 @@ export default function Navbar() {
           <Link
             href={ROUTES.home}
             className={`text-primary-50 ${transitionClass500}`}
-            onClick={handleLinkClick}
           >
             <Image
               alt="Custom Cabinets and Closets"
@@ -96,37 +59,26 @@ export default function Navbar() {
           >
             <ul className="flex flex-col lg:flex-row lg:justify-between lg:gap-10">
               {NAVLINKS.map((link, index) => (
-                <Link
-                  href={link.route}
+                <li
                   key={index}
-                  onClick={() => {
-                    setIsOpen(false);
-                    handleLinkClick();
-                  }}
+                  className={`${responsiveTextClass} text-white p-2 rounded-md hover:bg-white hover:text-secondary-500 md:${transitionClass500}`}
                 >
-                  <li
-                    className={`${responsiveTextClass} text-primary-50 p-2 rounded-md hover:bg-primary-50 hover:text-secondary-500 md:${transitionClass500}`}
+                  <Link
+                    href={link.route}
+                    onClick={() => {
+                      setIsOpen(false);
+                    }}
                   >
                     <div className="flex items-center gap-2">
                       <link.icon /> {link.name}
                     </div>
-                  </li>
-                </Link>
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>
         </div>
       </nav>
-      {loading && (
-        <div className=" w-full">
-          <div className="w-full h-1 bg-secondary-800">
-            <div
-              className="h-full bg-primary-50 transition-all duration-500"
-              style={{ width: `${progress}%` }}
-            ></div>
-          </div>
-        </div>
-      )}
     </header>
   );
 }

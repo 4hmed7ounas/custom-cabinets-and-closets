@@ -1,7 +1,6 @@
 "use client";
 import { HOMECARDSECTION } from "../../../../share/data";
 import { responsiveTextClass } from "../styles/classes";
-import HomeServices from "../homeServices";
 
 const Hero = () => {
   return (
@@ -12,7 +11,7 @@ const Hero = () => {
             key={index}
             className="flex flex-col justify-center items-center w-[90%] my-4"
           >
-            <h1 className="text-3xl font-bold">{card.heading}</h1>
+            <h2 className="text-3xl font-bold">{card.heading}</h2>
             <div
               className={`flex flex-wrap justify-between items-stretch mt-2 border-y-2 border-secondary-500 ${
                 index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
@@ -21,9 +20,9 @@ const Hero = () => {
               <div className="w-full lg:w-[45%] mb-4 lg:m-4">
                 {card.titles.map((title, titleIndex) => (
                   <div key={titleIndex}>
-                    <h2 className="text-xl md:text-2xl font-bold mb-2">
+                    <h3 className="text-xl md:text-2xl font-bold mb-2">
                       {title}
-                    </h2>
+                    </h3>
                     <p
                       className={`${responsiveTextClass} text-gray-800 leading-relaxed text-justify`}
                       dangerouslySetInnerHTML={{
@@ -45,7 +44,6 @@ const Hero = () => {
           </div>
         ))}
       </div>
-      <HomeServices />
     </section>
   );
 };

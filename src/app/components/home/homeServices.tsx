@@ -20,7 +20,7 @@ export default function HomeServices() {
   return (
     <div className="flex justify-center my-6">
       <div className="flex flex-col justify-center items-center">
-        <h1 className="text-3xl font-bold mb-4">Our Services</h1>
+        <h2 className="text-3xl font-bold mb-4">Our Services</h2>
         <div className="w-[90%] grid grid-cols-2 md:grid-cols-4">
           {SERVICESECTION.map((service, index) => {
             const rowIndex = Math.floor(index / itemsPerRow);
@@ -50,10 +50,16 @@ export default function HomeServices() {
                       }
                     : {}
                 }
+                aria-label={`Service: ${service.label}`}
               >
                 {startsWithIcon ? (
                   <>
-                    {service.icon && <service.icon size={50} />}
+                    {service.icon && (
+                      <service.icon
+                        size={50}
+                        aria-label={`Icon for ${service.label}`}
+                      />
+                    )}
                     {service.label && <p className="mt-2">{service.label}</p>}
                   </>
                 ) : (

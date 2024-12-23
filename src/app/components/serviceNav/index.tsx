@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { SERVICELINKS } from "../../../../share/data";
 import {
@@ -10,42 +10,6 @@ import {
 
 export default function ServiceNav() {
   const [isOpen, setIsOpen] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const [progress, setProgress] = useState(0);
-
-  const intervalRef = useRef<NodeJS.Timeout | null>(null);
-
-  useEffect(() => {
-    if (loading) {
-      let progressInterval = 0;
-      intervalRef.current = setInterval(() => {
-        progressInterval += 1;
-        setProgress(() => {
-          if (progressInterval <= 30) return 30;
-          if (progressInterval <= 50) return 50;
-          if (progressInterval <= 70) return 70;
-          if (progressInterval <= 100) return 100;
-
-          clearInterval(intervalRef.current as NodeJS.Timeout);
-          return 100;
-        });
-      }, 5);
-    }
-
-    setProgress(0);
-    return () => {
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-      }
-    };
-  }, [loading]);
-
-  const handleLinkClick = () => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 1000);
-  };
 
   return (
     <header className="fixed top-[3rem] sm:top-[3.2rem] lg:top-14 right-0 left-0 z-[9]">
@@ -83,8 +47,7 @@ export default function ServiceNav() {
                   href={link.route}
                   key={index}
                   onClick={() => {
-                    setIsOpen(false); // Close the menu when a link is clicked
-                    handleLinkClick(); // Trigger loading state
+                    setIsOpen(false);
                   }}
                 >
                   <li
@@ -100,16 +63,6 @@ export default function ServiceNav() {
           </div>
         </div>
       </nav>
-      {loading && (
-        <div className=" w-full">
-          <div className="w-full h-1 bg-secondary-800">
-            <div
-              className="h-full bg-primary-50 transition-all duration-500"
-              style={{ width: `${progress}%` }}
-            ></div>
-          </div>
-        </div>
-      )}
     </header>
   );
 }

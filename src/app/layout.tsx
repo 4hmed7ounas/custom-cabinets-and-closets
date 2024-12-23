@@ -1,5 +1,5 @@
 "use client";
-import { Roboto, Open_Sans, Lora, Poppins, Montserrat } from "next/font/google";
+import { Lora, Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
@@ -10,30 +10,14 @@ import { METADATA } from "../../share/data";
 import ServiceNav from "./components/serviceNav";
 import MainPoster from "./components/mainPoster";
 import { IMAGES } from "../../share/assets";
-
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-});
-
-const openSans = Open_Sans({
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
-});
+import ScrollToTop from "./components/scrollToTop";
 
 const lora = Lora({
   subsets: ["latin"],
-  weight: ["400", "700"],
-});
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
 });
 
 const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["400", "600", "700"],
 });
 
 function UpdateMetadata() {
@@ -86,18 +70,21 @@ export default function RootLayout({
       <Head>
         <meta name="description" content={pageMetadata.description} />
         <title>{pageMetadata.title}</title>
+        <link rel="preload" href={IMAGES.landingImage} as="image" />
+        <link rel="preload" href={IMAGES.logoMain} as="image" />
       </Head>
-      <body
-        className={`${roboto.className} ${openSans.className} ${lora.className} ${poppins.className} ${montserrat.className} antialiased`}
-      >
+      <body className={`${lora.className} ${montserrat.className} antialiased`}>
         <Navbar />
+        <ScrollToTop />
         {isServicePage && <ServiceNav />}
-        <MainPoster
-          image={IMAGES.landingImage}
-          title={pageMetadata.title}
-          description={pageMetadata.description}
-        />
-        <main className="min-h-[80vh]">{children}</main>
+        <main className="min-h-[80vh]">
+          <MainPoster
+            image={IMAGES.landingImage}
+            title={pageMetadata.title}
+            description={pageMetadata.description}
+          />
+          {children}
+        </main>
         <Footer />
         <UpdateMetadata />
       </body>

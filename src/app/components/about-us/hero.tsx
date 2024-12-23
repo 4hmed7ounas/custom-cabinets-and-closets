@@ -11,7 +11,7 @@ const Hero = () => {
               key={index}
               className="flex flex-col justify-center items-center w-[90%] my-4"
             >
-              <h1 className="text-3xl font-bold">{card.heading}</h1>
+              <h2 className="text-3xl font-bold">{card.heading}</h2>
               <div
                 className={`flex flex-wrap justify-center items-stretch mt-2 gap-4 ${
                   index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"

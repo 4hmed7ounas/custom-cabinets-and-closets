@@ -16,7 +16,7 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h2 className="text-lg font-semibold mb-4">Quick Links</h2>
             <ul className="w-1/3 sm:w-1/2">
               {NAVLINKS.map((link, index) => (
                 <li key={index}>
@@ -38,7 +38,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+            <h2 className="text-lg font-semibold mb-4">Contact Us</h2>
             <ul>
               {CONTACTINFO.map((info, index) => (
                 <li key={index}>
@@ -57,7 +57,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
+            <h2 className="text-lg font-semibold mb-4">Follow Us</h2>
             <div className="flex space-x-4">
               {SOCIALLINKS.map((media, index) => (
                 <Link
@@ -74,9 +74,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
-
       <div className="col-span-1 md:col-span-2 lg:col-span-1 mt-6">
-        <h3 className="text-xl text-center font-semibold mb-4">Our Location</h3>
+        <h2 className="text-xl text-center font-semibold mb-4">Our Location</h2>
         <div className="w-full">
           <iframe
             title="Map"
