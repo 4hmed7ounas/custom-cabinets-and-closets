@@ -1,16 +1,14 @@
 "use client";
 import { Lora, Montserrat } from "next/font/google";
-import "./globals.css";
-import Navbar from "./components/navbar";
-import Footer from "./components/footer";
-import { useEffect } from "react";
-import { usePathname } from "next/navigation";
-import Head from "next/head";
-import { METADATA } from "../../share/data";
-import ServiceNav from "./components/serviceNav";
-import MainPoster from "./components/mainPoster";
 import { IMAGES } from "../../share/assets";
+import { MAINPOSTERCONTENT, ROUTES_TITLES } from "../../share/data";
+import Footer from "./components/footer";
+import MainPoster from "./components/mainPoster";
+import Navbar from "./components/navbar";
 import ScrollToTop from "./components/scrollToTop";
+import ServiceNav from "./components/serviceNav";
+import "./globals.css";
+import { usePathname } from "next/navigation";
 
 const lora = Lora({
   subsets: ["latin"],
@@ -22,18 +20,17 @@ const montserrat = Montserrat({
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   const pathname = usePathname();
-  const pageTitle = METADATA[pathname]?.title || "Custom Cabinets and Closets";
-  const description =
-    "Discover custom cabinets and closets designed to maximize space, enhance organization, and complement your style. Tailored to your needs with high-quality materials and smart features for ultimate functionality and aesthetic appeal.";
-  const pageDescription = METADATA[pathname]?.description || description;
+  const dynamicTitle = ROUTES_TITLES[pathname] || "Custom Cabinets and Closets";
 
-  useEffect(() => {
-    document.title = pageTitle;
-  }, [pathname]);
+  const posterTitle =
+    MAINPOSTERCONTENT[pathname]?.title || "Custom Cabinets and Closets";
+  const posterDescription =
+    MAINPOSTERCONTENT[pathname]?.description ||
+    "Discover high-quality custom cabinets and closets tailored to your style and space. Expert craftsmanship and innovative designs to enhance your home.";
 
   const isServicePage =
     pathname === "/services" ||
@@ -50,20 +47,27 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <Head>
-        <meta name="description" content={description} />
-        <title>{pageTitle}</title>
-        <link rel="preload" href={IMAGES.landingImage} as="image" />
-        <link rel="preload" href={IMAGES.logoMain} as="image" />
-      </Head>
+      <head>
+        <title>{dynamicTitle}</title>
+        <meta
+          name="description"
+          content="Discover high-quality custom cabinets and closets tailored to your style and space. Expert craftsmanship and innovative designs to enhance your home."
+        />
+        <meta
+          name="keywords"
+          content="Custom Cabinets, Custom Closets, Home Organization, Interior Design, Storage Solutions, Cabinet Makers, Closet Designers, Custom Furniture"
+        />
+        <meta name="author" content="Ahmed Younas" />
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body className={`${lora.className} ${montserrat.className} antialiased`}>
         <Navbar />
         {isServicePage && <ServiceNav />}
         <main className="min-h-[80vh]">
           <MainPoster
             image={IMAGES.landingImage}
-            title={pageTitle}
-            description={pageDescription}
+            title={posterTitle}
+            description={posterDescription}
           />
           {children}
         </main>

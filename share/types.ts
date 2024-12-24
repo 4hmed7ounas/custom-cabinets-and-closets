@@ -32,7 +32,11 @@ export interface contactInfo {
   value: string;
 }
 
-export type MetadataType = {
+export interface routeTitles {
+  [key: string]: string;
+}
+
+export type mainPosterData = {
   [key: string]: {
     title: string;
     description: string;
