@@ -75,7 +75,6 @@ export default function RootLayout({
       </Head>
       <body className={`${lora.className} ${montserrat.className} antialiased`}>
         <Navbar />
-        <ScrollToTop />
         {isServicePage && <ServiceNav />}
         <main className="min-h-[80vh]">
           <MainPoster
@@ -86,6 +85,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <ScrollToTop />
         <UpdateMetadata />
       </body>
     </html>

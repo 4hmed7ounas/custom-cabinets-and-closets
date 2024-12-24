@@ -1,1 +1,23 @@
-Hello Dear! I could have sworn I’ve been to this blog before but after browsing through some of the post.
+# robots.txt for https://custom-cabinets-and-closets.vercel.app/
+
+# Allow all bots to access all content
+User-agent: *
+Disallow:
+
+# Specific rules for certain bots (e.g., Googlebot)
+User-agent: Googlebot
+Disallow: /private/
+
+# Disallow all bots from accessing certain parts of the site (e.g., admin pages)
+User-agent: *
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /login/
+
+# Allow bots to access CSS and JavaScript files
+User-agent: *
+Allow: /css/
+Allow: /js/
+
+# Sitemap location
+Sitemap: https://custom-cabinets-and-closets.vercel.app/sitemap.xml
