@@ -43,21 +43,21 @@ export default function ServiceNav() {
           >
             <ul className="flex flex-col lg:flex-row lg:justify-between lg:gap-10">
               {SERVICELINKS.map((link, index) => (
-                <Link
-                  href={link.route}
+                <li
                   key={index}
-                  onClick={() => {
-                    setIsOpen(false);
-                  }}
+                  className={`${responsiveTextClass} text-primary-50 p-2 rounded-md hover:bg-primary-50 hover:text-secondary-500 md:${transitionClass500}`}
                 >
-                  <li
-                    className={`${responsiveTextClass} text-primary-50 p-2 rounded-md hover:bg-primary-50 hover:text-secondary-500 md:${transitionClass500}`}
+                  <Link
+                    href={link.route}
+                    onClick={() => {
+                      setIsOpen(false);
+                    }}
                   >
                     <div className="flex items-center gap-2">
                       <link.icon /> {link.name}
                     </div>
-                  </li>
-                </Link>
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>

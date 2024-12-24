@@ -20,37 +20,20 @@ const montserrat = Montserrat({
   subsets: ["latin"],
 });
 
-function UpdateMetadata() {
-  const pathname = usePathname();
-
-  useEffect(() => {
-    const meta = METADATA[pathname] || {
-      title: "Custom Cabinets and Closets",
-      description:
-        "Discover custom cabinets and closets designed to maximize space, enhance organization, and complement your style. Tailored to your needs with high-quality materials and smart features for ultimate functionality and aesthetic appeal.",
-    };
-    document.title = meta.title;
-    const metaDescription = document.querySelector("meta[name='description']");
-    if (metaDescription) {
-      metaDescription.setAttribute("content", meta.description);
-    } else {
-      const newMetaDescription = document.createElement("meta");
-      newMetaDescription.name = "description";
-      newMetaDescription.content = meta.description;
-      document.head.appendChild(newMetaDescription);
-    }
-  }, [pathname]);
-
-  return null;
-}
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   const pathname = usePathname();
-  const pageMetadata = METADATA[pathname] || METADATA["/"];
+  const pageTitle = METADATA[pathname]?.title || "Custom Cabinets and Closets";
+  const description =
+    "Discover custom cabinets and closets designed to maximize space, enhance organization, and complement your style. Tailored to your needs with high-quality materials and smart features for ultimate functionality and aesthetic appeal.";
+  const pageDescription = METADATA[pathname]?.description || description;
+
+  useEffect(() => {
+    document.title = pageTitle;
+  }, [pathname]);
 
   const isServicePage =
     pathname === "/services" ||
@@ -68,20 +51,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <meta name="description" content={pageMetadata.description} />
-        <title>{pageMetadata.title}</title>
+        <meta name="description" content={description} />
+        <title>{pageTitle}</title>
         <link rel="preload" href={IMAGES.landingImage} as="image" />
         <link rel="preload" href={IMAGES.logoMain} as="image" />
       </Head>
-      <UpdateMetadata />
       <body className={`${lora.className} ${montserrat.className} antialiased`}>
         <Navbar />
         {isServicePage && <ServiceNav />}
         <main className="min-h-[80vh]">
           <MainPoster
             image={IMAGES.landingImage}
-            title={pageMetadata.title}
-            description={pageMetadata.description}
+            title={pageTitle}
+            description={pageDescription}
           />
           {children}
         </main>
