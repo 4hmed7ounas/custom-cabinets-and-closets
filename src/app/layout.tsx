@@ -73,6 +73,7 @@ export default function RootLayout({
         <link rel="preload" href={IMAGES.landingImage} as="image" />
         <link rel="preload" href={IMAGES.logoMain} as="image" />
       </Head>
+      <UpdateMetadata />
       <body className={`${lora.className} ${montserrat.className} antialiased`}>
         <Navbar />
         {isServicePage && <ServiceNav />}
@@ -86,7 +87,6 @@ export default function RootLayout({
         </main>
         <Footer />
         <ScrollToTop />
-        <UpdateMetadata />
       </body>
     </html>
   );
