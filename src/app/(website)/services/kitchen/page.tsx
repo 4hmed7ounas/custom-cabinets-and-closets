@@ -1,10 +1,11 @@
-import Hero from "@/app/components/kitchen/hero";
+import { Card } from "@/app/components/card";
+import { KITCHENCARDSECTION } from "../../../../../share/data";
 
 export default function Kitchen() {
   return (
     <div>
-        <Hero/>
+      <Card card={KITCHENCARDSECTION[0]} index={0} />
+      <Card card={KITCHENCARDSECTION[1]} index={1} />
     </div>
   );
 }
-

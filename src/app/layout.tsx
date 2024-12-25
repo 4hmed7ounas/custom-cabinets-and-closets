@@ -5,10 +5,10 @@ import { MAINPOSTERCONTENT, ROUTES_TITLES } from "../../share/data";
 import Footer from "./components/footer";
 import MainPoster from "./components/mainPoster";
 import Navbar from "./components/navbar";
-import ScrollToTop from "./components/scrollToTop";
 import ServiceNav from "./components/serviceNav";
 import "./globals.css";
 import { usePathname } from "next/navigation";
+import { ScrollToTopButton } from "./components/scrollToTopButton";
 
 const lora = Lora({
   subsets: ["latin"],
@@ -30,7 +30,7 @@ export default function RootLayout({
     MAINPOSTERCONTENT[pathname]?.title || "Custom Cabinets and Closets";
   const posterDescription =
     MAINPOSTERCONTENT[pathname]?.description ||
-    "Discover high-quality custom cabinets and closets tailored to your style and space. Expert craftsmanship and innovative designs to enhance your home.";
+    "Explore premium custom cabinets and closets designed to fit your style and space. Crafted with precision and innovation to elevate your home's functionality and aesthetic appeal.";
 
   const isServicePage =
     pathname === "/services" ||
@@ -70,9 +70,9 @@ export default function RootLayout({
             description={posterDescription}
           />
           {children}
+          <ScrollToTopButton />
         </main>
         <Footer />
-        <ScrollToTop />
       </body>
     </html>
   );

@@ -29,92 +29,6 @@ import {
   routeTitles,
 } from "./types";
 
-export const ROUTES_TITLES: routeTitles = {
-  "/": "Custom Cabinets and Closets",
-  "/contact-us": "Contact Us - Custom Cabinets and Closets",
-  "/news": "News - Custom Cabinets and Closets",
-  "/our-team": "Our Team - Custom Cabinets and Closets",
-  "/services": "Our Services - Custom Cabinets and Closets",
-  "/about-us": "About Us - Custom Cabinets and Closets",
-  "/services/kitchen": "Kitchen Cabinets - Custom Cabinets and Closets",
-  "/services/bathroom-storage":
-    "Bathroom Storage - Custom Cabinets and Closets",
-  "/services/built-in": "Built-in Cabinets - Custom Cabinets and Closets",
-  "/services/cabinets": "Custom Cabinets - Custom Cabinets and Closets",
-  "/services/closets": "Custom Closets - Custom Cabinets and Closets",
-  "/services/home-organization":
-    "Home Organization - Custom Cabinets and Closets",
-  "/services/laundry-storage": "Laundry Storage - Custom Cabinets and Closets",
-};
-
-export const MAINPOSTERCONTENT: mainPosterData = {
-  "/": {
-    title: "Custom Cabinets and Closets",
-    description:
-      "Discover custom cabinets and closets designed to maximize space, enhance organization, and complement your style. Tailored to your needs with high-quality materials and smart features for ultimate functionality and aesthetic appeal.",
-  },
-  "/contact-us": {
-    title: "Contact Us",
-    description:
-      "Get in touch with us for custom cabinetry solutions. We are here to answer all your queries and provide assistance.",
-  },
-  "/news": {
-    title: "News",
-    description:
-      "Stay updated with the latest news and trends in custom cabinetry and closet design. Discover new ideas and inspiration.",
-  },
-  "/our-team": {
-    title: "Our Team",
-    description:
-      "Meet the skilled professionals behind our custom cabinetry solutions. Learn more about their expertise and dedication.",
-  },
-  "/services": {
-    title: "Services",
-    description:
-      "Explore our range of services designed to create functional and beautiful spaces. From design to installation, we cover it all.",
-  },
-  "/services/kitchen": {
-    title: "Kitchen",
-    description:
-      "Explore our range of services designed to create functional and beautiful spaces. From design to installation, we cover it all.",
-  },
-  "/services/bathroom-storage": {
-    title: "Bathroom Storage",
-    description:
-      "Explore our range of services designed to create functional and beautiful spaces. From design to installation, we cover it all.",
-  },
-  "/services/built-in": {
-    title: "Built In",
-    description:
-      "Explore our range of services designed to create functional and beautiful spaces. From design to installation, we cover it all.",
-  },
-  "/services/cabinets": {
-    title: "Cabinets",
-    description:
-      "Explore our range of services designed to create functional and beautiful spaces. From design to installation, we cover it all.",
-  },
-  "/services/closets": {
-    title: "Closets",
-    description:
-      "Explore our range of services designed to create functional and beautiful spaces. From design to installation, we cover it all.",
-  },
-  "/services/home-organization": {
-    title: "Home Organization",
-    description:
-      "Explore our range of services designed to create functional and beautiful spaces. From design to installation, we cover it all.",
-  },
-  "/services/laundry-storage": {
-    title: "Laundry Storage",
-    description:
-      "Explore our range of services designed to create functional and beautiful spaces. From design to installation, we cover it all.",
-  },
-  "/about-us": {
-    title: "About Us",
-    description:
-      "Learn more about our mission and values. Discover why we are passionate about providing custom cabinetry solutions.",
-  },
-};
-
 export const CONTACT_EMAIL = "contact@example.com";
 export const CONTACT_NO = "+12345678901";
 export const CONTACT_ADDRESS = "123 Main St, Anytown, USA";
@@ -136,9 +50,420 @@ export const dummyData = {
   imageUrl: IMAGES.landingImage,
 };
 
+export const ROUTES_TITLES: routeTitles = {
+  "/": "Custom Cabinets and Closets",
+  "/contact-us": "Contact Us - Custom Cabinets and Closets",
+  "/news": "News - Custom Cabinets and Closets",
+  "/our-team": "Our Team - Custom Cabinets and Closets",
+  "/services": "Our Services - Custom Cabinets and Closets",
+  "/about-us": "About Us - Custom Cabinets and Closets",
+  "/services/kitchen": "Kitchen Cabinets - Custom Cabinets and Closets",
+  "/services/bathroom-storage":
+    "Bathroom Storage - Custom Cabinets and Closets",
+  "/services/built-in": "Built-in Cabinets - Custom Cabinets and Closets",
+  "/services/cabinets":
+    "Custom & Commercial Cabinets - Custom Cabinets and Closets",
+  "/services/closets": "Closets - Custom Cabinets and Closets",
+  "/services/home-organization":
+    "Home Organization - Custom Cabinets and Closets",
+  "/services/laundry-storage": "Laundry Storage - Custom Cabinets and Closets",
+};
+
+export const MAINPOSTERCONTENT: mainPosterData = {
+  "/": {
+    title: "Custom Cabinets and Closets",
+    description:
+      "Transform your home with custom-designed cabinets and closets. Maximize space, enhance organization, and infuse your personal style with premium materials and innovative features for a truly functional living space.",
+  },
+  "/contact-us": {
+    title: "Contact Us",
+    description:
+      "Have questions or need expert advice? Reach out to us for personalized assistance in creating your dream space. Our team is here to guide you through every step of your custom cabinetry journey.",
+  },
+  "/news": {
+    title: "News",
+    description:
+      "Stay in the know with the latest trends, product launches, and design inspirations in the world of custom cabinetry. Get fresh ideas and see how we're shaping the future of home organization.",
+  },
+  "/our-team": {
+    title: "Our Team",
+    description:
+      "Meet the talented craftsmen and designers behind our custom cabinetry solutions. With years of expertise and a passion for quality, our team is dedicated to delivering exceptional results that transform your space.",
+  },
+  "/services": {
+    title: "Our Services",
+    description:
+      "From initial design to flawless installation, our full range of services is tailored to create functional and beautiful spaces. Whether it's a kitchen, closet, or home organization, we've got you covered.",
+  },
+  "/services/kitchen": {
+    title: "Kitchen Design & Storage",
+    description:
+      "Reimagine your kitchen with custom cabinetry solutions that combine elegance and practicality. Maximize storage, improve organization, and create a kitchen that fits your lifestyle and aesthetic.",
+  },
+  "/services/bathroom-storage": {
+    title: "Bathroom Storage Solutions",
+    description:
+      "Create a spa-like retreat with custom bathroom storage. Our innovative designs optimize space while adding a touch of luxury, ensuring your bathroom is both organized and stylish.",
+  },
+  "/services/built-in": {
+    title: "Built-In Cabinetry",
+    description:
+      "Elevate your home with built-in cabinetry designed to seamlessly blend with your space. Whether it’s for your living room, bedroom, or office, we create bespoke solutions that enhance both function and design.",
+  },
+  "/services/cabinets": {
+    title: "Custom & Commercial Cabinets",
+    description:
+      "Upgrade your home with high-quality custom cabinets. Crafted with precision, our cabinets offer stylish storage solutions that are as functional as they are beautiful, tailored to fit any room.",
+  },
+  "/services/closets": {
+    title: "Closets",
+    description:
+      "Transform your closet into a beautifully organized haven. Our custom closet solutions maximize space, reduce clutter, and elevate your home's style, all while keeping your belongings neatly arranged.",
+  },
+  "/services/home-organization": {
+    title: "Home Organization",
+    description:
+      "Experience the joy of a well-organized home with our custom home organization solutions. From shelves to storage units, we offer designs that help you declutter and maximize every inch of your space.",
+  },
+  "/services/laundry-storage": {
+    title: "Laundry Storage Solutions",
+    description:
+      "Say goodbye to laundry room chaos with our custom storage solutions. Designed to maximize space and streamline your laundry routine, our storage systems add both function and flair to your laundry room.",
+  },
+  "/about-us": {
+    title: "About Us",
+    description:
+      "At the heart of our company is a passion for craftsmanship and customer satisfaction. Discover our mission to provide top-notch custom cabinetry solutions that make your home more beautiful, organized, and functional.",
+  },
+};
+
 export const HOMECARDSECTION: cardSection[] = [
   {
-    heading: "About us",
+    heading: "Custom Cabinets and Closets",
+    titles: ["Who are we?", "What we do?", "Our Values"],
+    descriptions: [
+      "At Custom Cabinets and Closets, we are passionate creators, builders, and designers dedicated to transforming spaces into functional works of art. Founded with a vision to bring high-quality craftsmanship into every home and office, we specialize in custom cabinetry and storage solutions that reflect your style and needs.",
+      "Our services range from consultation to installation, and our team ensures every detail is crafted to your specifications. We believe in providing solutions that maximize space while enhancing the aesthetic of your home or office.",
+      "Integrity, precision, and trust are at the core of our business. We work closely with clients to understand their unique needs and deliver products that are functional, beautiful, and long-lasting.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+  {
+    heading: "Why Choose Us",
+    titles: [
+      "Quality Craftsmanship",
+      "Tailored Solutions",
+      "Customer Satisfaction",
+    ],
+    descriptions: [
+      "At Custom Cabinets and Closets, we offer top-quality craftsmanship. Our team is highly skilled in woodworking and interior design, ensuring that every project meets the highest standards.",
+      "We provide custom, tailored solutions that perfectly suit your space. Whether it's a small closet or an entire kitchen overhaul, our designs are made to maximize storage while maintaining a stylish and modern aesthetic.",
+      "Our commitment to customer satisfaction is unwavering. We take pride in the long-term relationships we've built with our clients, ensuring their needs are met at every stage of the process.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+];
+
+export const ABOUTCARDSECTION: cardSection[] = [
+  {
+    heading: "Custom Cabinets and Closets",
+    titles: ["Who are we?", "What we do?", "Our Values"],
+    descriptions: [
+      "At Custom Cabinets and Closets, we are passionate creators, builders, and designers dedicated to transforming spaces into functional works of art. Founded with a vision to bring high-quality craftsmanship into every home and office, we specialize in custom cabinetry and storage solutions that reflect your style and needs.",
+      "Our services range from consultation to installation, and our team ensures every detail is crafted to your specifications. We believe in providing solutions that maximize space while enhancing the aesthetic of your home or office.",
+      "Integrity, precision, and trust are at the core of our business. We work closely with clients to understand their unique needs and deliver products that are functional, beautiful, and long-lasting.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+  {
+    heading: "Why Choose Us",
+    titles: [
+      "Quality Craftsmanship",
+      "Tailored Solutions",
+      "Customer Satisfaction",
+    ],
+    descriptions: [
+      "At Custom Cabinets and Closets, we offer top-quality craftsmanship. Our team is highly skilled in woodworking and interior design, ensuring that every project meets the highest standards.",
+      "We provide custom, tailored solutions that perfectly suit your space. Whether it's a small closet or an entire kitchen overhaul, our designs are made to maximize storage while maintaining a stylish and modern aesthetic.",
+      "Our commitment to customer satisfaction is unwavering. We take pride in the long-term relationships we've built with our clients, ensuring their needs are met at every stage of the process.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+];
+
+export const TEAMCARDSECTION: cardSection[] = [
+  {
+    heading: "Custom Cabinets and Closets",
+    titles: ["Who are we?", "What we do?", "Our Values"],
+    descriptions: [
+      "At Custom Cabinets and Closets, we are passionate creators, builders, and designers dedicated to transforming spaces into functional works of art. Founded with a vision to bring high-quality craftsmanship into every home and office, we specialize in custom cabinetry and storage solutions that reflect your style and needs.",
+      "Our services range from consultation to installation, and our team ensures every detail is crafted to your specifications. We believe in providing solutions that maximize space while enhancing the aesthetic of your home or office.",
+      "Integrity, precision, and trust are at the core of our business. We work closely with clients to understand their unique needs and deliver products that are functional, beautiful, and long-lasting.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+  {
+    heading: "Why Choose Us",
+    titles: [
+      "Quality Craftsmanship",
+      "Tailored Solutions",
+      "Customer Satisfaction",
+    ],
+    descriptions: [
+      "At Custom Cabinets and Closets, we offer top-quality craftsmanship. Our team is highly skilled in woodworking and interior design, ensuring that every project meets the highest standards.",
+      "We provide custom, tailored solutions that perfectly suit your space. Whether it's a small closet or an entire kitchen overhaul, our designs are made to maximize storage while maintaining a stylish and modern aesthetic.",
+      "Our commitment to customer satisfaction is unwavering. We take pride in the long-term relationships we've built with our clients, ensuring their needs are met at every stage of the process.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+];
+
+export const SERVICESCARDSECTION: cardSection[] = [
+  {
+    heading: "Custom Cabinets and Closets",
+    titles: ["Who are we?", "What we do?", "Our Values"],
+    descriptions: [
+      "At Custom Cabinets and Closets, we are passionate creators, builders, and designers dedicated to transforming spaces into functional works of art. Founded with a vision to bring high-quality craftsmanship into every home and office, we specialize in custom cabinetry and storage solutions that reflect your style and needs.",
+      "Our services range from consultation to installation, and our team ensures every detail is crafted to your specifications. We believe in providing solutions that maximize space while enhancing the aesthetic of your home or office.",
+      "Integrity, precision, and trust are at the core of our business. We work closely with clients to understand their unique needs and deliver products that are functional, beautiful, and long-lasting.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+  {
+    heading: "Why Choose Us",
+    titles: [
+      "Quality Craftsmanship",
+      "Tailored Solutions",
+      "Customer Satisfaction",
+    ],
+    descriptions: [
+      "At Custom Cabinets and Closets, we offer top-quality craftsmanship. Our team is highly skilled in woodworking and interior design, ensuring that every project meets the highest standards.",
+      "We provide custom, tailored solutions that perfectly suit your space. Whether it's a small closet or an entire kitchen overhaul, our designs are made to maximize storage while maintaining a stylish and modern aesthetic.",
+      "Our commitment to customer satisfaction is unwavering. We take pride in the long-term relationships we've built with our clients, ensuring their needs are met at every stage of the process.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+];
+
+export const KITCHENCARDSECTION: cardSection[] = [
+  {
+    heading: "Custom Cabinets and Closets",
+    titles: ["Who are we?", "What we do?", "Our Values"],
+    descriptions: [
+      "At Custom Cabinets and Closets, we are passionate creators, builders, and designers dedicated to transforming spaces into functional works of art. Founded with a vision to bring high-quality craftsmanship into every home and office, we specialize in custom cabinetry and storage solutions that reflect your style and needs.",
+      "Our services range from consultation to installation, and our team ensures every detail is crafted to your specifications. We believe in providing solutions that maximize space while enhancing the aesthetic of your home or office.",
+      "Integrity, precision, and trust are at the core of our business. We work closely with clients to understand their unique needs and deliver products that are functional, beautiful, and long-lasting.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+  {
+    heading: "Why Choose Us",
+    titles: [
+      "Quality Craftsmanship",
+      "Tailored Solutions",
+      "Customer Satisfaction",
+    ],
+    descriptions: [
+      "At Custom Cabinets and Closets, we offer top-quality craftsmanship. Our team is highly skilled in woodworking and interior design, ensuring that every project meets the highest standards.",
+      "We provide custom, tailored solutions that perfectly suit your space. Whether it's a small closet or an entire kitchen overhaul, our designs are made to maximize storage while maintaining a stylish and modern aesthetic.",
+      "Our commitment to customer satisfaction is unwavering. We take pride in the long-term relationships we've built with our clients, ensuring their needs are met at every stage of the process.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+];
+
+export const BATHROOMCARDSECTION: cardSection[] = [
+  {
+    heading: "Custom Cabinets and Closets",
+    titles: ["Who are we?", "What we do?", "Our Values"],
+    descriptions: [
+      "At Custom Cabinets and Closets, we are passionate creators, builders, and designers dedicated to transforming spaces into functional works of art. Founded with a vision to bring high-quality craftsmanship into every home and office, we specialize in custom cabinetry and storage solutions that reflect your style and needs.",
+      "Our services range from consultation to installation, and our team ensures every detail is crafted to your specifications. We believe in providing solutions that maximize space while enhancing the aesthetic of your home or office.",
+      "Integrity, precision, and trust are at the core of our business. We work closely with clients to understand their unique needs and deliver products that are functional, beautiful, and long-lasting.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+  {
+    heading: "Why Choose Us",
+    titles: [
+      "Quality Craftsmanship",
+      "Tailored Solutions",
+      "Customer Satisfaction",
+    ],
+    descriptions: [
+      "At Custom Cabinets and Closets, we offer top-quality craftsmanship. Our team is highly skilled in woodworking and interior design, ensuring that every project meets the highest standards.",
+      "We provide custom, tailored solutions that perfectly suit your space. Whether it's a small closet or an entire kitchen overhaul, our designs are made to maximize storage while maintaining a stylish and modern aesthetic.",
+      "Our commitment to customer satisfaction is unwavering. We take pride in the long-term relationships we've built with our clients, ensuring their needs are met at every stage of the process.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+];
+
+export const BUILTINCARDSECTION: cardSection[] = [
+  {
+    heading: "Custom Cabinets and Closets",
+    titles: ["Who are we?", "What we do?", "Our Values"],
+    descriptions: [
+      "At Custom Cabinets and Closets, we are passionate creators, builders, and designers dedicated to transforming spaces into functional works of art. Founded with a vision to bring high-quality craftsmanship into every home and office, we specialize in custom cabinetry and storage solutions that reflect your style and needs.",
+      "Our services range from consultation to installation, and our team ensures every detail is crafted to your specifications. We believe in providing solutions that maximize space while enhancing the aesthetic of your home or office.",
+      "Integrity, precision, and trust are at the core of our business. We work closely with clients to understand their unique needs and deliver products that are functional, beautiful, and long-lasting.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+  {
+    heading: "Why Choose Us",
+    titles: [
+      "Quality Craftsmanship",
+      "Tailored Solutions",
+      "Customer Satisfaction",
+    ],
+    descriptions: [
+      "At Custom Cabinets and Closets, we offer top-quality craftsmanship. Our team is highly skilled in woodworking and interior design, ensuring that every project meets the highest standards.",
+      "We provide custom, tailored solutions that perfectly suit your space. Whether it's a small closet or an entire kitchen overhaul, our designs are made to maximize storage while maintaining a stylish and modern aesthetic.",
+      "Our commitment to customer satisfaction is unwavering. We take pride in the long-term relationships we've built with our clients, ensuring their needs are met at every stage of the process.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+];
+
+export const CABINETSCARDSECTION: cardSection[] = [
+  {
+    heading: "Custom Cabinets and Closets",
+    titles: ["Who are we?", "What we do?", "Our Values"],
+    descriptions: [
+      "At Custom Cabinets and Closets, we are passionate creators, builders, and designers dedicated to transforming spaces into functional works of art. Founded with a vision to bring high-quality craftsmanship into every home and office, we specialize in custom cabinetry and storage solutions that reflect your style and needs.",
+      "Our services range from consultation to installation, and our team ensures every detail is crafted to your specifications. We believe in providing solutions that maximize space while enhancing the aesthetic of your home or office.",
+      "Integrity, precision, and trust are at the core of our business. We work closely with clients to understand their unique needs and deliver products that are functional, beautiful, and long-lasting.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+  {
+    heading: "Why Choose Us",
+    titles: [
+      "Quality Craftsmanship",
+      "Tailored Solutions",
+      "Customer Satisfaction",
+    ],
+    descriptions: [
+      "At Custom Cabinets and Closets, we offer top-quality craftsmanship. Our team is highly skilled in woodworking and interior design, ensuring that every project meets the highest standards.",
+      "We provide custom, tailored solutions that perfectly suit your space. Whether it's a small closet or an entire kitchen overhaul, our designs are made to maximize storage while maintaining a stylish and modern aesthetic.",
+      "Our commitment to customer satisfaction is unwavering. We take pride in the long-term relationships we've built with our clients, ensuring their needs are met at every stage of the process.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+];
+
+export const CLOSETSCARDSECTION: cardSection[] = [
+  {
+    heading: "Custom Cabinets and Closets",
+    titles: ["Who are we?", "What we do?", "Our Values"],
+    descriptions: [
+      "At Custom Cabinets and Closets, we are passionate creators, builders, and designers dedicated to transforming spaces into functional works of art. Founded with a vision to bring high-quality craftsmanship into every home and office, we specialize in custom cabinetry and storage solutions that reflect your style and needs.",
+      "Our services range from consultation to installation, and our team ensures every detail is crafted to your specifications. We believe in providing solutions that maximize space while enhancing the aesthetic of your home or office.",
+      "Integrity, precision, and trust are at the core of our business. We work closely with clients to understand their unique needs and deliver products that are functional, beautiful, and long-lasting.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+  {
+    heading: "Why Choose Us",
+    titles: [
+      "Quality Craftsmanship",
+      "Tailored Solutions",
+      "Customer Satisfaction",
+    ],
+    descriptions: [
+      "At Custom Cabinets and Closets, we offer top-quality craftsmanship. Our team is highly skilled in woodworking and interior design, ensuring that every project meets the highest standards.",
+      "We provide custom, tailored solutions that perfectly suit your space. Whether it's a small closet or an entire kitchen overhaul, our designs are made to maximize storage while maintaining a stylish and modern aesthetic.",
+      "Our commitment to customer satisfaction is unwavering. We take pride in the long-term relationships we've built with our clients, ensuring their needs are met at every stage of the process.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+];
+
+export const HOMEORGCARDSECTION: cardSection[] = [
+  {
+    heading: "Custom Cabinets and Closets",
+    titles: ["Who are we?", "What we do?", "Our Values"],
+    descriptions: [
+      "At Custom Cabinets and Closets, we are passionate creators, builders, and designers dedicated to transforming spaces into functional works of art. Founded with a vision to bring high-quality craftsmanship into every home and office, we specialize in custom cabinetry and storage solutions that reflect your style and needs.",
+      "Our services range from consultation to installation, and our team ensures every detail is crafted to your specifications. We believe in providing solutions that maximize space while enhancing the aesthetic of your home or office.",
+      "Integrity, precision, and trust are at the core of our business. We work closely with clients to understand their unique needs and deliver products that are functional, beautiful, and long-lasting.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+  {
+    heading: "Why Choose Us",
+    titles: [
+      "Quality Craftsmanship",
+      "Tailored Solutions",
+      "Customer Satisfaction",
+    ],
+    descriptions: [
+      "At Custom Cabinets and Closets, we offer top-quality craftsmanship. Our team is highly skilled in woodworking and interior design, ensuring that every project meets the highest standards.",
+      "We provide custom, tailored solutions that perfectly suit your space. Whether it's a small closet or an entire kitchen overhaul, our designs are made to maximize storage while maintaining a stylish and modern aesthetic.",
+      "Our commitment to customer satisfaction is unwavering. We take pride in the long-term relationships we've built with our clients, ensuring their needs are met at every stage of the process.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+];
+
+export const LAUNDRYCARDSECTION: cardSection[] = [
+  {
+    heading: "Custom Cabinets and Closets",
+    titles: ["Who are we?", "What we do?", "Our Values"],
+    descriptions: [
+      "At Custom Cabinets and Closets, we are passionate creators, builders, and designers dedicated to transforming spaces into functional works of art. Founded with a vision to bring high-quality craftsmanship into every home and office, we specialize in custom cabinetry and storage solutions that reflect your style and needs.",
+      "Our services range from consultation to installation, and our team ensures every detail is crafted to your specifications. We believe in providing solutions that maximize space while enhancing the aesthetic of your home or office.",
+      "Integrity, precision, and trust are at the core of our business. We work closely with clients to understand their unique needs and deliver products that are functional, beautiful, and long-lasting.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+  {
+    heading: "Why Choose Us",
+    titles: [
+      "Quality Craftsmanship",
+      "Tailored Solutions",
+      "Customer Satisfaction",
+    ],
+    descriptions: [
+      "At Custom Cabinets and Closets, we offer top-quality craftsmanship. Our team is highly skilled in woodworking and interior design, ensuring that every project meets the highest standards.",
+      "We provide custom, tailored solutions that perfectly suit your space. Whether it's a small closet or an entire kitchen overhaul, our designs are made to maximize storage while maintaining a stylish and modern aesthetic.",
+      "Our commitment to customer satisfaction is unwavering. We take pride in the long-term relationships we've built with our clients, ensuring their needs are met at every stage of the process.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+];
+
+export const NEWSCARDSECTION: cardSection[] = [
+  {
+    heading: "Custom Cabinets and Closets",
+    titles: ["Who are we?", "What we do?", "Our Values"],
+    descriptions: [
+      "At Custom Cabinets and Closets, we are passionate creators, builders, and designers dedicated to transforming spaces into functional works of art. Founded with a vision to bring high-quality craftsmanship into every home and office, we specialize in custom cabinetry and storage solutions that reflect your style and needs.",
+      "Our services range from consultation to installation, and our team ensures every detail is crafted to your specifications. We believe in providing solutions that maximize space while enhancing the aesthetic of your home or office.",
+      "Integrity, precision, and trust are at the core of our business. We work closely with clients to understand their unique needs and deliver products that are functional, beautiful, and long-lasting.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+  {
+    heading: "Why Choose Us",
+    titles: [
+      "Quality Craftsmanship",
+      "Tailored Solutions",
+      "Customer Satisfaction",
+    ],
+    descriptions: [
+      "At Custom Cabinets and Closets, we offer top-quality craftsmanship. Our team is highly skilled in woodworking and interior design, ensuring that every project meets the highest standards.",
+      "We provide custom, tailored solutions that perfectly suit your space. Whether it's a small closet or an entire kitchen overhaul, our designs are made to maximize storage while maintaining a stylish and modern aesthetic.",
+      "Our commitment to customer satisfaction is unwavering. We take pride in the long-term relationships we've built with our clients, ensuring their needs are met at every stage of the process.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+];
+
+export const CONTACTCARDSECTION: cardSection[] = [
+  {
+    heading: "Custom Cabinets and Closets",
     titles: ["Who are we?", "What we do?", "Our Values"],
     descriptions: [
       "At Custom Cabinets and Closets, we are passionate creators, builders, and designers dedicated to transforming spaces into functional works of art. Founded with a vision to bring high-quality craftsmanship into every home and office, we specialize in custom cabinetry and storage solutions that reflect your style and needs.",

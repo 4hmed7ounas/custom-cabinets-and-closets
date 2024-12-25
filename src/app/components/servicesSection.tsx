@@ -1,10 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { transitionClass500 } from "../styles/classes";
-import { SERVICESECTION } from "../../../../share/data";
+import { SERVICESECTION } from "../../../share/data";
+import { responsiveTextClass, transitionClass500 } from "./styles/classes";
 
-export default function HomeServices() {
+export default function ServiceSection() {
   const [itemsPerRow, setItemsPerRow] = useState(4);
 
   useEffect(() => {
@@ -19,9 +19,9 @@ export default function HomeServices() {
 
   return (
     <div className="flex justify-center my-6">
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center w-[90%] lg:w-auto">
         <h2 className="text-3xl font-bold mb-4">Our Services</h2>
-        <div className="w-[90%] grid grid-cols-2 md:grid-cols-4">
+        <div className="grid grid-cols-2 md:grid-cols-4">
           {SERVICESECTION.map((service, index) => {
             const rowIndex = Math.floor(index / itemsPerRow);
             const colIndex = index % itemsPerRow;
@@ -46,7 +46,6 @@ export default function HomeServices() {
                         backgroundImage: `url(${service.imageUrl})`,
                         backgroundSize: "cover",
                         backgroundPosition: "center",
-                        // backgroundAttachment: "fixed",
                       }
                     : {}
                 }
@@ -65,10 +64,17 @@ export default function HomeServices() {
                 ) : (
                   <div className="w-full h-full"></div>
                 )}
+                {service.label && (
+                  <p className="mt-2 hidden">{service.label}</p>
+                )}
               </Link>
             );
           })}
         </div>
+        <p className={`${responsiveTextClass} mt-2 text-center`}>
+          Additionally, we offer a 2-year warranty on our work after
+          installation so you can feel secure knowing that we have your back.
+        </p>
       </div>
     </div>
   );

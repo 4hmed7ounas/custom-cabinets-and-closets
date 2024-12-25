@@ -1,10 +1,11 @@
-import Hero from "@/app/components/closets/hero";
+import { Card } from "@/app/components/card";
+import { CLOSETSCARDSECTION } from "../../../../../share/data";
 
 export default function Closets() {
   return (
     <div>
-        <Hero/>
+      <Card card={CLOSETSCARDSECTION[0]} index={0} />
+      <Card card={CLOSETSCARDSECTION[1]} index={1} />{" "}
     </div>
   );
 }
-

@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { transitionClass500 } from "../styles/classes";
 
 interface ButtonProps {
   text: string;
@@ -26,7 +27,7 @@ export default function Button({
           disabled
             ? " bg-secondary-400 text-secondary-800 cursor-not-allowed"
             : "bg-secondary-500 text-secondary-50 hover:bg-secondary-50 hover:text-secondary-500"
-        }
+        } ${transitionClass500}
         ${className}`}
     >
       {text}

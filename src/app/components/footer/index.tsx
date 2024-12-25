@@ -64,6 +64,7 @@ export default function Footer() {
                   key={index}
                   href={media.url}
                   target="_blank"
+                  rel="noopener" 
                   aria-label={media.label}
                   className={`text-2xl text-primary-50 rounded-md bg-secondary-500 hover:text-secondary-500 hover:bg-primary-50 p-2 ${transitionClass500}`}
                 >

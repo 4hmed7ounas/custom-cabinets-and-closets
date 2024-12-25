@@ -61,7 +61,7 @@ export default function Navbar() {
               {NAVLINKS.map((link, index) => (
                 <li
                   key={index}
-                  className={`${responsiveTextClass} text-white p-2 rounded-md hover:bg-white hover:text-secondary-500 md:${transitionClass500}`}
+                  className={`${responsiveTextClass} text-secondary-50 p-2 rounded-md hover:bg-white hover:text-secondary-500 md:${transitionClass500}`}
                 >
                   <Link
                     href={link.route}
