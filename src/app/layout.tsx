@@ -10,6 +10,7 @@ import "./globals.css";
 import { usePathname } from "next/navigation";
 import { ScrollToTopButton } from "./components/scrollToTopButton";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const lora = Lora({
   subsets: ["latin"],
@@ -72,6 +73,7 @@ export default function RootLayout({
           />
           {children}
           <Analytics />
+          <SpeedInsights />
           <ScrollToTopButton />
         </main>
         <Footer />
