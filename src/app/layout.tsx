@@ -9,6 +9,7 @@ import ServiceNav from "./components/serviceNav";
 import "./globals.css";
 import { usePathname } from "next/navigation";
 import { ScrollToTopButton } from "./components/scrollToTopButton";
+import { Analytics } from "@vercel/analytics/react";
 
 const lora = Lora({
   subsets: ["latin"],
@@ -70,6 +71,7 @@ export default function RootLayout({
             description={posterDescription}
           />
           {children}
+          <Analytics />
           <ScrollToTopButton />
         </main>
         <Footer />
