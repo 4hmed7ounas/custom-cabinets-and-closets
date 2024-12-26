@@ -3,8 +3,8 @@ import {
   FaFacebook,
   FaHome,
   FaInstagram,
-  FaLinkedin,
   FaNewspaper,
+  FaSink,
 } from "react-icons/fa";
 import { IMAGES } from "./assets";
 import { ROUTES } from "./routes";
@@ -27,11 +27,12 @@ import {
   serviceSection,
   mainPosterData,
   routeTitles,
+  reviewsData,
 } from "./types";
 
-export const CONTACT_EMAIL = "contact@example.com";
-export const CONTACT_NO = "+12345678901";
-export const CONTACT_ADDRESS = "123 Main St, Anytown, USA";
+const contactEmail: string = "contact@example.com";
+const contactNo: string = "+1 403-870-7426";
+const contactAddress: string = "123 Main St, Anytown, USA";
 export const CONTACT_MAP = "https://maps.app.goo.gl/G12bsQ3AixMrm88u8";
 
 export const EMBED_MAP =
@@ -67,6 +68,7 @@ export const ROUTES_TITLES: routeTitles = {
   "/services/home-organization":
     "Home Organization - Custom Cabinets and Closets",
   "/services/laundry-storage": "Laundry Storage - Custom Cabinets and Closets",
+  "/services/wet-bars": "Wet Bars - Custom Cabinets and Closets",
 };
 
 export const MAINPOSTERCONTENT: mainPosterData = {
@@ -125,6 +127,12 @@ export const MAINPOSTERCONTENT: mainPosterData = {
     description:
       "Experience the joy of a well-organized home with our custom home organization solutions. From shelves to storage units, we offer designs that help you declutter and maximize every inch of your space.",
   },
+  "/services/wet-bars": {
+    title: "Wet Bars",
+    description:
+      "Enhance your home entertainment experience with our custom-designed wet bars. Tailored to fit your style and space, our wet bars offer a perfect blend of functionality and elegance, featuring premium materials, ample storage, and sleek finishes. Whether it's for hosting guests or enjoying a relaxing evening, our wet bars provide the ideal setup for any occasion.",
+  },
+
   "/services/laundry-storage": {
     title: "Laundry Storage Solutions",
     description:
@@ -139,7 +147,7 @@ export const MAINPOSTERCONTENT: mainPosterData = {
 
 export const HOMECARDSECTION: cardSection[] = [
   {
-    heading: "Custom Cabinets and Closets",
+    heading: "Who is Custom Cabinets and Closets",
     titles: ["Who are we?", "What we do?", "Our Values"],
     descriptions: [
       "At Custom Cabinets and Closets, we are passionate creators, builders, and designers dedicated to transforming spaces into functional works of art. Founded with a vision to bring high-quality craftsmanship into every home and office, we specialize in custom cabinetry and storage solutions that reflect your style and needs.",
@@ -149,18 +157,52 @@ export const HOMECARDSECTION: cardSection[] = [
     imageUrl: IMAGES.cardImg1,
   },
   {
-    heading: "Why Choose Us",
+    heading: "Transform Your Space with Custom Cabinets & Closets",
     titles: [
-      "Quality Craftsmanship",
-      "Tailored Solutions",
-      "Customer Satisfaction",
+      '"Custom Cabinets And Closets" Has Been Making Cabinets & Closets in Calgary for Over 13 Years',
     ],
     descriptions: [
-      "At Custom Cabinets and Closets, we offer top-quality craftsmanship. Our team is highly skilled in woodworking and interior design, ensuring that every project meets the highest standards.",
-      "We provide custom, tailored solutions that perfectly suit your space. Whether it's a small closet or an entire kitchen overhaul, our designs are made to maximize storage while maintaining a stylish and modern aesthetic.",
-      "Our commitment to customer satisfaction is unwavering. We take pride in the long-term relationships we've built with our clients, ensuring their needs are met at every stage of the process.",
+      "At Custom Cabinets and Closets, we believe that your home is an expression of who you are. Every detail matters—each color, texture, and design element should reflect your personal taste and lifestyle. That's why we specialize in crafting bespoke cabinetry that fits perfectly with your vision and space. With over 13 years of experience in Calgary, our locally owned and operated shop has been a trusted name in creating custom cabinets and closets. Our state-of-the-art manufacturing facility allows us to bring your ideas to life with precision and care, ensuring each piece is tailored to your exact specifications. Whether you need storage solutions, functional designs, or a complete transformation of your space, we are here to help. Start creating the space you've always dreamed of. <a href='/contact-us'><b>Contact us today</b></a> to explore the possibilities of custom cabinetry that is as unique as you are.",
     ],
     imageUrl: IMAGES.cardImg1,
+  },
+  {
+    heading: "The Benefits of Working with Us",
+    titles: [
+      "Expert Craftsmanship You Can Trust",
+      "Tailored Designs for Every Space",
+      "A Commitment to Exceptional Service",
+    ],
+    descriptions: [
+      "At Custom Cabinets and Closets, we take pride in our superior craftsmanship. Our expert team combines advanced woodworking techniques with innovative interior design to ensure that every piece is not only functional but also beautifully crafted to your specifications.",
+      "We specialize in creating personalized, tailor-made solutions that perfectly fit your space and lifestyle. Whether it's a custom closet, a kitchen makeover, or a full home transformation, we design to optimize storage, enhance style, and improve the flow of your space.",
+      "Customer satisfaction is at the heart of everything we do. We don't just build cabinets and closets – we build lasting relationships. From consultation to installation and beyond, we're with you every step of the way, ensuring that every detail is perfect and that you're completely satisfied with the results.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+];
+
+export const REVIEWS: reviewsData[] = [
+  {
+    title: "Excellent Service!",
+    description:
+      "The team was professional, timely, and delivered high-quality results. Highly recommended!",
+    reviewer: "John Doe",
+    rating: 5,
+  },
+  {
+    title: "Great Experience",
+    description:
+      "Very satisfied with the work. The attention to detail was impressive.",
+    reviewer: "Jane Smith",
+    rating: 4,
+  },
+  {
+    title: "Could be better",
+    description:
+      "Service was good, but there were slight delays. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum ut, impedit exercitationem dignissimos consequuntur assumenda, placeat ea provident saepe tempora asperiores expedita iusto officia eos dolore iure ducimus quidem quia mollitia facilis amet quos. Nemo, molestias in molestiae ab illum dolores. Sit, dicta asperiores dignissimos reiciendis quae eligendi cupiditate et neque voluptate dolore culpa quisquam nulla temporibus veritatis possimus vel in porro odio, recusandae, similique debitis! Rerum animi odit reiciendis minima, debitis voluptate perspiciatis obcaecati cum suscipit dignissimos dolore nulla cumque provident dolorum amet culpa in nostrum eum modi dolor, maxime neque. Quo repellat tempore dignissimos tenetur sed nesciunt deserunt?",
+    reviewer: "Alice Brown",
+    rating: 5,
   },
 ];
 
@@ -407,6 +449,33 @@ export const HOMEORGCARDSECTION: cardSection[] = [
   },
 ];
 
+export const WETBARSCARDSECTION: cardSection[] = [
+  {
+    heading: "Custom Cabinets and Closets",
+    titles: ["Who are we?", "What we do?", "Our Values"],
+    descriptions: [
+      "At Custom Cabinets and Closets, we are passionate creators, builders, and designers dedicated to transforming spaces into functional works of art. Founded with a vision to bring high-quality craftsmanship into every home and office, we specialize in custom cabinetry and storage solutions that reflect your style and needs.",
+      "Our services range from consultation to installation, and our team ensures every detail is crafted to your specifications. We believe in providing solutions that maximize space while enhancing the aesthetic of your home or office.",
+      "Integrity, precision, and trust are at the core of our business. We work closely with clients to understand their unique needs and deliver products that are functional, beautiful, and long-lasting.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+  {
+    heading: "Why Choose Us",
+    titles: [
+      "Quality Craftsmanship",
+      "Tailored Solutions",
+      "Customer Satisfaction",
+    ],
+    descriptions: [
+      "At Custom Cabinets and Closets, we offer top-quality craftsmanship. Our team is highly skilled in woodworking and interior design, ensuring that every project meets the highest standards.",
+      "We provide custom, tailored solutions that perfectly suit your space. Whether it's a small closet or an entire kitchen overhaul, our designs are made to maximize storage while maintaining a stylish and modern aesthetic.",
+      "Our commitment to customer satisfaction is unwavering. We take pride in the long-term relationships we've built with our clients, ensuring their needs are met at every stage of the process.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+];
+
 export const LAUNDRYCARDSECTION: cardSection[] = [
   {
     heading: "Custom Cabinets and Closets",
@@ -504,13 +573,13 @@ export const SERVICESECTION: serviceSection[] = [
   {
     url: ROUTES.cabinets,
     icon: BiCabinet,
-    label: "Wooden Cabinets",
+    label: "Custom & Commercial Cabinets",
     imageUrl: IMAGES.serviceCabinets,
   },
   {
     url: ROUTES.cabinets,
     icon: BiCabinet,
-    label: "Wooden Cabinets",
+    label: "Custom & Commercial Cabinets",
     imageUrl: IMAGES.serviceCabinets,
   },
   {
@@ -551,14 +620,14 @@ export const SERVICESECTION: serviceSection[] = [
   },
   {
     url: ROUTES.cabinets,
-    icon: BiCabinet,
-    label: "Commercial Cabinets",
+    icon: FaSink,
+    label: "Wet Bars",
     imageUrl: IMAGES.serviceComCabinets,
   },
   {
     url: ROUTES.cabinets,
-    icon: BiCabinet,
-    label: "Commercial Cabinets",
+    icon: FaSink,
+    label: "Wet Bars",
     imageUrl: IMAGES.serviceComCabinets,
   },
   {
@@ -593,7 +662,7 @@ export const NAVLINKS: Links[] = [
   { name: "Services", route: ROUTES.services, icon: FaGear },
   { name: "Our Team", route: ROUTES.ourteam, icon: FaPeopleGroup },
   { name: "News", route: ROUTES.news, icon: FaNewspaper },
-  { name: "Contact us", route: ROUTES.contactUs, icon: BsMailbox },
+  { name: "Connect", route: ROUTES.contactUs, icon: BsMailbox },
 ];
 
 export const SERVICELINKS: Links[] = [
@@ -610,43 +679,43 @@ export const SERVICELINKS: Links[] = [
     route: ROUTES.laundryStorage,
     icon: MdOutlineLocalLaundryService,
   },
-  { name: "Built-In", route: ROUTES.builtIn, icon: GiWoodenChair },
+  { name: "Built-In Furniture", route: ROUTES.builtIn, icon: GiWoodenChair },
+  { name: "Wet Bars", route: ROUTES.wetBars, icon: FaSink },
   { name: "Home Organization", route: ROUTES.homeOrg, icon: IoHome },
 ];
 
 export const SOCIALLINKS: socialLinks[] = [
   {
     icon: FaFacebook,
-    url: "https://www.facebook.com",
+    url: "https://www.facebook.com/share/HxGstcCJkD1h5TqB/?mibextid=wwXIfr",
     label: "Facebook",
   },
-  { icon: FaXTwitter, url: "https://www.twitter.com", label: "Twitter" },
   {
-    icon: FaInstagram,
-    url: "https://www.instagram.com",
-    label: "Instagram",
+    icon: FaXTwitter,
+    url: "https://x.com/bellacrafts01?s=11",
+    label: "Twitter",
   },
   {
-    icon: FaLinkedin,
-    url: "https://www.linkedin.com",
-    label: "LinkedIn",
+    icon: FaInstagram,
+    url: "https://www.instagram.com/bellacraftsofficial?igsh=ZDNoaW15ZmFjNXVy&utm_source=qr",
+    label: "Instagram",
   },
 ];
 
 export const CONTACTINFO: contactInfo[] = [
   {
     label: "Email",
-    url: `mailto:${CONTACT_EMAIL}`,
-    value: CONTACT_EMAIL,
+    url: `mailto:${contactEmail}`,
+    value: contactEmail,
   },
   {
     label: "Phone",
-    url: `tel:${CONTACT_NO}`,
-    value: CONTACT_NO,
+    url: `tel:${contactNo}`,
+    value: contactNo,
   },
   {
     label: "Address",
     url: CONTACT_MAP,
-    value: CONTACT_ADDRESS,
+    value: contactAddress,
   },
 ];

@@ -7,9 +7,11 @@ import {
   transitionClass500,
   transitionClass300,
 } from "../styles/classes";
+import { usePathname } from "next/navigation";
 
 export default function ServiceNav() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="fixed top-[3rem] sm:top-[3.2rem] lg:top-14 right-0 left-0 z-[9]">
@@ -41,16 +43,20 @@ export default function ServiceNav() {
               isOpen ? "translate-y-0" : "-translate-y-full"
             } lg:translate-y-0 lg:opacity-100`}
           >
-            <ul className="flex flex-col lg:flex-row lg:justify-between lg:gap-10">
+            <ul className="flex flex-col lg:flex-row lg:justify-between lg:gap-4">
               {SERVICELINKS.map((link, index) => (
                 <li
                   key={index}
-                  className={`${responsiveTextClass} text-primary-50 p-2 rounded-md hover:bg-primary-50 hover:text-secondary-500 md:${transitionClass500}`}
+                  className={`${responsiveTextClass} text-secondary-50 p-2 rounded-md hover:bg-white hover:text-secondary-500 md:${transitionClass500} ${
+                    pathname === link.route ? "bg-white text-secondary-500" : ""
+                  }`}
                 >
                   <Link
+                    rel="preload"
                     href={link.route}
                     onClick={() => {
                       setIsOpen(false);
+                      window.scrollTo({ top: 0, behavior: "smooth" });
                     }}
                   >
                     <div className="flex items-center gap-2">

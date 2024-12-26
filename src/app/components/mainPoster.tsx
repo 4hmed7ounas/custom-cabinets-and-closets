@@ -28,6 +28,7 @@ export default function MainPoster({
     "/services/built-in",
     "/services/home-organization",
     "/services/laundry-storage",
+    "/services/wet-bars",
   ];
 
   const router = useRouter();

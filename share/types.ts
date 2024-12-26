@@ -42,3 +42,10 @@ export type mainPosterData = {
     description: string;
   };
 };
+
+export interface reviewsData {
+  title: string;
+  description: string;
+  reviewer: string;
+  rating: number;
+}

@@ -45,6 +45,7 @@ export default function RootLayout({
         "built-in",
         "home-organization",
         "laundry-storage",
+        "wet-bars",
       ].includes(pathname.split("/")[2]));
 
   return (
