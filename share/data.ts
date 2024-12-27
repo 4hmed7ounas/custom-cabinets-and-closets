@@ -73,75 +73,88 @@ export const ROUTES_TITLES: routeTitles = {
 
 export const MAINPOSTERCONTENT: mainPosterData = {
   "/": {
-    title: "Custom Cabinets and Closets",
+    title: "WARNING: DEVELOPMENT STAGES",
     description:
-      "Transform your home with custom-designed cabinets and closets. Maximize space, enhance organization, and infuse your personal style with premium materials and innovative features for a truly functional living space.",
+      "Transform your home with custom-designed cabinets and closets. Maximize space, enhance organization, and infuse your personal style. With premium materials and innovative features, we create spaces that are both beautiful and functional.",
+    imageUrl: IMAGES.landingImage,
   },
   "/contact-us": {
     title: "Contact Us",
     description:
-      "Have questions or need expert advice? Reach out to us for personalized assistance in creating your dream space. Our team is here to guide you through every step of your custom cabinetry journey.",
+      "Have questions or need expert advice? Reach out to us for personalized assistance in creating your dream space. Our team is here to guide you through every step of your cabinetry journey, ensuring your satisfaction.",
+    imageUrl: IMAGES.landingImage,
   },
   "/news": {
     title: "News",
     description:
-      "Stay in the know with the latest trends, product launches, and design inspirations in the world of custom cabinetry. Get fresh ideas and see how we're shaping the future of home organization.",
+      "Stay updated with the latest trends, product launches, and design inspirations in custom cabinetry. Discover fresh ideas and learn how we’re shaping the future of home organization with innovation and style.",
+    imageUrl: IMAGES.landingImage,
   },
   "/our-team": {
     title: "Our Team",
     description:
-      "Meet the talented craftsmen and designers behind our custom cabinetry solutions. With years of expertise and a passion for quality, our team is dedicated to delivering exceptional results that transform your space.",
+      "Meet the skilled craftsmen and designers behind our cabinetry solutions. With years of experience and a dedication to excellence, our team ensures every project meets the highest standards of quality and precision.",
+    imageUrl: IMAGES.landingImage,
   },
   "/services": {
     title: "Our Services",
     description:
-      "From initial design to flawless installation, our full range of services is tailored to create functional and beautiful spaces. Whether it's a kitchen, closet, or home organization, we've got you covered.",
+      "From initial design to flawless installation, our services are tailored to create functional and stunning spaces. Whether it’s a kitchen, closet, or home organization system, we’ve got you covered every step of the way.",
+    imageUrl: IMAGES.serviceImage,
   },
   "/services/kitchen": {
     title: "Kitchen Design & Storage",
     description:
-      "Reimagine your kitchen with custom cabinetry solutions that combine elegance and practicality. Maximize storage, improve organization, and create a kitchen that fits your lifestyle and aesthetic.",
+      "Reimagine your kitchen with elegant and practical cabinetry solutions. Our designs maximize storage, improve organization, and create a kitchen that complements your lifestyle and aesthetic preferences.",
+    imageUrl: IMAGES.serviceImage,
   },
   "/services/bathroom-storage": {
     title: "Bathroom Storage Solutions",
     description:
-      "Create a spa-like retreat with custom bathroom storage. Our innovative designs optimize space while adding a touch of luxury, ensuring your bathroom is both organized and stylish.",
+      "Create a spa-like retreat with our innovative bathroom storage designs. Maximize space, add a touch of luxury, and ensure your bathroom remains both organized and stylish with our custom solutions.",
+    imageUrl: IMAGES.serviceImage,
   },
   "/services/built-in": {
     title: "Built-In Cabinetry",
     description:
-      "Elevate your home with built-in cabinetry designed to seamlessly blend with your space. Whether it’s for your living room, bedroom, or office, we create bespoke solutions that enhance both function and design.",
+      "Enhance your home with built-in cabinetry solutions designed to seamlessly integrate with your space. From living rooms to offices, our bespoke designs combine style and functionality for a perfect fit.",
+    imageUrl: IMAGES.serviceImage,
   },
   "/services/cabinets": {
     title: "Custom & Commercial Cabinets",
     description:
-      "Upgrade your home with high-quality custom cabinets. Crafted with precision, our cabinets offer stylish storage solutions that are as functional as they are beautiful, tailored to fit any room.",
+      "Upgrade your home with precision-crafted cabinets. Our designs are stylish, highly functional, and tailored to fit any room, offering smart storage solutions that blend seamlessly with your décor.",
+    imageUrl: IMAGES.serviceImage,
   },
   "/services/closets": {
     title: "Closets",
     description:
-      "Transform your closet into a beautifully organized haven. Our custom closet solutions maximize space, reduce clutter, and elevate your home's style, all while keeping your belongings neatly arranged.",
+      "Transform your closet into a beautifully organized space. Our custom closet solutions maximize storage, reduce clutter, and ensure every inch is utilized efficiently, all while looking stylish.",
+    imageUrl: IMAGES.serviceImage,
   },
   "/services/home-organization": {
     title: "Home Organization",
     description:
-      "Experience the joy of a well-organized home with our custom home organization solutions. From shelves to storage units, we offer designs that help you declutter and maximize every inch of your space.",
+      "Discover the joy of a well-organized home with our custom storage solutions. From shelves to storage units, our designs help declutter spaces while enhancing functionality and visual appeal.",
+    imageUrl: IMAGES.serviceImage,
   },
   "/services/wet-bars": {
     title: "Wet Bars",
     description:
-      "Enhance your home entertainment experience with our custom-designed wet bars. Tailored to fit your style and space, our wet bars offer a perfect blend of functionality and elegance, featuring premium materials, ample storage, and sleek finishes. Whether it's for hosting guests or enjoying a relaxing evening, our wet bars provide the ideal setup for any occasion.",
+      "Enhance your home entertainment with custom-designed wet bars. Featuring premium materials, sleek finishes, and ample storage, our wet bars are perfect for hosting guests or enjoying quiet evenings.",
+    imageUrl: IMAGES.serviceImage,
   },
-
   "/services/laundry-storage": {
     title: "Laundry Storage Solutions",
     description:
-      "Say goodbye to laundry room chaos with our custom storage solutions. Designed to maximize space and streamline your laundry routine, our storage systems add both function and flair to your laundry room.",
+      "Simplify your laundry routine with smart storage solutions. Our custom designs maximize space, improve efficiency, and add a touch of style, making your laundry room both functional and organized.",
+    imageUrl: IMAGES.serviceImage,
   },
   "/about-us": {
     title: "About Us",
     description:
-      "At the heart of our company is a passion for craftsmanship and customer satisfaction. Discover our mission to provide top-notch custom cabinetry solutions that make your home more beautiful, organized, and functional.",
+      "At the core of our company lies a passion for craftsmanship and customer satisfaction. We’re dedicated to delivering top-notch cabinetry solutions that enhance your home’s beauty, organization, and functionality.",
+    imageUrl: IMAGES.aboutImage,
   },
 };
 

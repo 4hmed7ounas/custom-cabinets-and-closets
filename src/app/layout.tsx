@@ -33,6 +33,7 @@ export default function RootLayout({
   const posterDescription =
     MAINPOSTERCONTENT[pathname]?.description ||
     "Explore premium custom cabinets and closets designed to fit your style and space. Crafted with precision and innovation to elevate your home's functionality and aesthetic appeal.";
+  const posterImage = MAINPOSTERCONTENT[pathname]?.imageUrl || IMAGES.landingImage;
 
   const isServicePage =
     pathname === "/services" ||
@@ -68,7 +69,7 @@ export default function RootLayout({
         {isServicePage && <ServiceNav />}
         <main className="min-h-[80vh]">
           <MainPoster
-            image={IMAGES.landingImage}
+            image={posterImage}
             title={posterTitle}
             description={posterDescription}
           />

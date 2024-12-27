@@ -13,7 +13,7 @@ import { responsiveTextClass, transitionClass500 } from "../styles/classes";
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary-800 text-primary-50 pt-8">
+    <footer className="bg-gradient-to-r from-secondary-800 to-secondary-700 text-primary-50 pt-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {/* Quick Links */}
@@ -28,7 +28,7 @@ export default function Footer() {
                     onClick={() =>
                       window.scrollTo({ top: 0, behavior: "smooth" })
                     }
-                    className={`${responsiveTextClass} text-primary-50 hover:text-secondary-500 ${transitionClass500}`}
+                    className={`${responsiveTextClass} text-primary-50 hover:text-secondary-300 ${transitionClass500}`}
                   >
                     <span className="flex items-center gap-2">
                       <link.icon /> {link.name}
@@ -41,7 +41,7 @@ export default function Footer() {
 
           <div>
             <h2 className="text-lg font-semibold mb-4">Services</h2>
-            <ul className="w-1/3 sm:w-[60%]">
+            <ul className="w-[45%] sm:w-[70%] md:w-[85%] lg:w-[80%]">
               {SERVICELINKS.map((link, index) => (
                 <li key={index}>
                   <Link
@@ -61,7 +61,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact Us */}
           <div>
             <h2 className="text-lg font-semibold mb-4">Contact Us</h2>
             <ul>

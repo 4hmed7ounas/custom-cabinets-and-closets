@@ -1,6 +1,7 @@
 export const ROUTES = {
   home: "/",
   contactUs: "/contact-us",
+  makeConnect: "#get-started",
   news: "/news",
   ourteam: "/our-team",
   services: "/services",

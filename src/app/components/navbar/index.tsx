@@ -18,7 +18,7 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 right-0 left-0 z-10">
-      <nav className="w-full bg-secondary-500 flex justify-center items-center p-2 pt-3">
+      <nav className="w-full bg-gradient-to-r from-secondary-600 to-secondary-500  flex justify-center items-center p-2 pt-3">
         <div className="flex items-center justify-between w-[90%]">
           {/* Logo */}
           <Link
@@ -58,16 +58,16 @@ export default function Navbar() {
 
           {/* Navigation Links */}
           <div
-            className={`absolute -z-10 p-1 lg:z-10 lg:static top-full left-0 w-full lg:w-auto bg-secondary-500 lg:p-0 ${transitionClass500} ${
+            className={`absolute -z-10 p-1 lg:z-10 lg:static top-full left-0 w-full lg:w-auto bg-gradient-to-r from-secondary-600 to-secondary-500 lg:bg-gradient-to-r lg:from-transparent lg:to-transparent lg:p-0 ${transitionClass500} ${
               isOpen ? "translate-y-0" : "-translate-y-full"
             } lg:translate-y-0 lg:opacity-100`}
           >
-            <ul className="flex flex-col lg:flex-row lg:justify-between lg:gap-10">
+            <ul className="flex flex-col gap-1 lg:flex-row lg:justify-between lg:gap-10">
               {NAVLINKS.map((link, index) => (
                 <li
                   key={index}
-                  className={`${responsiveTextClass} text-secondary-50 p-2 rounded-md hover:bg-white hover:text-secondary-500 md:${transitionClass500} ${
-                    pathname === link.route ? "bg-white text-secondary-500" : ""
+                  className={`${responsiveTextClass} text-secondary-50 p-2 rounded-md hover:bg-secondary-50 hover:text-secondary-500 md:${transitionClass500} ${
+                    pathname === link.route ? "bg-secondary-50 text-secondary-500" : ""
                   }`}
                 >
                   <Link

@@ -10,8 +10,8 @@ export interface serviceSection {
 export interface cardSection {
   heading: string;
   imageUrl: string;
-  titles: string[]; // Changed from 'title' to an array of titles
-  descriptions: string[]; // Changed from 'description' to an array of descriptions
+  titles: string[];
+  descriptions: string[];
 }
 
 export interface Links {
@@ -40,6 +40,7 @@ export type mainPosterData = {
   [key: string]: {
     title: string;
     description: string;
+    imageUrl: string;
   };
 };
 

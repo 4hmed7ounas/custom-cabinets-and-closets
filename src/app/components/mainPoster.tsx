@@ -5,6 +5,7 @@ import Button from "./button";
 import { usePathname, useRouter } from "next/navigation";
 import { IMAGES } from "../../../share/assets";
 import { ROUTES } from "../../../share/routes";
+import { responsiveTextClass } from "./styles/classes";
 
 interface MainPosterProps {
   image: string;
@@ -37,49 +38,73 @@ export default function MainPoster({
     router.push(ROUTES.contactUs);
   };
 
+  const handleContactUs = () => {
+    router.push(ROUTES.makeConnect);
+  };
+
   return (
     <div className="mt-12 w-full relative">
-      <div
-        className="flex flex-col items-center bg-cover bg-center py-10 bg-no-repeat"
-        style={{
-          backgroundImage: `url(${image})`,
-          backgroundSize: "cover",
-          backgroundAttachment: "fixed",
-        }}
-      >
-        {!noLogoPaths.includes(pathname) && (
-          <>
+      {!noLogoPaths.includes(pathname) && (
+        <>
+          <div
+            className="pt-4 lg:py-10 flex flex-col bg-gradient-to-tr from-tertiary-900 to-secondary-950 bg-blend-luminosity items-center bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: `url(${image})`,
+              backgroundSize: "cover",
+              backgroundAttachment: "fixed",
+            }}
+          >
             <Image
               alt="Main Logo"
               src={IMAGES.logoMain}
               width={100}
               height={400}
-              className="w-[90%] sm:w-[45%] md:w-[50%] xl:w-[35%] 2xl:w-[30%]"
+              className="w-[75%] sm:w-[45%] xl:w-[35%] 2xl:w-[30%]"
               priority
             />
-            <div className="bg-primary-50 mt-4 pt-6 pb-3 px-2 bg-opacity-50 shadow-lg text-secondary-950 shadow-secondary-900 w-[90%] md:w-[70%] 2xl:w-[90%]">
-              <h1 className="text-3xl font-bold font-lora">{title}</h1>
-              <p className="font-normal text-left">{description}</p>
-              <Button
-                text="Get Your Free Consultation Today!"
-                onClick={handleClick}
-                className="mt-4"
-              />
+            <div className="bg-secondary-50 bg-opacity-50 mt-6 p-4 text-secondary-950 shadow-secondary-900 w-full lg:w-[70%] 2xl:w-[90%]">
+              <h1 className="text-3xl font-bold font-calibri">{title}</h1>
+              <p className={`text-left ${responsiveTextClass}`}>
+                {description}
+              </p>
+              {pathname !== ROUTES.contactUs && (
+                <Button
+                  text="Get Your Free Consultation Today!"
+                  onClick={handleClick}
+                  className="mt-4"
+                />
+              )}
+              {pathname === ROUTES.contactUs && (
+                <Button
+                  text="Get in Touch"
+                  onClick={handleContactUs}
+                  className="mt-4"
+                />
+              )}
             </div>
-          </>
-        )}
-        {noLogoPaths.includes(pathname) && (
-          <div className="bg-primary-50 mt-24 pt-6 pb-3 px-2 bg-opacity-50 shadow-lg text-secondary-950 shadow-secondary-900 w-[90%] md:w-[70%] 2xl:w-[90%]">
-            <h1 className="text-3xl font-bold font-lora">{title}</h1>
-            <p className="font-normal text-left">{description}</p>
+          </div>
+        </>
+      )}
+      {noLogoPaths.includes(pathname) && (
+        <div
+          className="py-4 lg:pt-28 flex flex-col bg-gradient-to-tr from-tertiary-900 to-secondary-950 bg-blend-luminosity items-center bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url(${image})`,
+            backgroundSize: "cover",
+            backgroundAttachment: "fixed",
+          }}
+        >
+          <div className=" mt-6 p-4 text-secondary-50 w-full lg:w-[70%] 2xl:w-[90%]">
+            <h1 className="text-3xl font-bold font-calibri">{title}</h1>
+            <p className={`text-left ${responsiveTextClass}`}>{description}</p>
             <Button
               text="Get Your Free Consultation Today!"
               onClick={handleClick}
               className="mt-4"
             />
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 }
