@@ -43,7 +43,7 @@ export default function MainPoster({
   };
 
   return (
-    <div className="mt-12 w-full relative">
+    <div className="mt-12 w-full relative text-primary-950">
       {!noLogoPaths.includes(pathname) && (
         <>
           <div
@@ -62,7 +62,7 @@ export default function MainPoster({
               className="w-[75%] sm:w-[45%] xl:w-[35%] 2xl:w-[30%]"
               priority
             />
-            <div className="bg-secondary-50 bg-opacity-50 mt-6 p-4 text-secondary-950 shadow-secondary-900 w-full lg:w-[70%] 2xl:w-[90%]">
+            <div className="bg-secondary-50 bg-opacity-60 mt-6 p-4 shadow-secondary-900 w-full lg:w-[70%] 2xl:w-[90%]">
               <h1 className="text-3xl font-bold font-calibri">{title}</h1>
               <p className={`text-left ${responsiveTextClass}`}>
                 {description}

@@ -14,6 +14,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const lora = Lora({
   subsets: ["latin"],
+  display: 'swap',
 });
 
 const montserrat = Montserrat({

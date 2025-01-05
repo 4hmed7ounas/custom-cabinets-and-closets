@@ -8,6 +8,8 @@ export default function ContactUs() {
       <Card card={CONTACTCARDSECTION[0]} index={0} />
       <ContactForm />
       <Card card={CONTACTCARDSECTION[1]} index={1} />
+      <Card card={CONTACTCARDSECTION[2]} index={0} />
+      {/* <Card card={CONTACTCARDSECTION[3]} index={1} /> */}
     </div>
   );
 }

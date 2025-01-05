@@ -9,16 +9,16 @@ interface CardProps {
 
 export const Card = ({ card, index }: CardProps) => {
   return (
-    <section className="relative">
+    <section className="relative text-secondary-900">
       <div className="flex justify-center items-center flex-wrap">
-        <div className="flex flex-col justify-center items-center w-[90%] mt-8 mb-4">
+        <div className="flex flex-col justify-center items-center w-[95%] mt-8 mb-4">
           <h2 className="text-3xl font-bold">{card.heading}</h2>
           <div
-            className={`flex flex-wrap justify-center items-stretch mt-2 gap-4 border-y-2 border-secondary-500 ${
+            className={`flex flex-wrap justify-center items-stretch mt-2 gap-4 border-y-2 border-secondary-500 md:border-y-0 ${
               index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
             }`}
           >
-            <div className="w-full lg:w-[45%] mb-4 lg:m-4">
+            <div className="w-full lg:w-[40%] mb-4 lg:m-4">
               {card.titles.map((title, titleIndex) => (
                 <div key={titleIndex}>
                   <h3 className="text-2xl md:text-3xl font-bold mb-2 text-justify">

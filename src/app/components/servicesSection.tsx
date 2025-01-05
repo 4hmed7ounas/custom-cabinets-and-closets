@@ -41,7 +41,7 @@ export default function ServiceSection() {
                   href={service.url}
                   className={`flex flex-col items-center justify-center border-2 border-secondary-700 p-4 text-center ${transitionClass500} min-h-[220px] sm:min-h-[180px] w-full flex-grow ${
                     startsWithIcon
-                      ? "bg-secondary-500 text-secondary-50 hover:bg-secondary-50 hover:text-secondary-500"
+                      ? "bg-secondary-500 text-secondary-50 hover:bg-primary-100 hover:text-secondary-500"
                       : ""
                   }`}
                   style={
