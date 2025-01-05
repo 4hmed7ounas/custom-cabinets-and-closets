@@ -55,7 +55,8 @@ export default function MainPoster({
             }}
           >
             <Image
-              alt="Main Logo"
+              alt="Luxe Kitchen Cabinets"
+              title="Luxe Kitchen Cabinets"
               src={IMAGES.logoMain}
               width={100}
               height={400}

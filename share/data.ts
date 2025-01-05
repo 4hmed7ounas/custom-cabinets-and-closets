@@ -52,20 +52,30 @@ export const dummyData = {
 };
 
 export const ROUTES_TITLES: routeTitles = {
-  "/": "Luxe Kitchen Cabinets",
-  "/contact-us": "Contact Us - Luxe Kitchen Cabinets",
-  "/news": "News - Luxe Kitchen Cabinets",
-  "/our-team": "Our Team - Luxe Kitchen Cabinets",
-  "/services": "Our Services - Luxe Kitchen Cabinets",
-  "/about-us": "About Us - Luxe Kitchen Cabinets",
-  "/services/kitchen": "Kitchen Cabinets - Luxe Kitchen Cabinets",
-  "/services/bathroom-storage": "Bathroom Storage - Luxe Kitchen Cabinets",
-  "/services/built-in": "Built-in Cabinets - Luxe Kitchen Cabinets",
-  "/services/cabinets": "Custom & Commercial Cabinets - Luxe Kitchen Cabinets",
-  "/services/closets": "Closets - Luxe Kitchen Cabinets",
-  "/services/home-organization": "Home Organization - Luxe Kitchen Cabinets",
-  "/services/laundry-storage": "Laundry Storage - Luxe Kitchen Cabinets",
-  "/services/wet-bars": "Wet Bars - Luxe Kitchen Cabinets",
+  "/": "Luxe Kitchen Cabinets - Custom Cabinets & Closets",
+  "/contact-us":
+    "Contact Us - Luxe Kitchen Cabinets - Custom Cabinets & Closets",
+  "/news": "News - Luxe Kitchen Cabinets - Custom Cabinets & Closets",
+  "/our-team": "Our Team - Luxe Kitchen Cabinets - Custom Cabinets & Closets",
+  "/services":
+    "Our Services - Luxe Kitchen Cabinets - Custom Cabinets & Closets",
+  "/about-us": "About Us - Luxe Kitchen Cabinets - Custom Cabinets & Closets",
+  "/services/kitchen":
+    "Kitchen Cabinets - Luxe Kitchen Cabinets - Custom Cabinets & Closets",
+  "/services/bathroom-storage":
+    "Bathroom Storage - Luxe Kitchen Cabinets - Custom Cabinets & Closets",
+  "/services/built-in":
+    "Built-in Cabinets - Luxe Kitchen Cabinets - Custom Cabinets & Closets",
+  "/services/cabinets":
+    "Custom & Commercial Cabinets - Luxe Kitchen Cabinets - Custom Cabinets & Closets",
+  "/services/closets":
+    "Closets - Luxe Kitchen Cabinets - Custom Cabinets & Closets",
+  "/services/home-organization":
+    "Home Organization - Luxe Kitchen Cabinets - Custom Cabinets & Closets",
+  "/services/laundry-storage":
+    "Laundry Storage - Luxe Kitchen Cabinets - Custom Cabinets & Closets",
+  "/services/wet-bars":
+    "Wet Bars - Luxe Kitchen Cabinets - Custom Cabinets & Closets",
 };
 
 export const MAINPOSTERCONTENT: mainPosterData = {

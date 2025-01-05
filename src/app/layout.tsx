@@ -27,10 +27,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
-  const dynamicTitle = ROUTES_TITLES[pathname] || "Luxe Kitchen Cabinets";
+  const dynamicTitle =
+    ROUTES_TITLES[pathname] ||
+    "Luxe Kitchen Cabinets - Custom Cabinets & Closets";
 
   const posterTitle =
-    MAINPOSTERCONTENT[pathname]?.title || "Luxe Kitchen Cabinets";
+    MAINPOSTERCONTENT[pathname]?.title ||
+    "Luxe Kitchen Cabinets - Custom Cabinets & Closets";
   const posterDescription =
     MAINPOSTERCONTENT[pathname]?.description ||
     "At Luxe Kitchen Cabinets, we specialize in creating premium, custom-designed cabinets and closets that reflect your unique style. Our expert craftsmanship and innovative designs are tailored to optimize space and enhance the beauty and functionality of your home.";
@@ -61,8 +64,9 @@ export default function RootLayout({
         />
         <meta
           name="keywords"
-          content="Luxe Kitchen Cabinets, Custom Cabinets, Custom Closets, Home Organization, Kitchen Storage Solutions, Interior Design, Luxury Cabinet Makers, Closet Designers, Premium Storage Systems"
+          content="Luxe Kitchen Cabinets, Custom Cabinets, Custom Closets, Home Organization, Kitchen Storage Solutions, Interior Design, Luxury Cabinet Makers, Closet Designers, Premium Storage Systems, Kitchen Remodeling, Bathroom Cabinets, Custom Storage Solutions, Modern Kitchen Cabinets, Luxury Home Cabinets, Custom Closets Design, Built-In Cabinets, Space Optimization, Custom Furniture, Cabinet Installation, Storage Systems, Stylish Kitchen Storage, Elegant Closet Designs, Sustainable Cabinets, Smart Storage Solutions, Kitchen Renovation, Home Storage Ideas, Personalized Cabinet Designs"
         />
+
         <meta name="author" content="Ahmed Younas" />
         <link rel="icon" href="/favicon.ico" />
       </head>

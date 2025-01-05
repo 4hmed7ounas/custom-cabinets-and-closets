@@ -27,6 +27,7 @@ export default function Navbar() {
           >
             <Image
               alt="Luxe Kitchen Cabinets"
+              title="Luxe Kitchen Cabinets"
               src={IMAGES.logo}
               width={41}
               height={40}
@@ -67,7 +68,9 @@ export default function Navbar() {
                 <li
                   key={index}
                   className={`${responsiveTextClass} text-secondary-50 p-2 rounded-md hover:bg-secondary-50 hover:text-secondary-500 md:${transitionClass500} ${
-                    pathname === link.route ? "bg-secondary-50 text-secondary-500" : ""
+                    pathname === link.route
+                      ? "bg-secondary-50 text-secondary-500"
+                      : ""
                   }`}
                 >
                   <Link
