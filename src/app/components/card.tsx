@@ -34,7 +34,7 @@ export const Card = ({ card, index }: CardProps) => {
               ))}
             </div>
             <div
-              className={`w-full lg:w-[50%] h-auto bg-cover md:bg-fixed bg-center py-40 lg:py-10 bg-no-repeat `}
+              className={`w-full lg:w-[50%] h-auto bg-cover md:bg-fixed bg-center py-40 lg:py-10 bg-no-repeat`}
               style={{
                 backgroundImage: `url(${card.imageUrl})`,
               }}

@@ -6,6 +6,7 @@ export default function LaundryStorage() {
     <div>
       <Card card={LAUNDRYCARDSECTION[0]} index={0} />
       <Card card={LAUNDRYCARDSECTION[1]} index={1} />
+      <Card card={LAUNDRYCARDSECTION[2]} index={2} />
     </div>
   );
 }

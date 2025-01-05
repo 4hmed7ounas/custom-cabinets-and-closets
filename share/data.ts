@@ -386,7 +386,7 @@ export const KITCHENCARDSECTION: cardSection[] = [
       "We integrate smart technology, including intelligent storage solutions and automated appliances, for a seamless cooking experience. Our kitchens are designed to evolve with your needs, incorporating the latest advancements for convenience and ease.",
       "Our kitchens feature premium finishes and durable materials, ensuring both aesthetic appeal and long-lasting quality. Each element is selected with care to guarantee both beauty and functionality for years to come.",
     ],
-    imageUrl: IMAGES.cardImg1,
+    imageUrl: IMAGES.kitchenImg1,
   },
   {
     heading: "Classic Kitchens",
@@ -542,26 +542,32 @@ export const BUILTINCARDSECTION: cardSection[] = [
 
 export const CABINETSCARDSECTION: cardSection[] = [
   {
-    heading: "Luxe Kitchen Cabinets",
-    titles: ["Who are we?", "What we do?", "Our Values"],
+    heading: "Kitchen Cabinets",
+    titles: ["Modern Designs", "Custom Solutions", "Durable Materials"],
     descriptions: [
-      "At Luxe Kitchen Cabinets, we are passionate creators, builders, and designers dedicated to transforming spaces into functional works of art. Founded with a vision to bring high-quality craftsmanship into every home and office, we specialize in custom cabinetry and storage solutions that reflect your style and needs.",
-      "Our services range from consultation to installation, and our team ensures every detail is crafted to your specifications. We believe in providing solutions that maximize space while enhancing the aesthetic of your home or office.",
-      "Integrity, precision, and trust are at the core of our business. We work closely with clients to understand their unique needs and deliver products that are functional, beautiful, and long-lasting.",
+      "Our kitchen cabinets combine modern aesthetics with functionality to create a space you'll love to cook in. Each design is carefully planned to blend seamlessly with contemporary interiors, offering a stylish yet practical solution. From sleek finishes to innovative layouts, every detail is crafted with your comfort and convenience in mind.",
+      "Every cabinet is custom-designed to fit your kitchen layout and meet your storage needs. Our team works closely with you to understand your vision and deliver a design that maximizes space. Whether it’s smart corner solutions or specialized compartments, your cabinets will be tailored to perfection.",
+      "We use high-quality materials to ensure durability and longevity for years to come. From solid wood to premium hardware, every component is chosen to stand the test of time. Our cabinets are designed to endure daily wear and tear without compromising on style.",
     ],
     imageUrl: IMAGES.cardImg1,
   },
   {
-    heading: "Why Choose Us",
-    titles: [
-      "Quality Craftsmanship",
-      "Tailored Solutions",
-      "Customer Satisfaction",
-    ],
+    heading: "Bathroom Cabinets",
+    titles: ["Space Optimization", "Elegant Finishes", "Moisture Resistant"],
     descriptions: [
-      "At Luxe Kitchen Cabinets, we offer top-quality craftsmanship. Our team is highly skilled in woodworking and interior design, ensuring that every project meets the highest standards.",
-      "We provide custom, tailored solutions that perfectly suit your space. Whether it's a small closet or an entire kitchen overhaul, our designs are made to maximize storage while maintaining a stylish and modern aesthetic.",
-      "Our commitment to customer satisfaction is unwavering. We take pride in the long-term relationships we've built with our clients, ensuring their needs are met at every stage of the process.",
+      "Enhance your bathroom space with cabinets designed for optimal storage and style. Our designs focus on utilizing every inch of space efficiently, offering clever storage options. Whether it’s under-sink cabinets or vertical storage units, every design element serves a purpose.",
+      "Choose from a variety of elegant finishes to match your bathroom décor. From matte textures to glossy surfaces, our finishes add a sophisticated touch. Each option is selected to complement the overall aesthetic of your bathroom.",
+      "Our cabinets are built to withstand moisture and humidity, ensuring long-lasting performance. Special coatings and water-resistant materials prevent warping and damage. You can trust our designs to remain beautiful and functional even in the dampest conditions.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+  {
+    heading: "Custom Cabinets",
+    titles: ["Tailored Designs", "Premium Craftsmanship", "Unique Styles"],
+    descriptions: [
+      "Whether it's a home office, living room, or hallway, our custom cabinets fit perfectly in any space. Every design is uniquely crafted to suit the dimensions and requirements of your room. From built-in shelves to multipurpose units, our cabinets adapt to your lifestyle.",
+      "We ensure every cabinet is crafted with precision and attention to detail. Our skilled artisans combine traditional techniques with modern technology to achieve exceptional results. The final product is a testament to our dedication to quality and excellence.",
+      "Add a unique touch to your home with custom styles and finishes. From minimalist designs to bold statement pieces, our range caters to diverse tastes. Your cabinets will not only be functional but also a reflection of your personal style.",
     ],
     imageUrl: IMAGES.cardImg1,
   },
@@ -569,26 +575,32 @@ export const CABINETSCARDSECTION: cardSection[] = [
 
 export const CLOSETSCARDSECTION: cardSection[] = [
   {
-    heading: "Luxe Kitchen Cabinets",
-    titles: ["Who are we?", "What we do?", "Our Values"],
+    heading: "Walk-In Closets",
+    titles: ["Spacious Layouts", "Luxury Design", "Custom Shelving"],
     descriptions: [
-      "At Luxe Kitchen Cabinets, we are passionate creators, builders, and designers dedicated to transforming spaces into functional works of art. Founded with a vision to bring high-quality craftsmanship into every home and office, we specialize in custom cabinetry and storage solutions that reflect your style and needs.",
-      "Our services range from consultation to installation, and our team ensures every detail is crafted to your specifications. We believe in providing solutions that maximize space while enhancing the aesthetic of your home or office.",
-      "Integrity, precision, and trust are at the core of our business. We work closely with clients to understand their unique needs and deliver products that are functional, beautiful, and long-lasting.",
+      "Experience luxury with our walk-in closets, offering ample space and organization. Designed to accommodate your wardrobe effortlessly, these closets provide designated areas for clothing, shoes, and accessories. Every detail is thoughtfully planned to deliver a clutter-free and visually stunning space.",
+      "Our designs prioritize elegance and functionality to create your dream closet. From premium finishes to stylish fixtures, every element is chosen to enhance the overall appeal. Step into a space where luxury meets practicality, making your daily routine a pleasure.",
+      "Custom shelving ensures every item has its place. Whether it’s for shoes, handbags, or seasonal clothing, each shelf is designed to maximize efficiency. Our tailored approach guarantees an organized and accessible layout for your belongings.",
     ],
     imageUrl: IMAGES.cardImg1,
   },
   {
-    heading: "Why Choose Us",
-    titles: [
-      "Quality Craftsmanship",
-      "Tailored Solutions",
-      "Customer Satisfaction",
-    ],
+    heading: "Reach-In Closets",
+    titles: ["Space Efficient", "Organized Storage", "Modern Look"],
     descriptions: [
-      "At Luxe Kitchen Cabinets, we offer top-quality craftsmanship. Our team is highly skilled in woodworking and interior design, ensuring that every project meets the highest standards.",
-      "We provide custom, tailored solutions that perfectly suit your space. Whether it's a small closet or an entire kitchen overhaul, our designs are made to maximize storage while maintaining a stylish and modern aesthetic.",
-      "Our commitment to customer satisfaction is unwavering. We take pride in the long-term relationships we've built with our clients, ensuring their needs are met at every stage of the process.",
+      "Our reach-in closets are perfect for smaller spaces without compromising on style or organization. Thoughtfully designed compartments and hanging areas make the most of limited space. These closets prove that size doesn’t limit style or functionality.",
+      "Smart storage solutions make the most of every inch. From pull-out drawers to adjustable shelves, every feature is designed with convenience in mind. Say goodbye to clutter and hello to effortless organization.",
+      "Modern designs add sophistication to your room. Sleek lines, contemporary finishes, and stylish hardware create a refined aesthetic. Our reach-in closets bring elegance and charm to any space they occupy.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+  {
+    heading: "Wardrobe Closets",
+    titles: ["Custom Compartments", "Elegant Finishes", "Functional Design"],
+    descriptions: [
+      "Maximize your storage with wardrobe closets tailored to your needs. Designed to fit your unique lifestyle, each compartment is crafted for specific items. From hanging sections to hidden drawers, everything has a dedicated space.",
+      "Custom compartments keep your clothing and accessories organized. With premium materials and refined details, every finish adds a touch of class. These thoughtful designs ensure a perfect balance between functionality and style.",
+      "Elegant finishes ensure your closet is both stylish and functional. With a focus on usability and durability, our wardrobe closets are designed to enhance your daily routine. Every detail is fine-tuned to deliver a seamless experience.",
     ],
     imageUrl: IMAGES.cardImg1,
   },
@@ -596,26 +608,32 @@ export const CLOSETSCARDSECTION: cardSection[] = [
 
 export const HOMEORGCARDSECTION: cardSection[] = [
   {
-    heading: "Luxe Kitchen Cabinets",
-    titles: ["Who are we?", "What we do?", "Our Values"],
+    heading: "Pantry Organization",
+    titles: ["Efficient Storage", "Smart Solutions", "Custom Shelving"],
     descriptions: [
-      "At Luxe Kitchen Cabinets, we are passionate creators, builders, and designers dedicated to transforming spaces into functional works of art. Founded with a vision to bring high-quality craftsmanship into every home and office, we specialize in custom cabinetry and storage solutions that reflect your style and needs.",
-      "Our services range from consultation to installation, and our team ensures every detail is crafted to your specifications. We believe in providing solutions that maximize space while enhancing the aesthetic of your home or office.",
-      "Integrity, precision, and trust are at the core of our business. We work closely with clients to understand their unique needs and deliver products that are functional, beautiful, and long-lasting.",
+      "Keep your pantry tidy and accessible with smart storage solutions. Our designs maximize every inch of space, making it easy to find and reach your essentials. Enjoy a well-organized pantry that simplifies meal preparation and grocery storage.",
+      "Custom shelving ensures every item has its designated space. From spices to bulk groceries, everything is arranged for easy access and visibility. Say goodbye to clutter and wasted space.",
+      "Our designs make your pantry both functional and visually appealing. With adjustable shelves and clever compartments, your pantry becomes a perfect blend of style and practicality.",
     ],
     imageUrl: IMAGES.cardImg1,
   },
   {
-    heading: "Why Choose Us",
-    titles: [
-      "Quality Craftsmanship",
-      "Tailored Solutions",
-      "Customer Satisfaction",
-    ],
+    heading: "Garage Storage",
+    titles: ["Durable Cabinets", "Tool Organization", "Maximized Space"],
     descriptions: [
-      "At Luxe Kitchen Cabinets, we offer top-quality craftsmanship. Our team is highly skilled in woodworking and interior design, ensuring that every project meets the highest standards.",
-      "We provide custom, tailored solutions that perfectly suit your space. Whether it's a small closet or an entire kitchen overhaul, our designs are made to maximize storage while maintaining a stylish and modern aesthetic.",
-      "Our commitment to customer satisfaction is unwavering. We take pride in the long-term relationships we've built with our clients, ensuring their needs are met at every stage of the process.",
+      "Transform your garage into an organized and efficient space. Our durable cabinets are built to withstand heavy-duty use while maintaining their appearance. Enjoy a clutter-free and functional workspace.",
+      "Custom cabinets and tool organization systems keep clutter at bay. Every tool has its place, ensuring easy access and efficient workflows for your projects. Stay focused with a tidy workspace.",
+      "Make the most of your garage with smart design solutions. Vertical storage, custom shelving, and multi-functional spaces ensure every corner serves a purpose. Experience unmatched efficiency and organization.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+  {
+    heading: "Laundry Room Organization",
+    titles: ["Functional Spaces", "Custom Storage", "Easy Access"],
+    descriptions: [
+      "Streamline your laundry routine with organized and accessible spaces. Our designs optimize every inch, ensuring that everything is within arm's reach for a hassle-free experience. Enjoy a space where efficiency meets style.",
+      "Custom storage solutions keep detergents and supplies neatly arranged. Every item has its place, reducing mess and improving accessibility. Keep your laundry room clean and clutter-free.",
+      "Functional designs ensure your laundry room is both efficient and stylish. Thoughtfully placed shelves, cabinets, and counters make every task seamless. Turn your laundry room into a space you’ll love to use.",
     ],
     imageUrl: IMAGES.cardImg1,
   },
@@ -623,26 +641,32 @@ export const HOMEORGCARDSECTION: cardSection[] = [
 
 export const WETBARSCARDSECTION: cardSection[] = [
   {
-    heading: "Luxe Kitchen Cabinets",
-    titles: ["Who are we?", "What we do?", "Our Values"],
+    heading: "Custom Wet Bars",
+    titles: ["Stylish Designs", "Functional Spaces", "Premium Materials"],
     descriptions: [
-      "At Luxe Kitchen Cabinets, we are passionate creators, builders, and designers dedicated to transforming spaces into functional works of art. Founded with a vision to bring high-quality craftsmanship into every home and office, we specialize in custom cabinetry and storage solutions that reflect your style and needs.",
-      "Our services range from consultation to installation, and our team ensures every detail is crafted to your specifications. We believe in providing solutions that maximize space while enhancing the aesthetic of your home or office.",
-      "Integrity, precision, and trust are at the core of our business. We work closely with clients to understand their unique needs and deliver products that are functional, beautiful, and long-lasting.",
+      "Elevate your home entertainment experience with custom-designed wet bars. Our designs seamlessly blend elegance and practicality, creating a focal point in your home. Enjoy hosting with a setup tailored to your unique style.",
+      "Our wet bar designs combine style and functionality, creating the perfect hosting space. From sleek counters to optimized storage, every element is thoughtfully designed for ease of use and sophistication.",
+      "Crafted from premium materials, our wet bars are built to impress and last. Durable finishes and high-quality construction ensure your wet bar stands the test of time while maintaining its luxurious appeal.",
     ],
     imageUrl: IMAGES.cardImg1,
   },
   {
-    heading: "Why Choose Us",
-    titles: [
-      "Quality Craftsmanship",
-      "Tailored Solutions",
-      "Customer Satisfaction",
-    ],
+    heading: "Compact Wet Bars",
+    titles: ["Space-Saving", "Efficient Layout", "Modern Style"],
     descriptions: [
-      "At Luxe Kitchen Cabinets, we offer top-quality craftsmanship. Our team is highly skilled in woodworking and interior design, ensuring that every project meets the highest standards.",
-      "We provide custom, tailored solutions that perfectly suit your space. Whether it's a small closet or an entire kitchen overhaul, our designs are made to maximize storage while maintaining a stylish and modern aesthetic.",
-      "Our commitment to customer satisfaction is unwavering. We take pride in the long-term relationships we've built with our clients, ensuring their needs are met at every stage of the process.",
+      "Perfect for smaller spaces, our compact wet bars offer functionality without compromise. Thoughtful layouts maximize space, ensuring every inch serves a purpose. Small space, big impact!",
+      "Efficient layouts ensure you have everything you need in an organized space. From glass holders to bottle storage, every detail enhances usability and convenience. Stay organized, even in compact settings.",
+      "Modern designs blend seamlessly with your home décor. Whether minimalist or bold, our wet bars integrate effortlessly into your living space, enhancing both style and functionality.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+  {
+    heading: "Luxury Wet Bars",
+    titles: ["High-End Finishes", "Custom Features", "Entertainment Ready"],
+    descriptions: [
+      "Add a touch of luxury to your home with a fully customized wet bar. Elegant finishes, premium materials, and refined craftsmanship come together to create a show-stopping centerpiece.",
+      "High-end finishes and tailored features make every detail exceptional. From built-in lighting to custom shelving, every feature enhances both style and practicality.",
+      "Designed for entertainment, your guests will love the experience. A well-planned wet bar ensures everything you need is within reach, making hosting seamless and enjoyable. Cheers to unforgettable moments!",
     ],
     imageUrl: IMAGES.cardImg1,
   },
@@ -650,26 +674,32 @@ export const WETBARSCARDSECTION: cardSection[] = [
 
 export const LAUNDRYCARDSECTION: cardSection[] = [
   {
-    heading: "Luxe Kitchen Cabinets",
-    titles: ["Who are we?", "What we do?", "Our Values"],
+    heading: "Laundry Room Cabinets",
+    titles: ["Organized Spaces", "Custom Shelving", "Durable Materials"],
     descriptions: [
-      "At Luxe Kitchen Cabinets, we are passionate creators, builders, and designers dedicated to transforming spaces into functional works of art. Founded with a vision to bring high-quality craftsmanship into every home and office, we specialize in custom cabinetry and storage solutions that reflect your style and needs.",
-      "Our services range from consultation to installation, and our team ensures every detail is crafted to your specifications. We believe in providing solutions that maximize space while enhancing the aesthetic of your home or office.",
-      "Integrity, precision, and trust are at the core of our business. We work closely with clients to understand their unique needs and deliver products that are functional, beautiful, and long-lasting.",
+      "Transform your laundry room into an efficient and organized space. With thoughtfully designed layouts, every corner serves a purpose, eliminating clutter and enhancing productivity. Enjoy a space where everything is neatly arranged and easy to access.",
+      "Custom shelving ensures easy access to all your laundry essentials. From detergents to baskets, each item has a dedicated spot for maximum convenience. Our shelving solutions are designed to keep your workspace tidy and functional.",
+      "Built with durable materials, our cabinets withstand daily use. Resistant to wear and tear, they maintain their quality and finish even in high-traffic areas. Invest in solutions that are built to last.",
     ],
     imageUrl: IMAGES.cardImg1,
   },
   {
-    heading: "Why Choose Us",
-    titles: [
-      "Quality Craftsmanship",
-      "Tailored Solutions",
-      "Customer Satisfaction",
-    ],
+    heading: "Functional Laundry Spaces",
+    titles: ["Smart Design", "Maximized Storage", "Easy Maintenance"],
     descriptions: [
-      "At Luxe Kitchen Cabinets, we offer top-quality craftsmanship. Our team is highly skilled in woodworking and interior design, ensuring that every project meets the highest standards.",
-      "We provide custom, tailored solutions that perfectly suit your space. Whether it's a small closet or an entire kitchen overhaul, our designs are made to maximize storage while maintaining a stylish and modern aesthetic.",
-      "Our commitment to customer satisfaction is unwavering. We take pride in the long-term relationships we've built with our clients, ensuring their needs are met at every stage of the process.",
+      "Our laundry room designs focus on functionality and efficiency. Every detail, from shelf placement to cabinet size, is optimized for daily tasks. Experience a space where everything works seamlessly together.",
+      "Maximized storage keeps detergents, baskets, and tools neatly arranged. Smart compartments and adjustable shelves ensure every item has its place. Say goodbye to clutter and hello to smooth organization.",
+      "Easy-to-maintain finishes ensure long-lasting cleanliness and style. Resistant to stains and easy to wipe clean, our surfaces stay fresh and polished with minimal effort.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+  {
+    heading: "Modern Laundry Rooms",
+    titles: ["Contemporary Style", "Ergonomic Design", "Seamless Integration"],
+    descriptions: [
+      "Add a modern touch to your laundry room with stylish designs. Clean lines, sleek finishes, and modern hardware bring a sophisticated look to this often-overlooked space. Make your laundry room as stylish as the rest of your home.",
+      "Ergonomic layouts make laundry tasks easier and more efficient. With strategically placed shelves, baskets, and counters, every movement feels natural and effortless. Experience comfort in every task.",
+      "Seamlessly integrate style and practicality into your daily routine. Our laundry room solutions balance aesthetics and functionality, creating a space that works for you while looking stunning.",
     ],
     imageUrl: IMAGES.cardImg1,
   },
@@ -677,26 +707,32 @@ export const LAUNDRYCARDSECTION: cardSection[] = [
 
 export const NEWSCARDSECTION: cardSection[] = [
   {
-    heading: "Luxe Kitchen Cabinets",
-    titles: ["Who are we?", "What we do?", "Our Values"],
+    heading: "Latest Trends in Cabinetry",
+    titles: ["Modern Designs", "Innovative Solutions", "Sustainable Choices"],
     descriptions: [
-      "At Luxe Kitchen Cabinets, we are passionate creators, builders, and designers dedicated to transforming spaces into functional works of art. Founded with a vision to bring high-quality craftsmanship into every home and office, we specialize in custom cabinetry and storage solutions that reflect your style and needs.",
-      "Our services range from consultation to installation, and our team ensures every detail is crafted to your specifications. We believe in providing solutions that maximize space while enhancing the aesthetic of your home or office.",
-      "Integrity, precision, and trust are at the core of our business. We work closely with clients to understand their unique needs and deliver products that are functional, beautiful, and long-lasting.",
+      "Stay updated with the latest trends in cabinetry and interior design. Our designs combine style, functionality, and innovation to create timeless spaces. Experience the perfect blend of aesthetics and utility in every detail.",
+      "Explore innovative storage solutions and space-saving designs. Our team focuses on creating smart layouts that make the most of every inch, offering solutions tailored to your needs.",
+      "Learn about sustainable materials and eco-friendly practices in modern cabinetry. We prioritize environmentally friendly materials and processes to build spaces that are both beautiful and responsible.",
     ],
     imageUrl: IMAGES.cardImg1,
   },
   {
-    heading: "Why Choose Us",
-    titles: [
-      "Quality Craftsmanship",
-      "Tailored Solutions",
-      "Customer Satisfaction",
-    ],
+    heading: "Company Announcements",
+    titles: ["Exciting Updates", "New Services", "Milestones Achieved"],
     descriptions: [
-      "At Luxe Kitchen Cabinets, we offer top-quality craftsmanship. Our team is highly skilled in woodworking and interior design, ensuring that every project meets the highest standards.",
-      "We provide custom, tailored solutions that perfectly suit your space. Whether it's a small closet or an entire kitchen overhaul, our designs are made to maximize storage while maintaining a stylish and modern aesthetic.",
-      "Our commitment to customer satisfaction is unwavering. We take pride in the long-term relationships we've built with our clients, ensuring their needs are met at every stage of the process.",
+      "Get the latest updates and announcements from our team. From new designs to improved services, stay informed about how we’re continuously evolving to better serve you.",
+      "Discover new services and product launches aimed at enhancing your space. Whether it’s an innovative product or a custom service, we’re always bringing something fresh to the table.",
+      "Celebrate milestones and achievements with us as we grow together. Every milestone reflects our commitment to quality, innovation, and customer satisfaction.",
+    ],
+    imageUrl: IMAGES.cardImg1,
+  },
+  {
+    heading: "Client Stories",
+    titles: ["Success Stories", "Customer Experiences", "Project Highlights"],
+    descriptions: [
+      "Read inspiring success stories from our satisfied clients. Discover how our designs have made a difference in creating functional and stylish living spaces. Each story showcases our dedication to delivering exceptional results and exceeding expectations.",
+      "Discover how our custom cabinetry transformed homes and offices. Real-life testimonials highlight the impact of thoughtful designs and quality craftsmanship. Our clients' experiences reflect the care and precision we put into every project.",
+      "Explore featured projects and the unique solutions we delivered. See how we’ve turned ideas into reality, showcasing creativity and precision in every project. Each highlight represents our commitment to excellence and innovation.",
     ],
     imageUrl: IMAGES.cardImg1,
   },

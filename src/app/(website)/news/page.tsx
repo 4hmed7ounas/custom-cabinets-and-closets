@@ -6,6 +6,7 @@ export default function News() {
     <div>
       <Card card={NEWSCARDSECTION[0]} index={0} />
       <Card card={NEWSCARDSECTION[1]} index={1} />
+      <Card card={NEWSCARDSECTION[2]} index={2} />
     </div>
   );
 }

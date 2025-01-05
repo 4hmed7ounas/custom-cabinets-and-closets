@@ -15,4 +15,5 @@ export const IMAGES = {
   serviceComCabinets: `${ASSETS_BASE_URL}/commercial-cabinets.svg`,
   serviceLaundary: `${ASSETS_BASE_URL}/laundry.svg`,
   serviceHomeOrg: `${ASSETS_BASE_URL}/home-org.svg`,
+  kitchenImg1: `${ASSETS_BASE_URL}/kitchen-img-1.png`,
 };

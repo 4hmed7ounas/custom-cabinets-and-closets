@@ -6,6 +6,7 @@ export default function Cabinets() {
     <div>
       <Card card={CABINETSCARDSECTION[0]} index={0} />
       <Card card={CABINETSCARDSECTION[1]} index={1} />
+      <Card card={CABINETSCARDSECTION[2]} index={2} />
     </div>
   );
 }
