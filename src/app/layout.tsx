@@ -92,18 +92,18 @@ export default function RootLayout({
         <title>{dynamicTitle}</title>
         <meta
           name="description"
-          content="At Luxe Kitchen Cabinets, we specialize in creating premium, custom-designed cabinets and closets that reflect your unique style. Our expert craftsmanship and innovative designs are tailored to optimize space and enhance the functionality of your home."
+          content="Luxe Kitchen Cabinets crafts premium, custom cabinets and closets with expert design to reflect your style, maximize space, and enhance your home's functionality."
         />
         <meta
           name="keywords"
-          content="Luxe, Luxe Kitchen Cabinets, Custom Cabinets, Custom Closets, Home Organization, Kitchen Storage Solutions, Interior Design, Luxury Cabinet Makers, Closet Designers, Premium Storage Systems"
+          content="Luxe, Luxe Kitchen Cabinets, Custom Cabinets, Custom Closets, Home Organization, Kitchen Storage Solutions, Interior Design, Luxury Cabinet Makers, Closet Designers, Premium Storage Systems, Kitchen Remodeling, Bathroom Cabinets, Custom Storage Solutions, Modern Kitchen Cabinets, Luxury Home Cabinets, Custom Closets Design, Built-In Cabinets, Space Optimization, Custom Furniture, Cabinet Installation, Storage Systems, Stylish Kitchen Storage, Elegant Closet Designs, Sustainable Cabinets, Smart Storage Solutions, Kitchen Renovation, Home Storage Ideas, Personalized Cabinet Designs"
         />
         <meta property="og:title" content={dynamicTitle} />
         <meta
           property="og:description"
           content={
             MAINPOSTERCONTENT[pathname]?.description ||
-            "At Luxe Kitchen Cabinets, we specialize in creating premium, custom-designed cabinets and closets that reflect your unique style. Our expert craftsmanship and innovative designs are tailored to optimize space and enhance the functionality of your home."
+            "Luxe Kitchen Cabinets crafts premium, custom cabinets and closets with expert design to reflect your style, maximize space, and enhance your home's functionality."
           }
         />
         <meta
