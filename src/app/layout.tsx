@@ -55,18 +55,71 @@ export default function RootLayout({
       ].includes(pathname.split("/")[2]));
 
   return (
+    // <html lang="en">
+    //   <head>
+    //     <title>{dynamicTitle}</title>
+    //     <meta
+    //       name="description"
+    //       content="Luxe Kitchen Cabinets offers high-quality, custom cabinets and closets designed to fit your space and style. Our craftsmanship and innovative designs elevate your home's functionality and aesthetic appeal."
+    //     />
+    //     <meta
+    //       name="keywords"
+    //       content="Luxe Kitchen Cabinets, Custom Cabinets, Custom Closets, Home Organization, Kitchen Storage Solutions, Interior Design, Luxury Cabinet Makers, Closet Designers, Premium Storage Systems, Kitchen Remodeling, Bathroom Cabinets, Custom Storage Solutions, Modern Kitchen Cabinets, Luxury Home Cabinets, Custom Closets Design, Built-In Cabinets, Space Optimization, Custom Furniture, Cabinet Installation, Storage Systems, Stylish Kitchen Storage, Elegant Closet Designs, Sustainable Cabinets, Smart Storage Solutions, Kitchen Renovation, Home Storage Ideas, Personalized Cabinet Designs"
+    //     />
+
+    //     <meta name="author" content="Ahmed Younas" />
+    //     <link rel="icon" href="/favicon.ico" />
+    //   </head>
+    //   <body className={`${lora.className} ${montserrat.className} antialiased`}>
+    //     <Navbar />
+    //     {isServicePage && <ServiceNav />}
+    //     <main className="min-h-[80vh]">
+    //       <MainPoster
+    //         image={posterImage}
+    //         title={posterTitle}
+    //         description={posterDescription}
+    //       />
+    //       {children}
+    //       <Analytics />
+    //       <SpeedInsights />
+    //       <ScrollToTopButton />
+    //     </main>
+    //     <Footer />
+    //   </body>
+    // </html>
     <html lang="en">
       <head>
         <title>{dynamicTitle}</title>
         <meta
           name="description"
-          content="Luxe Kitchen Cabinets offers high-quality, custom cabinets and closets designed to fit your space and style. Our craftsmanship and innovative designs elevate your home's functionality and aesthetic appeal."
+          content="Discover high-quality custom cabinets and closets tailored to your style and space. Expert craftsmanship and innovative designs to enhance your home."
         />
         <meta
           name="keywords"
-          content="Luxe Kitchen Cabinets, Custom Cabinets, Custom Closets, Home Organization, Kitchen Storage Solutions, Interior Design, Luxury Cabinet Makers, Closet Designers, Premium Storage Systems, Kitchen Remodeling, Bathroom Cabinets, Custom Storage Solutions, Modern Kitchen Cabinets, Luxury Home Cabinets, Custom Closets Design, Built-In Cabinets, Space Optimization, Custom Furniture, Cabinet Installation, Storage Systems, Stylish Kitchen Storage, Elegant Closet Designs, Sustainable Cabinets, Smart Storage Solutions, Kitchen Renovation, Home Storage Ideas, Personalized Cabinet Designs"
+          content="Luxe Kitchen Cabinets, Custom Cabinets, Custom Closets, Home Organization, Kitchen Storage Solutions, Interior Design, Luxury Cabinet Makers, Closet Designers, Premium Storage Systems"
         />
-
+        <meta property="og:title" content={dynamicTitle} />
+        <meta
+          property="og:description"
+          content={
+            MAINPOSTERCONTENT[pathname]?.description ||
+            "Explore premium custom cabinets and closets designed to fit your style and space. Crafted with precision and innovation to elevate your home's functionality and aesthetic appeal."
+          }
+        />
+        <meta
+          property="og:image"
+          content={posterImage || IMAGES.landingImage}
+        />
+        <meta property="og:url" content={pathname} />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+        {isServicePage && (
+          <>
+            <meta property="og:type" content="product" />
+            <meta property="og:site_name" content="Luxe Kitchen Cabinets" />
+          </>
+        )}
+        <meta property="og:updated_time" content={new Date().toISOString()} />
         <meta name="author" content="Ahmed Younas" />
         <link rel="icon" href="/favicon.ico" />
       </head>
