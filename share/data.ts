@@ -741,7 +741,7 @@ export const CONTACTCARDSECTION: cardSection[] = [
     heading: "Connect With Us",
     titles: ["Follow Us Online On", "Share Your Experience"],
     descriptions: [
-      "<a target='_blank' href='https://www.facebook.com/share/HxGstcCJkD1h5TqB/?mibextid=wwXIfr'><b>Facebook</b></a>, <a target='_blank' href='https://www.instagram.com/bellacraftsofficial?igsh=ZDNoaW15ZmFjNXVy&utm_source=qr'><b>Instagram</b></a> & <a target='_blank' href='https://x.com/bellacrafts01?s=11'><b>X</b></a> to stay updated with our latest projects, designs, and offers. Join our online community and be part of our design journey. Get inspired by behind-the-scenes content and success stories.",
+      "<a target='_blank' rel='preload noopener noreferrer' href='https://www.facebook.com/share/HxGstcCJkD1h5TqB/?mibextid=wwXIfr'><b>Facebook</b></a>, <a target='_blank'rel='preload noopener noreferrer' href='https://www.instagram.com/bellacraftsofficial?igsh=ZDNoaW15ZmFjNXVy&utm_source=qr'><b>Instagram</b></a> & <a target='_blank' rel='preload noopener noreferrer' href='https://x.com/bellacrafts01?s=11'><b>X</b></a> to stay updated with our latest projects, designs, and offers. Join our online community and be part of our design journey. Get inspired by behind-the-scenes content and success stories.",
       "We value your feedback! Share your experience with Luxe Kitchen Cabinets and help us improve. Your reviews inspire us to continually raise our standards. Connect with us and let your voice shape our future projects.",
     ],
     imageUrl: IMAGES.cardImg1,

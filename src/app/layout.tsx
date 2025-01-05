@@ -92,23 +92,23 @@ export default function RootLayout({
         <title>{dynamicTitle}</title>
         <meta
           name="description"
-          content="Discover high-quality custom cabinets and closets tailored to your style and space. Expert craftsmanship and innovative designs to enhance your home."
+          content="At Luxe Kitchen Cabinets, we specialize in creating premium, custom-designed cabinets and closets that reflect your unique style. Our expert craftsmanship and innovative designs are tailored to optimize space and enhance the functionality of your home."
         />
         <meta
           name="keywords"
-          content="Luxe Kitchen Cabinets, Custom Cabinets, Custom Closets, Home Organization, Kitchen Storage Solutions, Interior Design, Luxury Cabinet Makers, Closet Designers, Premium Storage Systems"
+          content="Luxe, Luxe Kitchen Cabinets, Custom Cabinets, Custom Closets, Home Organization, Kitchen Storage Solutions, Interior Design, Luxury Cabinet Makers, Closet Designers, Premium Storage Systems"
         />
         <meta property="og:title" content={dynamicTitle} />
         <meta
           property="og:description"
           content={
             MAINPOSTERCONTENT[pathname]?.description ||
-            "Explore premium custom cabinets and closets designed to fit your style and space. Crafted with precision and innovation to elevate your home's functionality and aesthetic appeal."
+            "At Luxe Kitchen Cabinets, we specialize in creating premium, custom-designed cabinets and closets that reflect your unique style. Our expert craftsmanship and innovative designs are tailored to optimize space and enhance the functionality of your home."
           }
         />
         <meta
           property="og:image"
-          content={posterImage || IMAGES.landingImage}
+          content={posterImage || IMAGES.landingImage || IMAGES.logo}
         />
         <meta property="og:url" content={pathname} />
         <meta property="og:type" content="website" />
@@ -121,7 +121,7 @@ export default function RootLayout({
         )}
         <meta property="og:updated_time" content={new Date().toISOString()} />
         <meta name="author" content="Ahmed Younas" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href={IMAGES.logo} />
       </head>
       <body className={`${lora.className} ${montserrat.className} antialiased`}>
         <Navbar />

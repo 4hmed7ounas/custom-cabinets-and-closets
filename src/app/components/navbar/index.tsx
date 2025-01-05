@@ -20,7 +20,6 @@ export default function Navbar() {
     <header className="fixed top-0 right-0 left-0 z-10">
       <nav className="w-full bg-gradient-to-r from-secondary-600 to-secondary-500  flex justify-center items-center p-2 pt-3">
         <div className="flex items-center justify-between w-[90%]">
-          {/* Logo */}
           <Link
             href={ROUTES.home}
             className={`text-primary-50 ${transitionClass500}`}
@@ -35,7 +34,6 @@ export default function Navbar() {
             />
           </Link>
 
-          {/* Mobile Menu Button */}
           <button
             className="lg:hidden flex flex-col gap-1 focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
@@ -57,7 +55,6 @@ export default function Navbar() {
             ></span>
           </button>
 
-          {/* Navigation Links */}
           <div
             className={`absolute -z-10 p-1 lg:z-10 lg:static top-full left-0 w-full lg:w-auto bg-gradient-to-r from-secondary-600 to-secondary-500 lg:bg-gradient-to-r lg:from-transparent lg:to-transparent lg:p-0 ${transitionClass500} ${
               isOpen ? "translate-y-0" : "-translate-y-full"

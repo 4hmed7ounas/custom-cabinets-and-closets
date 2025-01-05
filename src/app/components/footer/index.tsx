@@ -68,7 +68,7 @@ export default function Footer() {
                 <li key={index}>
                   <strong>{info.label}: </strong>
                   <Link
-                    rel="preload"
+                    rel="preload noopener noreferrer"
                     href={info.url}
                     target="_blank"
                     className={`${responsiveTextClass} text-primary-50 hover:text-secondary-500 ${transitionClass500}`}
@@ -89,7 +89,7 @@ export default function Footer() {
                   key={index}
                   href={media.url}
                   target="_blank"
-                  rel="noopener"
+                  rel="preload noopener noreferrer"
                   aria-label={media.label}
                   className={`text-2xl text-primary-50 rounded-md bg-secondary-500 hover:text-secondary-500 hover:bg-primary-50 p-2 ${transitionClass500}`}
                 >
