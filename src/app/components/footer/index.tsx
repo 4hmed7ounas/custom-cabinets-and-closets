@@ -117,7 +117,7 @@ export default function Footer() {
       {/* Copyright */}
       <div className="bg-secondary-900 w-full text-center text-primary-50 py-4">
         <p className={`${responsiveTextClass}`}>
-          &copy; {CURR_YEAR} Custom Cabinets & Closets. All rights reserved.
+          &copy; {CURR_YEAR} Luxe Kitchen Cabinets. All rights reserved.
         </p>
       </div>
     </footer>

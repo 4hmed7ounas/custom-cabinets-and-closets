@@ -14,7 +14,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const lora = Lora({
   subsets: ["latin"],
-  display: 'swap',
+  display: "swap",
 });
 
 const montserrat = Montserrat({
@@ -27,14 +27,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
-  const dynamicTitle = ROUTES_TITLES[pathname] || "Custom Cabinets and Closets";
+  const dynamicTitle = ROUTES_TITLES[pathname] || "Luxe Kitchen Cabinets";
 
   const posterTitle =
-    MAINPOSTERCONTENT[pathname]?.title || "Custom Cabinets and Closets";
+    MAINPOSTERCONTENT[pathname]?.title || "Luxe Kitchen Cabinets";
   const posterDescription =
     MAINPOSTERCONTENT[pathname]?.description ||
-    "Explore premium custom cabinets and closets designed to fit your style and space. Crafted with precision and innovation to elevate your home's functionality and aesthetic appeal.";
-  const posterImage = MAINPOSTERCONTENT[pathname]?.imageUrl || IMAGES.landingImage;
+    "At Luxe Kitchen Cabinets, we specialize in creating premium, custom-designed cabinets and closets that reflect your unique style. Our expert craftsmanship and innovative designs are tailored to optimize space and enhance the beauty and functionality of your home.";
+  const posterImage =
+    MAINPOSTERCONTENT[pathname]?.imageUrl || IMAGES.landingImage;
 
   const isServicePage =
     pathname === "/services" ||
@@ -56,11 +57,11 @@ export default function RootLayout({
         <title>{dynamicTitle}</title>
         <meta
           name="description"
-          content="Discover high-quality custom cabinets and closets tailored to your style and space. Expert craftsmanship and innovative designs to enhance your home."
+          content="Luxe Kitchen Cabinets offers high-quality, custom cabinets and closets designed to fit your space and style. Our craftsmanship and innovative designs elevate your home's functionality and aesthetic appeal."
         />
         <meta
           name="keywords"
-          content="Custom Cabinets, Custom Closets, Home Organization, Interior Design, Storage Solutions, Cabinet Makers, Closet Designers, Custom Furniture"
+          content="Luxe Kitchen Cabinets, Custom Cabinets, Custom Closets, Home Organization, Kitchen Storage Solutions, Interior Design, Luxury Cabinet Makers, Closet Designers, Premium Storage Systems"
         />
         <meta name="author" content="Ahmed Younas" />
         <link rel="icon" href="/favicon.ico" />

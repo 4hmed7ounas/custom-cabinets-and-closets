@@ -26,7 +26,7 @@ export default function Navbar() {
             className={`text-primary-50 ${transitionClass500}`}
           >
             <Image
-              alt="Custom Cabinets and Closets"
+              alt="Luxe Kitchen Cabinets"
               src={IMAGES.logo}
               width={41}
               height={40}

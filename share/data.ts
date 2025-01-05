@@ -72,7 +72,7 @@ export const MAINPOSTERCONTENT: mainPosterData = {
   "/": {
     title: "WARNING: DEVELOPMENT STAGES",
     description:
-      "Transform your home with custom-designed cabinets and closets. Maximize space, enhance organization, and infuse your personal style. With premium materials and innovative features, we create spaces that are both beautiful and functional.",
+      "Transform your home with Luxe Kitchen Cabinets' custom-designed cabinets and closets. Maximize space, improve organization, and showcase your personal style. Using premium materials and innovative features, we craft spaces that are as functional as they are beautiful.",
     imageUrl: IMAGES.landingImage,
   },
   "/contact-us": {
