@@ -21,11 +21,7 @@ const montserrat = Montserrat({
   subsets: ["latin"],
 });
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const dynamicTitle =
     ROUTES_TITLES[pathname] ||
@@ -55,55 +51,23 @@ export default function RootLayout({
       ].includes(pathname.split("/")[2]));
 
   return (
-    // <html lang="en">
-    //   <head>
-    //     <title>{dynamicTitle}</title>
-    //     <meta
-    //       name="description"
-    //       content="Luxe Kitchen Cabinets offers high-quality, custom cabinets and closets designed to fit your space and style. Our craftsmanship and innovative designs elevate your home's functionality and aesthetic appeal."
-    //     />
-    //     <meta
-    //       name="keywords"
-    //       content="Luxe Kitchen Cabinets, Custom Cabinets, Custom Closets, Home Organization, Kitchen Storage Solutions, Interior Design, Luxury Cabinet Makers, Closet Designers, Premium Storage Systems, Kitchen Remodeling, Bathroom Cabinets, Custom Storage Solutions, Modern Kitchen Cabinets, Luxury Home Cabinets, Custom Closets Design, Built-In Cabinets, Space Optimization, Custom Furniture, Cabinet Installation, Storage Systems, Stylish Kitchen Storage, Elegant Closet Designs, Sustainable Cabinets, Smart Storage Solutions, Kitchen Renovation, Home Storage Ideas, Personalized Cabinet Designs"
-    //     />
-
-    //     <meta name="author" content="Ahmed Younas" />
-    //     <link rel="icon" href="/favicon.ico" />
-    //   </head>
-    //   <body className={`${lora.className} ${montserrat.className} antialiased`}>
-    //     <Navbar />
-    //     {isServicePage && <ServiceNav />}
-    //     <main className="min-h-[80vh]">
-    //       <MainPoster
-    //         image={posterImage}
-    //         title={posterTitle}
-    //         description={posterDescription}
-    //       />
-    //       {children}
-    //       <Analytics />
-    //       <SpeedInsights />
-    //       <ScrollToTopButton />
-    //     </main>
-    //     <Footer />
-    //   </body>
-    // </html>
     <html lang="en">
       <head>
         <title>{dynamicTitle}</title>
         <meta
           name="description"
-          content="Luxe Kitchen Cabinets crafts premium, custom cabinets and closets with expert design to reflect your style, maximize space, and enhance your home's functionality."
+          content="Luxe Kitchen Cabinets crafts premium, custom cabinets and closets in Calgary with expert design to reflect your style, maximize space, and enhance your home's functionality."
         />
         <meta
           name="keywords"
-          content="Luxe, Luxe Kitchen Cabinets, Custom Cabinets, Custom Closets, Home Organization, Kitchen Storage Solutions, Interior Design, Luxury Cabinet Makers, Closet Designers, Premium Storage Systems, Kitchen Remodeling, Bathroom Cabinets, Custom Storage Solutions, Modern Kitchen Cabinets, Luxury Home Cabinets, Custom Closets Design, Built-In Cabinets, Space Optimization, Custom Furniture, Cabinet Installation, Storage Systems, Stylish Kitchen Storage, Elegant Closet Designs, Sustainable Cabinets, Smart Storage Solutions, Kitchen Renovation, Home Storage Ideas, Personalized Cabinet Designs"
+          content="Luxe, Luxe Kitchen Cabinets, Custom Cabinets Calgary, Custom Closets Calgary, Home Organization Calgary, Kitchen Storage Solutions Calgary, Interior Design Calgary, Luxury Cabinet Makers Calgary, Closet Designers Calgary, Premium Storage Systems Calgary, Kitchen Remodeling Calgary, Bathroom Cabinets Calgary, Custom Storage Solutions Calgary, Modern Kitchen Cabinets Calgary, Luxury Home Cabinets Calgary, Custom Closets Design Calgary, Built-In Cabinets Calgary, Space Optimization Calgary, Custom Furniture Calgary, Cabinet Installation Calgary, Storage Systems Calgary, Stylish Kitchen Storage Calgary, Elegant Closet Designs Calgary, Sustainable Cabinets Calgary, Smart Storage Solutions Calgary, Kitchen Renovation Calgary, Home Storage Ideas Calgary, Personalized Cabinet Designs Calgary"
         />
         <meta property="og:title" content={dynamicTitle} />
         <meta
           property="og:description"
           content={
             MAINPOSTERCONTENT[pathname]?.description ||
-            "Luxe Kitchen Cabinets crafts premium, custom cabinets and closets with expert design to reflect your style, maximize space, and enhance your home's functionality."
+            "Luxe Kitchen Cabinets crafts premium, custom cabinets and closets in Calgary with expert design to reflect your style, maximize space, and enhance your home's functionality."
           }
         />
         <meta
@@ -123,7 +87,9 @@ export default function RootLayout({
         <meta name="author" content="Ahmed Younas" />
         <link rel="icon" href={IMAGES.logo} />
       </head>
-      <body className={`${lora.className} ${montserrat.className} antialiased`}>
+      <body
+        className={`${lora.className} ${montserrat.className} antialiased`}
+      >
         <Navbar />
         {isServicePage && <ServiceNav />}
         <main className="min-h-[80vh]">

@@ -30,7 +30,7 @@ import {
   reviewsData,
 } from "./types";
 
-const contactEmail: string = "contact@example.com";
+const contactEmail: string = "luxekitchencabinets@gmail.com";
 const contactNo: string = "+1 403-870-7426";
 const contactAddress: string = "#116 - 8 heatherglen pl, Rocky View AB";
 export const CONTACT_MAP = "https://maps.app.goo.gl/DJonswjCub4mKbZWA";
@@ -78,89 +78,176 @@ export const ROUTES_TITLES: routeTitles = {
     "Wet Bars - Luxe Kitchen Cabinets - Custom Cabinets & Closets",
 };
 
+// export const MAINPOSTERCONTENT: mainPosterData = {
+//   "/": {
+//     title: "WARNING: DEVELOPMENT STAGES",
+//     description:
+//       "Transform your home with Luxe Kitchen Cabinets' custom-designed cabinets and closets. Maximize space, improve organization, and showcase your personal style. Using premium materials and innovative features, we craft spaces that are as functional as they are beautiful.",
+//     imageUrl: IMAGES.landingImage,
+//   },
+//   "/contact-us": {
+//     title: "Contact Us",
+//     description:
+//       "Have questions or need expert advice? Reach out to us for personalized assistance in creating your dream space. Our team is here to guide you through every step of your cabinetry journey, ensuring your satisfaction. Whether you’re ready to start a project or need more information, we're always happy to help.",
+//     imageUrl: IMAGES.landingImage,
+//   },
+//   "/news": {
+//     title: "News",
+//     description:
+//       "Stay updated with the latest trends, product launches, and design inspirations in custom cabinetry. Discover fresh ideas and learn how we’re shaping the future of home organization with innovation and style. Our blog keeps you informed about new trends and offers expert tips for home improvement.",
+//     imageUrl: IMAGES.landingImage,
+//   },
+//   "/our-team": {
+//     title: "Our Team",
+//     description:
+//       "Meet the skilled craftsmen and designers behind our cabinetry solutions. With years of experience and a dedication to excellence, our team ensures every project meets the highest standards of quality and precision. We pride ourselves on our attention to detail and our commitment to creating spaces that exceed client expectations.",
+//     imageUrl: IMAGES.landingImage,
+//   },
+//   "/services": {
+//     title: "Our Services",
+//     description:
+//       "From initial design to flawless installation, our services are tailored to create functional and stunning spaces. Whether it’s a kitchen, closet, or home organization system, we’ve got you covered every step of the way. We work closely with you to ensure that each solution fits perfectly with your lifestyle and aesthetic preferences.",
+//     imageUrl: IMAGES.serviceImage,
+//   },
+//   "/services/kitchen": {
+//     title: "Kitchen Design & Storage",
+//     description:
+//       "Reimagine your kitchen with elegant and practical cabinetry solutions. Our designs maximize storage, improve organization, and create a kitchen that complements your lifestyle and aesthetic preferences. From sleek modern designs to traditional warmth, we have the perfect solution for every home.",
+//     imageUrl: IMAGES.serviceImage,
+//   },
+//   "/services/bathroom-storage": {
+//     title: "Bathroom Storage Solutions",
+//     description:
+//       "Create a spa-like retreat with our innovative bathroom storage designs. Maximize space, add a touch of luxury, and ensure your bathroom remains both organized and stylish with our custom solutions. We incorporate smart storage elements to ensure your bathroom is as functional as it is beautiful.",
+//     imageUrl: IMAGES.serviceImage,
+//   },
+//   "/services/built-in": {
+//     title: "Built-In Cabinetry",
+//     description:
+//       "Enhance your home with built-in cabinetry solutions designed to seamlessly integrate with your space. From living rooms to offices, our bespoke designs combine style and functionality for a perfect fit. These built-ins provide both beauty and utility, making them the ideal addition to any home.",
+//     imageUrl: IMAGES.serviceImage,
+//   },
+//   "/services/cabinets": {
+//     title: "Custom & Commercial Cabinets",
+//     description:
+//       "Upgrade your home with precision-crafted cabinets. Our designs are stylish, highly functional, and tailored to fit any room, offering smart storage solutions that blend seamlessly with your décor. Whether it’s a cozy living room or a professional commercial space, our custom cabinets provide the perfect blend of form and function.",
+//     imageUrl: IMAGES.serviceImage,
+//   },
+//   "/services/closets": {
+//     title: "Closets",
+//     description:
+//       "Transform your closet into a beautifully organized space. Our custom closet solutions maximize storage, reduce clutter, and ensure every inch is utilized efficiently, all while looking stylish. From walk-in closets to compact spaces, we create functional yet beautiful designs that suit your personal needs and style.",
+//     imageUrl: IMAGES.serviceImage,
+//   },
+//   "/services/home-organization": {
+//     title: "Home Organization",
+//     description:
+//       "Discover the joy of a well-organized home with our custom storage solutions. From shelves to storage units, our designs help declutter spaces while enhancing functionality and visual appeal. We aim to create solutions that maximize every inch of your home while maintaining a stylish and cohesive look.",
+//     imageUrl: IMAGES.serviceImage,
+//   },
+//   "/services/wet-bars": {
+//     title: "Wet Bars",
+//     description:
+//       "Enhance your home entertainment with custom-designed wet bars. Featuring premium materials, sleek finishes, and ample storage, our wet bars are perfect for hosting guests or enjoying quiet evenings. Whether you need a compact design or a larger setup, our wet bars bring sophistication to your entertainment space.",
+//     imageUrl: IMAGES.serviceImage,
+//   },
+//   "/services/laundry-storage": {
+//     title: "Laundry Storage Solutions",
+//     description:
+//       "Simplify your laundry routine with smart storage solutions. Our custom designs maximize space, improve efficiency, and add a touch of style, making your laundry room both functional and organized. Say goodbye to cluttered countertops and hello to a sleek, organized space.",
+//     imageUrl: IMAGES.serviceImage,
+//   },
+//   "/about-us": {
+//     title: "About Us",
+//     description:
+//       "At the core of our company lies a passion for craftsmanship and customer satisfaction. We’re dedicated to delivering top-notch cabinetry solutions that enhance your home’s beauty, organization, and functionality. Our experienced team works closely with clients to bring their vision to life, ensuring every detail reflects their unique needs.",
+//     imageUrl: IMAGES.aboutImage,
+//   },
+// };
+
 export const MAINPOSTERCONTENT: mainPosterData = {
   "/": {
     title: "WARNING: DEVELOPMENT STAGES",
     description:
-      "Transform your home with Luxe Kitchen Cabinets' custom-designed cabinets and closets. Maximize space, improve organization, and showcase your personal style. Using premium materials and innovative features, we craft spaces that are as functional as they are beautiful.",
+      "Transform your home with Luxe Kitchen Cabinets' custom-designed cabinets and closets in Calgary. Maximize space, improve organization, and showcase your personal style. Using premium materials and innovative features, we craft spaces that are as functional as they are beautiful.",
     imageUrl: IMAGES.landingImage,
   },
   "/contact-us": {
     title: "Contact Us",
     description:
-      "Have questions or need expert advice? Reach out to us for personalized assistance in creating your dream space. Our team is here to guide you through every step of your cabinetry journey, ensuring your satisfaction. Whether you’re ready to start a project or need more information, we're always happy to help.",
+      "Have questions or need expert advice? Reach out to us for personalized assistance in creating your dream space with Luxe Kitchen Cabinets. Our team in Calgary is here to guide you through every step of your cabinetry journey, ensuring your satisfaction. Whether you’re ready to start a project or need more information, we're always happy to help.",
     imageUrl: IMAGES.landingImage,
   },
   "/news": {
     title: "News",
     description:
-      "Stay updated with the latest trends, product launches, and design inspirations in custom cabinetry. Discover fresh ideas and learn how we’re shaping the future of home organization with innovation and style. Our blog keeps you informed about new trends and offers expert tips for home improvement.",
+      "Stay updated with the latest trends, product launches, and design inspirations in custom cabinetry. Discover fresh ideas and learn how Luxe Kitchen Cabinets is shaping the future of home organization with innovation and style. Our blog keeps you informed about new trends and offers expert tips for home improvement in Calgary.",
     imageUrl: IMAGES.landingImage,
   },
   "/our-team": {
     title: "Our Team",
     description:
-      "Meet the skilled craftsmen and designers behind our cabinetry solutions. With years of experience and a dedication to excellence, our team ensures every project meets the highest standards of quality and precision. We pride ourselves on our attention to detail and our commitment to creating spaces that exceed client expectations.",
+      "Meet the skilled craftsmen and designers behind Luxe Kitchen Cabinets' solutions in Calgary. With years of experience and a dedication to excellence, our team ensures every project meets the highest standards of quality and precision. We pride ourselves on our attention to detail and our commitment to creating spaces that exceed client expectations.",
     imageUrl: IMAGES.landingImage,
   },
   "/services": {
     title: "Our Services",
     description:
-      "From initial design to flawless installation, our services are tailored to create functional and stunning spaces. Whether it’s a kitchen, closet, or home organization system, we’ve got you covered every step of the way. We work closely with you to ensure that each solution fits perfectly with your lifestyle and aesthetic preferences.",
+      "From initial design to flawless installation, our services are tailored to create functional and stunning spaces. Whether it’s a kitchen, closet, or home organization system, Luxe Kitchen Cabinets has got you covered every step of the way. We work closely with you to ensure that each solution fits perfectly with your lifestyle and aesthetic preferences.",
     imageUrl: IMAGES.serviceImage,
   },
   "/services/kitchen": {
     title: "Kitchen Design & Storage",
     description:
-      "Reimagine your kitchen with elegant and practical cabinetry solutions. Our designs maximize storage, improve organization, and create a kitchen that complements your lifestyle and aesthetic preferences. From sleek modern designs to traditional warmth, we have the perfect solution for every home.",
+      "Reimagine your kitchen in Calgary with elegant and practical cabinetry solutions from Luxe Kitchen Cabinets. Our designs maximize storage, improve organization, and create a kitchen that complements your lifestyle and aesthetic preferences. From sleek modern designs to traditional warmth, we have the perfect solution for every home.",
     imageUrl: IMAGES.serviceImage,
   },
   "/services/bathroom-storage": {
     title: "Bathroom Storage Solutions",
     description:
-      "Create a spa-like retreat with our innovative bathroom storage designs. Maximize space, add a touch of luxury, and ensure your bathroom remains both organized and stylish with our custom solutions. We incorporate smart storage elements to ensure your bathroom is as functional as it is beautiful.",
+      "Create a spa-like retreat with our innovative bathroom storage designs in Calgary. Maximize space, add a touch of luxury, and ensure your bathroom remains both organized and stylish with our custom solutions. We incorporate smart storage elements to ensure your bathroom is as functional as it is beautiful.",
     imageUrl: IMAGES.serviceImage,
   },
   "/services/built-in": {
     title: "Built-In Cabinetry",
     description:
-      "Enhance your home with built-in cabinetry solutions designed to seamlessly integrate with your space. From living rooms to offices, our bespoke designs combine style and functionality for a perfect fit. These built-ins provide both beauty and utility, making them the ideal addition to any home.",
+      "Enhance your home in Calgary with built-in cabinetry solutions designed to seamlessly integrate with your space. From living rooms to offices, Luxe Kitchen Cabinets' bespoke designs combine style and functionality for a perfect fit. These built-ins provide both beauty and utility, making them the ideal addition to any home.",
     imageUrl: IMAGES.serviceImage,
   },
   "/services/cabinets": {
     title: "Custom & Commercial Cabinets",
     description:
-      "Upgrade your home with precision-crafted cabinets. Our designs are stylish, highly functional, and tailored to fit any room, offering smart storage solutions that blend seamlessly with your décor. Whether it’s a cozy living room or a professional commercial space, our custom cabinets provide the perfect blend of form and function.",
+      "Upgrade your home in Calgary with precision-crafted cabinets from Luxe Kitchen Cabinets. Our designs are stylish, highly functional, and tailored to fit any room, offering smart storage solutions that blend seamlessly with your décor. Whether it’s a cozy living room or a professional commercial space, our custom cabinets provide the perfect blend of form and function.",
     imageUrl: IMAGES.serviceImage,
   },
   "/services/closets": {
     title: "Closets",
     description:
-      "Transform your closet into a beautifully organized space. Our custom closet solutions maximize storage, reduce clutter, and ensure every inch is utilized efficiently, all while looking stylish. From walk-in closets to compact spaces, we create functional yet beautiful designs that suit your personal needs and style.",
+      "Transform your closet into a beautifully organized space with Luxe Kitchen Cabinets' custom solutions in Calgary. Our closet designs maximize storage, reduce clutter, and ensure every inch is utilized efficiently, all while looking stylish. From walk-in closets to compact spaces, we create functional yet beautiful designs that suit your personal needs and style.",
     imageUrl: IMAGES.serviceImage,
   },
   "/services/home-organization": {
     title: "Home Organization",
     description:
-      "Discover the joy of a well-organized home with our custom storage solutions. From shelves to storage units, our designs help declutter spaces while enhancing functionality and visual appeal. We aim to create solutions that maximize every inch of your home while maintaining a stylish and cohesive look.",
+      "Discover the joy of a well-organized home with Luxe Kitchen Cabinets' custom storage solutions in Calgary. From shelves to storage units, our designs help declutter spaces while enhancing functionality and visual appeal. We aim to create solutions that maximize every inch of your home while maintaining a stylish and cohesive look.",
     imageUrl: IMAGES.serviceImage,
   },
   "/services/wet-bars": {
     title: "Wet Bars",
     description:
-      "Enhance your home entertainment with custom-designed wet bars. Featuring premium materials, sleek finishes, and ample storage, our wet bars are perfect for hosting guests or enjoying quiet evenings. Whether you need a compact design or a larger setup, our wet bars bring sophistication to your entertainment space.",
+      "Enhance your home entertainment in Calgary with custom-designed wet bars from Luxe Kitchen Cabinets. Featuring premium materials, sleek finishes, and ample storage, our wet bars are perfect for hosting guests or enjoying quiet evenings. Whether you need a compact design or a larger setup, our wet bars bring sophistication to your entertainment space.",
     imageUrl: IMAGES.serviceImage,
   },
   "/services/laundry-storage": {
     title: "Laundry Storage Solutions",
     description:
-      "Simplify your laundry routine with smart storage solutions. Our custom designs maximize space, improve efficiency, and add a touch of style, making your laundry room both functional and organized. Say goodbye to cluttered countertops and hello to a sleek, organized space.",
+      "Simplify your laundry routine with smart storage solutions from Luxe Kitchen Cabinets in Calgary. Our custom designs maximize space, improve efficiency, and add a touch of style, making your laundry room both functional and organized. Say goodbye to cluttered countertops and hello to a sleek, organized space.",
     imageUrl: IMAGES.serviceImage,
   },
   "/about-us": {
     title: "About Us",
     description:
-      "At the core of our company lies a passion for craftsmanship and customer satisfaction. We’re dedicated to delivering top-notch cabinetry solutions that enhance your home’s beauty, organization, and functionality. Our experienced team works closely with clients to bring their vision to life, ensuring every detail reflects their unique needs.",
+      "At the core of Luxe Kitchen Cabinets lies a passion for craftsmanship and customer satisfaction. We’re dedicated to delivering top-notch cabinetry solutions that enhance your home’s beauty, organization, and functionality. Our experienced team in Calgary works closely with clients to bring their vision to life, ensuring every detail reflects their unique needs.",
     imageUrl: IMAGES.aboutImage,
   },
 };
@@ -170,9 +257,9 @@ export const HOMECARDSECTION: cardSection[] = [
     heading: "Who is Luxe Kitchen Cabinets",
     titles: ["Who are we?", "What we do?", "Our Values"],
     descriptions: [
-      "At Luxe Kitchen Cabinets, we are passionate creators, builders, and designers dedicated to transforming spaces into functional works of art. Founded with a vision to bring high-quality craftsmanship into every home and office, we specialize in custom cabinetry and storage solutions that reflect your style and needs.",
-      "Our services range from consultation to installation, and our team ensures every detail is crafted to your specifications. We believe in providing solutions that maximize space while enhancing the aesthetic of your home or office.",
-      "Integrity, precision, and trust are at the core of our business. We work closely with clients to understand their unique needs and deliver products that are functional, beautiful, and long-lasting.",
+      "At Luxe Kitchen Cabinets, we are passionate creators, builders, and designers dedicated to transforming spaces into functional works of art. Founded with a vision to bring high-quality craftsmanship into every home and office in Calgary, we specialize in custom cabinetry and storage solutions that reflect your style and needs.",
+      "Our services range from consultation to installation, and our team ensures every detail is crafted to your specifications. We believe in providing solutions that maximize space while enhancing the aesthetic of your home or office. Whether you need kitchen cabinets in Calgary, bathroom cabinets in Calgary, or office cabinets in Calgary, we've got you covered.",
+      "Integrity, precision, and trust are at the core of our business. We work closely with clients in Calgary to understand their unique needs and deliver products that are functional, beautiful, and long-lasting.",
     ],
     imageUrl: IMAGES.cardImg1,
   },
@@ -182,7 +269,7 @@ export const HOMECARDSECTION: cardSection[] = [
       '"Luxe Kitchen Cabinets" Has Been Making Cabinets & Closets in Calgary for Over 13 Years',
     ],
     descriptions: [
-      "At Luxe Kitchen Cabinets, we believe that your home is an expression of who you are. Every detail matters—each color, texture, and design element should reflect your personal taste and lifestyle. That's why we specialize in crafting bespoke cabinetry that fits perfectly with your vision and space. With over 13 years of experience in Calgary, our locally owned and operated shop has been a trusted name in creating Luxe Kitchen Cabinets. Our state-of-the-art manufacturing facility allows us to bring your ideas to life with precision and care, ensuring each piece is tailored to your exact specifications. Whether you need storage solutions, functional designs, or a complete transformation of your space, we are here to help. Start creating the space you've always dreamed of. <a href='/contact-us'><b>Contact us today</b></a> to explore the possibilities of custom cabinetry that is as unique as you are.",
+      "At Luxe Kitchen Cabinets, we believe that your home is an expression of who you are. Every detail matters—each color, texture, and design element should reflect your personal taste and lifestyle. That's why we specialize in crafting bespoke cabinetry that fits perfectly with your vision and space. With over 13 years of experience in Calgary, our locally owned and operated shop has been a trusted name in creating luxe kitchen cabinets, bathroom cabinets, and custom cabinets in Calgary. Our state-of-the-art manufacturing facility allows us to bring your ideas to life with precision and care, ensuring each piece is tailored to your exact specifications. Whether you need storage solutions, functional designs, or a complete transformation of your space, we are here to help. Start creating the space you've always dreamed of. <a href='/contact-us'><b>Contact us today</b></a> to explore the possibilities of custom cabinetry that is as unique as you are.",
     ],
     imageUrl: IMAGES.cardImg1,
   },
@@ -196,7 +283,7 @@ export const HOMECARDSECTION: cardSection[] = [
     descriptions: [
       "At Luxe Kitchen Cabinets, we take pride in our superior craftsmanship. Our expert team combines advanced woodworking techniques with innovative interior design to ensure that every piece is not only functional but also beautifully crafted to your specifications.",
       "We specialize in creating personalized, tailor-made solutions that perfectly fit your space and lifestyle. Whether it's a custom closet, a kitchen makeover, or a full home transformation, we design to optimize storage, enhance style, and improve the flow of your space.",
-      "Customer satisfaction is at the heart of everything we do. We don't just build cabinets and closets – we build lasting relationships. From consultation to installation and beyond, we're with you every step of the way, ensuring that every detail is perfect and that you're completely satisfied with the results.",
+      "Customer satisfaction is at the heart of everything we do. We don't just build cabinets and closets - we build lasting relationships. From consultation to installation and beyond, we're with you every step of the way, ensuring that every detail is perfect and that you're completely satisfied with the results.",
     ],
     imageUrl: IMAGES.cardImg1,
   },
@@ -231,9 +318,9 @@ export const ABOUTCARDSECTION: cardSection[] = [
     heading: "Our Story",
     titles: ["How It Began", "Our Growth", "Our Passion"],
     descriptions: [
-      "At Luxe Kitchen Cabinets, our journey began with a simple yet powerful idea: to create spaces that are not just functional but also inspiring. From humble beginnings to becoming a trusted name in custom cabinetry, our story is built on passion, craftsmanship, and a commitment to excellence.",
-      "Over the years, we've grown from a small team of dedicated artisans to a full-scale operation, serving homes and offices with innovative and personalized cabinetry solutions.",
-      "Our passion lies in creating timeless designs that blend functionality with aesthetics, ensuring every project tells a unique story.",
+      "At Luxe Kitchen Cabinets, our journey began with a simple yet powerful idea: to create spaces that are not just functional but also inspiring. From humble beginnings in Calgary, we have grown into a trusted name in custom cabinetry, built on passion, craftsmanship, and a commitment to excellence.",
+      "Over the years, we've expanded from a small team of dedicated artisans to a full-scale operation, serving homes and offices in Calgary with innovative and personalized cabinetry solutions.",
+      "Our passion lies in creating timeless designs that blend functionality with aesthetics, ensuring every project tells a unique story. From kitchen cabinets in Calgary to bathroom cabinets and office cabinets, we cater to diverse needs.",
     ],
     imageUrl: IMAGES.cardImg1,
   },
@@ -247,11 +334,11 @@ export const ABOUTCARDSECTION: cardSection[] = [
       "Home Organization Systems",
     ],
     descriptions: [
-      "Our kitchen solutions are designed to enhance your cooking experience with innovative storage ideas, modern aesthetics, and functional layouts that suit your lifestyle.",
-      "We design custom closets and cabinets that cater to your specific needs, whether it's maximizing storage or adding a touch of luxury to your space.",
-      "Our bathroom and laundry storage solutions provide a balance of style and function, keeping your spaces organized and efficient, even in smaller areas.",
-      "From built-in furniture to wet bars, we craft unique, integrated pieces that complement your living spaces, offering both beauty and functionality.",
-      "Our home organization systems are designed to simplify your life. We create storage solutions that help you maintain a clutter-free and organized home, making it easier to manage everyday tasks.",
+      "Our kitchen solutions are designed to enhance your cooking experience with innovative storage ideas, modern aesthetics, and functional layouts that suit your lifestyle. Whether you need kitchen cabinets in Calgary or custom kitchen designs, we've got you covered.",
+      "We design custom closets and cabinets that cater to your specific needs, whether it's maximizing storage or adding a touch of luxury to your space. Our expertise in creating bespoke cabinetry makes us a top choice for cabinet makers in Calgary.",
+      "Our bathroom and laundry storage solutions provide a balance of style and function, keeping your spaces organized and efficient, even in smaller areas. We offer custom bathroom cabinets in Calgary that are both practical and stylish.",
+      "From built-in furniture to wet bars, we craft unique, integrated pieces that complement your living spaces, offering both beauty and functionality. Our custom-built furniture ensures that every piece fits seamlessly into your home.",
+      "Our home organization systems are designed to simplify your life. We create storage solutions that help you maintain a clutter-free and organized home, making it easier to manage everyday tasks. Explore our range of custom cabinets and home organization solutions in Calgary.",
     ],
     imageUrl: IMAGES.serviceImage,
   },
@@ -259,9 +346,9 @@ export const ABOUTCARDSECTION: cardSection[] = [
     heading: "Why Choose Luxe Kitchen Cabinets",
     titles: ["Innovative Designs", "Premium Materials", "Customer Focus"],
     descriptions: [
-      "Our team works closely with you to understand your vision and goals, ensuring every detail is meticulously crafted. With a focus on quality and functionality, we create solutions that not only meet but exceed expectations.",
-      "We use only the finest materials, ensuring durability, longevity, and an elegant finish in every project we undertake.",
-      "Customer satisfaction is our top priority. From consultation to installation, we ensure every step is seamless and every expectation is exceeded.",
+      "Our team works closely with you to understand your vision and goals, ensuring every detail is meticulously crafted. With a focus on quality and functionality, we create solutions that not only meet but exceed expectations. From kitchen cabinets to custom closets, our designs are always on-trend and highly functional.",
+      "We use only the finest materials, ensuring durability, longevity, and an elegant finish in every project we undertake. Our commitment to quality makes us a preferred choice for custom cabinets and cabinetry solutions in Calgary.",
+      "Customer satisfaction is our top priority. From consultation to installation, we ensure every step is seamless and every expectation is exceeded. Our dedication to excellence has earned us a reputation as one of the best cabinet makers in Calgary.",
     ],
     imageUrl: IMAGES.cardImg1,
   },
@@ -329,7 +416,7 @@ export const SERVICESCARDSECTION: cardSection[] = [
     heading: "Custom Kitchen Designs",
     titles: ["Tailored Solutions", "Functional Spaces", "Elegant Aesthetics"],
     descriptions: [
-      "Our custom kitchen designs are crafted to suit your unique lifestyle and preferences. From modern minimalism to classic elegance, we bring your dream kitchen to life. Every project begins with a detailed consultation to understand your needs, ensuring the final design fits perfectly into your space. Whether it's maximizing storage or incorporating the latest trends, we create solutions that are both practical and aesthetically pleasing.",
+      "Our custom kitchen designs in Calgary are crafted to suit your unique lifestyle and preferences. From modern minimalism to classic elegance, we bring your dream kitchen to life. Every project begins with a detailed consultation to understand your needs, ensuring the final design fits perfectly into your space. Whether it's maximizing storage or incorporating the latest trends, we create solutions that are both practical and aesthetically pleasing.",
       "We optimize every inch of your space, ensuring seamless functionality while maintaining a sophisticated look. Our designs are focused on making your kitchen work effortlessly for your daily activities, with smart storage solutions and easy access to everything you need. We understand that functionality is key, and our goal is to create spaces that are not only beautiful but also highly efficient and organized.",
       "Every design is a blend of creativity and precision, resulting in kitchens that are both beautiful and practical. Our team meticulously selects materials and finishes that complement your vision, ensuring a timeless aesthetic that enhances the overall ambiance. With a keen eye for detail and a passion for design, we create kitchens that inspire, offering a balance of elegance and durability for years to come.",
     ],
@@ -339,7 +426,7 @@ export const SERVICESCARDSECTION: cardSection[] = [
     heading: "Smart Storage Solutions",
     titles: ["Innovative Designs", "Space Optimization", "Clutter-Free Living"],
     descriptions: [
-      "Say goodbye to clutter with our smart storage solutions, designed to maximize every corner of your home or office. We combine innovation and style to create designs that make the most of available space while adding a touch of elegance. Whether it's a small nook or an expansive area, our designs turn every inch into a functional and aesthetically pleasing part of your space.",
+      "Say goodbye to clutter with our smart storage solutions in Calgary, designed to maximize every corner of your home or office. We combine innovation and style to create designs that make the most of available space while adding a touch of elegance. Whether it's a small nook or an expansive area, our designs turn every inch into a functional and aesthetically pleasing part of your space.",
       "From custom cabinets to hidden compartments, our solutions ensure a perfect balance between design and utility. We understand that every space is unique, which is why we craft solutions that cater to your specific needs. Our designs aim to make your space feel larger, more organized, and visually appealing, with thoughtful attention to detail and efficient use of space.",
       "Our storage systems are crafted to provide long-lasting functionality without compromising on style. We focus on creating systems that simplify your life by keeping your belongings neatly organized and easily accessible. By blending practical design with elegance, we ensure that your home or office remains clutter-free while looking sophisticated and welcoming.",
     ],
@@ -349,7 +436,7 @@ export const SERVICESCARDSECTION: cardSection[] = [
     heading: "Bathroom Cabinetry",
     titles: ["Stylish Designs", "Durable Materials", "Efficient Use of Space"],
     descriptions: [
-      "Upgrade your bathroom with our elegant and durable cabinetry solutions tailored to fit your space. Our designs offer a perfect blend of style and functionality, enhancing the overall aesthetic of your bathroom. Whether you're looking for sleek modern lines or timeless classic elements, our solutions ensure your bathroom remains both luxurious and practical for years to come.",
+      "Upgrade your bathroom with our elegant and durable cabinetry solutions in Calgary tailored to fit your space. Our designs offer a perfect blend of style and functionality, enhancing the overall aesthetic of your bathroom. Whether you're looking for sleek modern lines or timeless classic elements, our solutions ensure your bathroom remains both luxurious and practical for years to come.",
       "We use premium materials designed to withstand moisture and daily wear while adding aesthetic appeal. Each piece is crafted with durability in mind, ensuring that your cabinetry maintains its beauty and function even in the most demanding environments. From high-quality wood finishes to water-resistant coatings, our materials are chosen to stand the test of time.",
       "Our designs focus on efficiency, ensuring every cabinet serves a purpose. We maximize storage while maintaining an uncluttered, polished look that complements your space. Whether it's hidden storage or cleverly designed shelving, we ensure your bathroom feels open and organized, with everything you need within reach.",
     ],
@@ -359,7 +446,7 @@ export const SERVICESCARDSECTION: cardSection[] = [
     heading: "Closet Organizers",
     titles: ["Custom Closets", "Maximized Storage", "Personalized Design"],
     descriptions: [
-      "Transform your closet into an organized haven with our custom closet solutions. Our designs are built around your lifestyle and storage needs, ensuring a perfect fit for your space and belongings. We offer a range of layouts and features to suit every style, from walk-in closets to compact spaces, creating a functional and aesthetically pleasing storage solution.",
+      "Transform your closet into an organized haven with our custom closet solutions in Calgary. Our designs are built around your lifestyle and storage needs, ensuring a perfect fit for your space and belongings. We offer a range of layouts and features to suit every style, from walk-in closets to compact spaces, creating a functional and aesthetically pleasing storage solution.",
       "We design layouts that maximize storage space and keep your belongings easily accessible. By incorporating adjustable shelves, hanging systems, and hidden compartments, we create closets that are as functional as they are beautiful. Our goal is to make the most out of every inch, providing efficient storage while maintaining an organized, clean look.",
       "Every closet is tailored to your personal style and storage requirements. We collaborate with you to ensure that your closet is not only a practical solution but also a reflection of your taste and preferences. From the choice of materials to custom features, we create closets that perfectly match your vision and needs.",
     ],
@@ -369,8 +456,8 @@ export const SERVICESCARDSECTION: cardSection[] = [
     heading: "Commercial Spaces",
     titles: ["Office Cabinets", "Retail Displays", "Custom Workspaces"],
     descriptions: [
-      "Enhance your commercial space with custom cabinetry and storage solutions designed for efficiency and style. Our office cabinets are crafted to meet the demands of a professional environment while maintaining a sleek and modern design. Whether for storage, organization, or display, we ensure that your office is both productive and visually appealing.",
-      "From office workstations to retail shelving, we deliver functional and visually appealing solutions. Our custom displays are designed to enhance the shopping experience, offering a balance of style and practicality. We focus on creating displays that not only showcase your products but also optimize the space and flow of your store.",
+      "Enhance your commercial space with custom cabinetry and storage solutions designed for efficiency and style. Our office cabinets in Calgary are crafted to meet the demands of a professional environment while maintaining a sleek and modern design. Whether for storage, organization, or display, we ensure that your office is both productive and visually appealing.",
+      "rom office workstations to retail shelving, we deliver functional and visually appealing solutions. Our custom displays are designed to enhance the shopping experience, offering a balance of style and practicality. We focus on creating displays that not only showcase your products but also optimize the space and flow of your store.",
       "We understand the unique requirements of commercial spaces and design accordingly. Whether you're looking to create an efficient workstation, a collaborative area, or a functional retail setup, we offer customized solutions that cater to your business needs. Our designs prioritize organization, accessibility, and aesthetic appeal, ensuring your workspace is both efficient and inspiring.",
     ],
     imageUrl: IMAGES.cardImg1,
@@ -382,8 +469,8 @@ export const KITCHENCARDSECTION: cardSection[] = [
     heading: "Modern Kitchens",
     titles: ["Sleek Designs", "Smart Technology", "Premium Finishes"],
     descriptions: [
-      "Experience the perfect blend of style and functionality with our modern kitchen designs. Every detail is carefully crafted to create a contemporary and efficient space, ensuring your kitchen becomes the heart of your home.",
-      "We integrate smart technology, including intelligent storage solutions and automated appliances, for a seamless cooking experience. Our kitchens are designed to evolve with your needs, incorporating the latest advancements for convenience and ease.",
+      "Experience the perfect blend of style and functionality with our modern kitchen designs in Calgary. Every detail is carefully crafted to create a contemporary and efficient space, ensuring your kitchen becomes the heart of your home.",
+      "We integrate smart technology, including intelligent storage solutions and automated appliances, for a seamless cooking experience. Our modern kitchens are designed to evolve with your needs, incorporating the latest advancements for convenience and ease.",
       "Our kitchens feature premium finishes and durable materials, ensuring both aesthetic appeal and long-lasting quality. Each element is selected with care to guarantee both beauty and functionality for years to come.",
     ],
     imageUrl: IMAGES.kitchenImg1,
@@ -392,7 +479,7 @@ export const KITCHENCARDSECTION: cardSection[] = [
     heading: "Classic Kitchens",
     titles: ["Timeless Designs", "Rich Details", "Elegant Craftsmanship"],
     descriptions: [
-      "Bring timeless elegance to your home with our classic kitchen designs that never go out of style. With a focus on tradition and enduring appeal, we create kitchens that will always feel current and inviting.",
+      "Bring timeless elegance to your home with our classic kitchen designs in Calgary that never go out of style. With a focus on tradition and enduring appeal, we create kitchens that will always feel current and inviting.",
       "We focus on intricate details, rich textures, and warm finishes that create an inviting atmosphere. Every corner is thoughtfully designed to provide a luxurious yet comfortable space for cooking and entertaining.",
       "Each design reflects traditional craftsmanship blended with modern functionality. We emphasize quality construction and a commitment to detail, creating kitchens that are both beautiful and practical.",
     ],
@@ -402,9 +489,9 @@ export const KITCHENCARDSECTION: cardSection[] = [
     heading: "Open Concept Kitchens",
     titles: ["Spacious Layouts", "Seamless Flow", "Integrated Living"],
     descriptions: [
-      "Our open-concept kitchens are designed to create a sense of spaciousness and seamless connection with the rest of your home. The layout encourages interaction, ensuring that the kitchen becomes a central part of your living space.",
+      "Our open-concept kitchens in Calgary are designed to create a sense of spaciousness and seamless connection with the rest of your home. The layout encourages interaction, ensuring that the kitchen becomes a central part of your living space.",
       "We prioritize layouts that enhance movement, accessibility, and interaction among family and guests. The kitchen becomes a fluid extension of your home, making meal prep and socializing effortless.",
-      "These designs combine style and practicality for a dynamic living space. Our kitchens don't just serve as places to cook—they're designed to integrate into your home’s lifestyle, enhancing how you live.",
+      "These designs combine style and practicality for a dynamic living space. Our kitchens don't just serve as places to cook—they're designed to integrate into your home's lifestyle, enhancing how you live.",
     ],
     imageUrl: IMAGES.cardImg1,
   },
@@ -412,7 +499,7 @@ export const KITCHENCARDSECTION: cardSection[] = [
     heading: "Custom Cabinetry",
     titles: ["Tailored Storage", "Unique Designs", "Maximum Efficiency"],
     descriptions: [
-      "Maximize your kitchen's potential with our custom cabinetry solutions, tailored to your unique storage needs. Every cabinet and shelf is meticulously designed to organize and optimize your space.",
+      "Maximize your kitchen's potential with our custom cabinetry solutions in Calgary, tailored to your unique storage needs. Every cabinet and shelf is meticulously designed to organize and optimize your space.",
       "We design cabinets that blend functionality with aesthetics, ensuring every inch of space is utilized efficiently. With attention to detail and unique customizations, we create kitchens that reflect your style and needs.",
       "Our team works closely with you to create personalized designs that reflect your style and preferences. Every design decision is made with the goal of creating a functional, efficient, and organized kitchen that fits your lifestyle.",
     ],
@@ -426,7 +513,7 @@ export const KITCHENCARDSECTION: cardSection[] = [
       "Exclusive Designs",
     ],
     descriptions: [
-      "Indulge in sophistication with our luxury kitchen designs, featuring high-end finishes and state-of-the-art appliances. We carefully select the best materials and finishes to create a space that's as luxurious as it is practical.",
+      "Indulge in sophistication with our luxury kitchen designs in Calgary, featuring high-end finishes and state-of-the-art appliances. We carefully select the best materials and finishes to create a space that's as luxurious as it is practical.",
       "Each luxury kitchen is crafted with precision and attention to detail, ensuring an exclusive and elegant aesthetic. We integrate the latest appliances to provide convenience and ensure your kitchen is equipped for the future.",
       "We create spaces that redefine comfort, style, and opulence. Our exclusive designs elevate the heart of your home, bringing unparalleled elegance and functionality into one beautiful package.",
     ],
@@ -545,8 +632,8 @@ export const CABINETSCARDSECTION: cardSection[] = [
     heading: "Kitchen Cabinets",
     titles: ["Modern Designs", "Custom Solutions", "Durable Materials"],
     descriptions: [
-      "Our kitchen cabinets combine modern aesthetics with functionality to create a space you'll love to cook in. Each design is carefully planned to blend seamlessly with contemporary interiors, offering a stylish yet practical solution. From sleek finishes to innovative layouts, every detail is crafted with your comfort and convenience in mind.",
-      "Every cabinet is custom-designed to fit your kitchen layout and meet your storage needs. Our team works closely with you to understand your vision and deliver a design that maximizes space. Whether it’s smart corner solutions or specialized compartments, your cabinets will be tailored to perfection.",
+      "Our kitchen cabinets in Calgary combine modern aesthetics with functionality to create a space you'll love to cook in. Each design is carefully planned to blend seamlessly with contemporary interiors, offering a stylish yet practical solution. From sleek finishes to innovative layouts, every detail is crafted with your comfort and convenience in mind.",
+      "Every cabinet is custom-designed to fit your kitchen layout and meet your storage needs. Our team works closely with you to understand your vision and deliver a design that maximizes space. Whether it's smart corner solutions or specialized compartments, your cabinets will be tailored to perfection.",
       "We use high-quality materials to ensure durability and longevity for years to come. From solid wood to premium hardware, every component is chosen to stand the test of time. Our cabinets are designed to endure daily wear and tear without compromising on style.",
     ],
     imageUrl: IMAGES.cardImg1,
@@ -555,7 +642,7 @@ export const CABINETSCARDSECTION: cardSection[] = [
     heading: "Bathroom Cabinets",
     titles: ["Space Optimization", "Elegant Finishes", "Moisture Resistant"],
     descriptions: [
-      "Enhance your bathroom space with cabinets designed for optimal storage and style. Our designs focus on utilizing every inch of space efficiently, offering clever storage options. Whether it’s under-sink cabinets or vertical storage units, every design element serves a purpose.",
+      "Enhance your bathroom space with cabinets designed for optimal storage and style. Our bathroom cabinets in Calgary focus on utilizing every inch of space efficiently, offering clever storage options. Whether it's under-sink cabinets or vertical storage units, every design element serves a purpose.",
       "Choose from a variety of elegant finishes to match your bathroom décor. From matte textures to glossy surfaces, our finishes add a sophisticated touch. Each option is selected to complement the overall aesthetic of your bathroom.",
       "Our cabinets are built to withstand moisture and humidity, ensuring long-lasting performance. Special coatings and water-resistant materials prevent warping and damage. You can trust our designs to remain beautiful and functional even in the dampest conditions.",
     ],
@@ -565,7 +652,7 @@ export const CABINETSCARDSECTION: cardSection[] = [
     heading: "Custom Cabinets",
     titles: ["Tailored Designs", "Premium Craftsmanship", "Unique Styles"],
     descriptions: [
-      "Whether it's a home office, living room, or hallway, our custom cabinets fit perfectly in any space. Every design is uniquely crafted to suit the dimensions and requirements of your room. From built-in shelves to multipurpose units, our cabinets adapt to your lifestyle.",
+      "Whether it's a home office, living room, or hallway, our custom cabinets in Calgary fit perfectly in any space. Every design is uniquely crafted to suit the dimensions and requirements of your room. From built-in shelves to multipurpose units, our cabinets adapt to your lifestyle.",
       "We ensure every cabinet is crafted with precision and attention to detail. Our skilled artisans combine traditional techniques with modern technology to achieve exceptional results. The final product is a testament to our dedication to quality and excellence.",
       "Add a unique touch to your home with custom styles and finishes. From minimalist designs to bold statement pieces, our range caters to diverse tastes. Your cabinets will not only be functional but also a reflection of your personal style.",
     ],
@@ -578,9 +665,9 @@ export const CLOSETSCARDSECTION: cardSection[] = [
     heading: "Walk-In Closets",
     titles: ["Spacious Layouts", "Luxury Design", "Custom Shelving"],
     descriptions: [
-      "Experience luxury with our walk-in closets, offering ample space and organization. Designed to accommodate your wardrobe effortlessly, these closets provide designated areas for clothing, shoes, and accessories. Every detail is thoughtfully planned to deliver a clutter-free and visually stunning space.",
+      "Experience luxury with our walk-in closets in Calgary, offering ample space and organization. Designed to accommodate your wardrobe effortlessly, these closets provide designated areas for clothing, shoes, and accessories. Every detail is thoughtfully planned to deliver a clutter-free and visually stunning space.",
       "Our designs prioritize elegance and functionality to create your dream closet. From premium finishes to stylish fixtures, every element is chosen to enhance the overall appeal. Step into a space where luxury meets practicality, making your daily routine a pleasure.",
-      "Custom shelving ensures every item has its place. Whether it’s for shoes, handbags, or seasonal clothing, each shelf is designed to maximize efficiency. Our tailored approach guarantees an organized and accessible layout for your belongings.",
+      "Custom shelving ensures every item has its place. Whether it's for shoes, handbags, or seasonal clothing, each shelf is designed to maximize efficiency. Our tailored approach guarantees an organized and accessible layout for your belongings.",
     ],
     imageUrl: IMAGES.cardImg1,
   },
@@ -588,7 +675,7 @@ export const CLOSETSCARDSECTION: cardSection[] = [
     heading: "Reach-In Closets",
     titles: ["Space Efficient", "Organized Storage", "Modern Look"],
     descriptions: [
-      "Our reach-in closets are perfect for smaller spaces without compromising on style or organization. Thoughtfully designed compartments and hanging areas make the most of limited space. These closets prove that size doesn’t limit style or functionality.",
+      "Our reach-in closets in Calgary are perfect for smaller spaces without compromising on style or organization. Thoughtfully designed compartments and hanging areas make the most of limited space. These closets prove that size doesn't limit style or functionality.",
       "Smart storage solutions make the most of every inch. From pull-out drawers to adjustable shelves, every feature is designed with convenience in mind. Say goodbye to clutter and hello to effortless organization.",
       "Modern designs add sophistication to your room. Sleek lines, contemporary finishes, and stylish hardware create a refined aesthetic. Our reach-in closets bring elegance and charm to any space they occupy.",
     ],
@@ -598,7 +685,7 @@ export const CLOSETSCARDSECTION: cardSection[] = [
     heading: "Wardrobe Closets",
     titles: ["Custom Compartments", "Elegant Finishes", "Functional Design"],
     descriptions: [
-      "Maximize your storage with wardrobe closets tailored to your needs. Designed to fit your unique lifestyle, each compartment is crafted for specific items. From hanging sections to hidden drawers, everything has a dedicated space.",
+      "Maximize your storage with wardrobe closets tailored to your needs in Calgary. Designed to fit your unique lifestyle, each compartment is crafted for specific items. From hanging sections to hidden drawers, everything has a dedicated space.",
       "Custom compartments keep your clothing and accessories organized. With premium materials and refined details, every finish adds a touch of class. These thoughtful designs ensure a perfect balance between functionality and style.",
       "Elegant finishes ensure your closet is both stylish and functional. With a focus on usability and durability, our wardrobe closets are designed to enhance your daily routine. Every detail is fine-tuned to deliver a seamless experience.",
     ],
