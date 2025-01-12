@@ -50,3 +50,8 @@ export interface reviewsData {
   reviewer: string;
   rating: number;
 }
+
+export interface servicesHome {
+  title: string;
+  description: string;
+}

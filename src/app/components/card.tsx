@@ -9,7 +9,7 @@ interface CardProps {
 
 export const Card = ({ card, index }: CardProps) => {
   return (
-    <section className="relative text-secondary-900">
+    <section className="text-secondary-900">
       <div className="flex justify-center items-center flex-wrap">
         <div className="flex flex-col justify-center items-center w-[95%] mt-8 mb-4">
           <h2 className="text-3xl font-bold">{card.heading}</h2>
@@ -34,7 +34,7 @@ export const Card = ({ card, index }: CardProps) => {
               ))}
             </div>
             <div
-              className={`w-full lg:w-[50%] h-auto bg-cover md:bg-fixed bg-center py-40 lg:py-10 bg-no-repeat`}
+              className={`w-full lg:w-[50%] h-auto bg-cover md:bg-fixed bg-center py-40 lg:py-10 bg-no-repeat bg-secondary-800 bg-blend-lighten`}
               style={{
                 backgroundImage: `url(${card.imageUrl})`,
               }}

@@ -47,12 +47,8 @@ export default function MainPoster({
       {!noLogoPaths.includes(pathname) && (
         <>
           <div
-            className="pt-4 lg:py-10 flex flex-col bg-gradient-to-tr from-tertiary-900 to-secondary-950 bg-blend-luminosity items-center bg-cover bg-center bg-no-repeat"
-            style={{
-              backgroundImage: `url(${image})`,
-              backgroundSize: "cover",
-              backgroundAttachment: "fixed",
-            }}
+            className="pt-4 lg:py-10 flex flex-col items-center bg-secondary-950 bg-blend-lighten bg-fixed bg-cover bg-center h-auto min-h-[100%]"
+            style={{ backgroundImage: `url(${image})` }}
           >
             <Image
               alt="Luxe Kitchen Cabinets"
@@ -65,7 +61,7 @@ export default function MainPoster({
             />
             <div className="bg-secondary-50 bg-opacity-60 mt-6 p-4 shadow-secondary-900 w-full lg:w-[70%] 2xl:w-[90%]">
               <h1 className="text-3xl font-bold font-calibri">{title}</h1>
-              <p className={`text-left ${responsiveTextClass}`}>
+              <p className={`text-justify ${responsiveTextClass}`}>
                 {description}
               </p>
               {pathname !== ROUTES.contactUs && (
@@ -97,7 +93,9 @@ export default function MainPoster({
         >
           <div className=" mt-6 p-4 text-secondary-50 w-full lg:w-[70%] 2xl:w-[90%]">
             <h1 className="text-3xl font-bold font-calibri">{title}</h1>
-            <p className={`text-left ${responsiveTextClass}`}>{description}</p>
+            <p className={`text-justify ${responsiveTextClass}`}>
+              {description}
+            </p>
             <Button
               text="Get Your Free Consultation Today!"
               onClick={handleClick}

@@ -18,7 +18,7 @@ export default function ServiceSection() {
   }, []);
 
   return (
-    <section className="relative">
+    <section className="relative text-secondary-900">
       <div className="flex justify-center my-6">
         <div className="flex flex-col justify-center items-center w-[90%] lg:w-auto">
           <h2 className="text-3xl font-bold mb-2">Our Services</h2>
@@ -50,6 +50,8 @@ export default function ServiceSection() {
                           backgroundImage: `url(${service.imageUrl})`,
                           backgroundSize: "cover",
                           backgroundPosition: "center",
+                          backgroundColor: "#4b4238",
+                          backgroundBlendMode: "lighten",
                         }
                       : {}
                   }
