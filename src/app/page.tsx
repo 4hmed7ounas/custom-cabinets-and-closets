@@ -3,7 +3,7 @@ import { Card } from "./components/card";
 import Hero from "./components/home/hero";
 import { Review } from "./components/home/review";
 import ServiceSection from "./components/servicesSection";
-import { ServicesHome } from "./components/servicesHome";
+import { ServicesHome } from "./components/home/servicesHome";
 
 export default function Home() {
   return (

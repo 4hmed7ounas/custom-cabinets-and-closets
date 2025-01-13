@@ -215,24 +215,38 @@ export const HOMECARDSECTION: cardSection[] = [
 
 export const REVIEWS: reviewsData[] = [
   {
-    title: "Excellent Service!",
+    title: "Exceptional Craftsmanship!",
     description:
-      "The team was professional, timely, and delivered high-quality results. Highly recommended!",
-    reviewer: "John Doe",
+      "Luxe Kitchen Cabinets exceeded our expectations! The custom kitchen cabinets they crafted for our home are not only beautiful but also incredibly functional. The team was professional and detail-oriented throughout the entire process. Highly recommend their services in Calgary!",
+    reviewer: "Michael Carter",
     rating: 5,
   },
   {
-    title: "Great Experience",
+    title: "Professional and Timely Service",
     description:
-      "Very satisfied with the work. The attention to detail was impressive.",
-    reviewer: "Jane Smith",
+      "From consultation to installation, the experience was seamless. The team designed a stunning wet bar for our entertainment space that perfectly matches our style. Their attention to detail and use of quality materials are unmatched.",
+    reviewer: "Sarah Thompson",
+    rating: 5,
+  },
+  {
+    title: "Great Results, Slight Delays",
+    description:
+      "The cabinets turned out fantastic and really elevated our home’s aesthetic. However, there were minor delays in the project timeline. Overall, the quality of the work makes up for it, and I’d still recommend Luxe Kitchen Cabinets.",
+    reviewer: "Alice Brown",
     rating: 4,
   },
   {
-    title: "Could be better",
+    title: "Highly Satisfied with Custom Closets",
     description:
-      "Service was good, but there were slight delays. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum ut, impedit exercitationem dignissimos consequuntur assumenda, placeat ea provident saepe tempora asperiores expedita iusto officia eos dolore iure ducimus quidem quia mollitia facilis amet quos. Nemo, molestias in molestiae ab illum dolores. Sit, dicta asperiores dignissimos reiciendis quae eligendi cupiditate et neque voluptate dolore culpa quisquam nulla temporibus veritatis possimus vel in porro odio, recusandae, similique debitis! Rerum animi odit reiciendis minima, debitis voluptate perspiciatis obcaecati cum suscipit dignissimos dolore nulla cumque provident dolorum amet culpa in nostrum eum modi dolor, maxime neque. Quo repellat tempore dignissimos tenetur sed nesciunt deserunt?",
-    reviewer: "Alice Brown",
+      "The team at Luxe Kitchen Cabinets designed custom closets for our home, and we couldn't be happier! The storage solutions are tailored to our needs, and the build quality is exceptional. Their expertise truly shows in their work.",
+    reviewer: "Emma Davis",
+    rating: 5,
+  },
+  {
+    title: "Wonderful Kitchen Renovation",
+    description:
+      "We had Luxe Kitchen Cabinets handle our kitchen renovation, and the results were amazing. The team was knowledgeable, courteous, and efficient. Our new kitchen cabinets are exactly what we envisioned. Thank you for the great service!",
+    reviewer: "James Wilson",
     rating: 5,
   },
 ];
