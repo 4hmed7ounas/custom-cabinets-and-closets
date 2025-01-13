@@ -1,5 +1,3 @@
 User-agent: *
-Disallow: /share/
-Disallow: /src/
-
+Disallow:
 Sitemap: https://www.luxekitchencabinets.ca/sitemap.xml
