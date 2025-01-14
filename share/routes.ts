@@ -1,11 +1,18 @@
 export const ROUTES = {
   home: "/",
-  contactUs: "/contact-us/",
-  news: "/news/",
-  ourteam: "/our-team/",
-  services: "/services/",
-  aboutUs: "/about-us/",
-
+  contactUs: "/contact-us",
+  makeConnect: "#get-started",
+  gallery: "/gallery",
+  news: "/news",
+  ourteam: "/our-team",
+  services: "/services",
+  aboutUs: "/about-us",
+  kitchen: "/services/kitchen",
+  bathroomStorage: "/services/bathroom-storage",
+  builtIn: "/services/built-in",
+  cabinets: "/services/cabinets",
+  closets: "/services/closets",
+  homeOrg: "/services/home-organization",
+  wetBars: "/services/wet-bars",
+  laundryStorage: "/services/laundry-storage",
 };
-
-
