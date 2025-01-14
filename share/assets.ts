@@ -1,6 +1,22 @@
 import { ASSETS_BASE_URL } from "./config";
 
 export const IMAGES = {
+  logoHeader: `${ASSETS_BASE_URL}/logo-header.svg`,
   logo: `${ASSETS_BASE_URL}/logo.svg`,
-  
+  landingImage: `${ASSETS_BASE_URL}/landing-image.svg`,
+  aboutImage: `${ASSETS_BASE_URL}/about-image.svg`,
+  serviceImage: `${ASSETS_BASE_URL}/service-image.svg`,
+  logoMain: `${ASSETS_BASE_URL}/logo-main.svg`,
+  cardImg1: `${ASSETS_BASE_URL}/homecard1.svg`,
+  serviceHomeOrg: `${ASSETS_BASE_URL}/closets.svg`,
+  serviceBathroom: `${ASSETS_BASE_URL}/bathroom-storage.svg`,
+  serviceBuiltIns: `${ASSETS_BASE_URL}/built-ins.svg`,
+  serviceCabinets: `${ASSETS_BASE_URL}/cabinets.svg`,
+  serviceComCabinets: `${ASSETS_BASE_URL}/commercial-cabinets.svg`,
+  serviceLaundary: `${ASSETS_BASE_URL}/laundry.svg`,
+  serviceCloset: `${ASSETS_BASE_URL}/home-org.svg`,
+  kitchenImg1: `${ASSETS_BASE_URL}/kitchen-img-1.png`,
+  ArsalanAnwar: `${ASSETS_BASE_URL}/shani.jpg`,
+  GhulamAhmed: `${ASSETS_BASE_URL}/sony.jpg`,
+  GurvinderSingh: `${ASSETS_BASE_URL}/singh.jpg`,
 };
