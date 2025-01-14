@@ -7,6 +7,19 @@ export interface serviceSection {
   imageUrl: string;
 }
 
+export interface teamData {
+  name: string;
+  designation: string;
+  picture: string;
+  description: string;
+}
+
+export interface gallerySection {
+  title: string;
+  imgURL: string;
+  description: string;
+}
+
 export interface cardSection {
   heading: string;
   imageUrl: string;

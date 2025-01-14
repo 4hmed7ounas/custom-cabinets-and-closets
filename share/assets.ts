@@ -16,4 +16,7 @@ export const IMAGES = {
   serviceLaundary: `${ASSETS_BASE_URL}/laundry.svg`,
   serviceCloset: `${ASSETS_BASE_URL}/home-org.svg`,
   kitchenImg1: `${ASSETS_BASE_URL}/kitchen-img-1.png`,
+  ArsalanAnwar: `${ASSETS_BASE_URL}/shani.jpg`,
+  GhulamAhmed: `${ASSETS_BASE_URL}/sony.jpg`,
+  GurvinderSingh: `${ASSETS_BASE_URL}/singh.jpg`,
 };

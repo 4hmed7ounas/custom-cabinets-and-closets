@@ -2,6 +2,7 @@ export const ROUTES = {
   home: "/",
   contactUs: "/contact-us",
   makeConnect: "#get-started",
+  gallery: "/gallery",
   news: "/news",
   ourteam: "/our-team",
   services: "/services",

@@ -4,6 +4,7 @@ import {
   FaHome,
   FaInstagram,
   FaNewspaper,
+  FaPhotoVideo,
   FaSink,
 } from "react-icons/fa";
 import { IMAGES } from "./assets";
@@ -29,6 +30,8 @@ import {
   routeTitles,
   reviewsData,
   servicesHome,
+  teamData,
+  gallerySection,
 } from "./types";
 
 const contactEmail: string = "luxekitchencabinets@gmail.com";
@@ -60,6 +63,8 @@ export const ROUTES_TITLES: routeTitles = {
     "News - Luxe Kitchen Cabinets - Personalized Cabinetry for Stylish Spaces",
   "/our-team":
     "Our Team - Luxe Kitchen Cabinets - Personalized Cabinetry for Stylish Spaces",
+  "/gallery":
+    "Gallery - Luxe Kitchen Cabinets - Personalized Cabinetry for Stylish Spaces",
   "/services":
     "Our Services - Luxe Kitchen Cabinets - Personalized Cabinetry for Stylish Spaces",
   "/about-us":
@@ -99,6 +104,12 @@ export const MAINPOSTERCONTENT: mainPosterData = {
     title: "News",
     description:
       "Stay updated with the latest trends, product launches, and design inspirations in custom cabinetry. Discover fresh ideas and learn how Luxe Kitchen Cabinets is shaping the future of home organization with innovation and style. Our blog keeps you informed about new trends and offers expert tips for home improvement in Calgary.",
+    imageUrl: IMAGES.landingImage,
+  },
+  "/gallery": {
+    title: "Gallery",
+    description:
+      "Explore our gallery to see the exceptional craftsmanship and design excellence of Luxe Kitchen Cabinets. From kitchens to closets, our completed projects showcase the quality, functionality, and style that define our work. Get inspired for your next cabinetry project in Calgary.",
     imageUrl: IMAGES.landingImage,
   },
   "/our-team": {
@@ -380,6 +391,68 @@ export const TEAMCARDSECTION: cardSection[] = [
       "We go above and beyond to exceed your expectations, delivering results that reflect your vision and needs. Your satisfaction is our top priority, and we make sure every detail is perfect, from start to finish.",
     ],
     imageUrl: IMAGES.cardImg1,
+  },
+];
+
+export const TEAMDATA: teamData[] = [
+  {
+    name: "Arsalan Anwar (SHANI)",
+    designation: "Co-Founder & Operations Strategist",
+    picture: IMAGES.ArsalanAnwar,
+    description:
+      "Arsalan Anwar, the Co-Founder and Operations Strategist at Luxe Kitchen Cabinets, ensures that every aspect of the business runs smoothly. With over 13 years of experience in operations and project management, he specializes in optimizing workflows to deliver exceptional results on time and within budget. Mr. Arsalan's meticulous attention to detail and commitment to customer satisfaction ensure that each project not only meets but exceeds expectations. His strategic approach has been instrumental in expanding Luxe Kitchen Cabinets' reach and maintaining its reputation for excellence in Calgary, Alberta and beyond.",
+  },
+  {
+    name: "Ghulam Ahmed (SONY)",
+    designation: "Co-Founder & Creative Director",
+    picture: IMAGES.GhulamAhmed,
+    description:
+      "As the Co-Founder and Creative Director of Luxe Kitchen Cabinets, Ghulam Ahmed leads the design vision, ensuring that each project combines style and practicality. With a passion for innovative solutions, he brings over 17 years of experience in crafting bespoke cabinetry. Mr. Ahmed excels at transforming spaces through designs that maximize functionality while reflecting the unique preferences of each client. His dedication to staying ahead of design trends and incorporating premium materials has solidified Luxe Kitchen Cabinets' reputation as Calgary's premier custom cabinetry provider.",
+  },
+  {
+    name: "Gurvinder Singh",
+    designation: "Product Manager",
+    picture: IMAGES.GurvinderSingh,
+    description:
+      "Gurvinder Singh, the Product Manager at Luxe Kitchen Cabinets, plays a pivotal role in overseeing product development and innovation. With a keen eye for detail and a strategic mindset, Mr. Gurvinder ensures that all products meet the highest standards of quality and functionality. His expertise in market analysis and customer insights helps shape designs that resonate with clients' needs. He's leadership has been instrumental in driving growth and maintaining Luxe Kitchen Cabinets' reputation for excellence in the industry.",
+  },
+];
+
+export const GALLERYSECTION: gallerySection[] = [
+  {
+    imgURL: IMAGES.landingImage,
+    title: "Image 1",
+    description: "This is the first image.",
+  },
+  {
+    imgURL: IMAGES.landingImage,
+    title: "Image 2",
+    description: "This is the second image.",
+  },
+  {
+    imgURL: IMAGES.landingImage,
+    title: "Image 3",
+    description: "This is the third image.",
+  },
+  {
+    imgURL: IMAGES.landingImage,
+    title: "Image 4",
+    description: "This is the fourth image.",
+  },
+  {
+    imgURL: IMAGES.landingImage,
+    title: "Image 5",
+    description: "This is the fifth image.",
+  },
+  {
+    imgURL: IMAGES.landingImage,
+    title: "Image 6",
+    description: "This is the sixth image.",
+  },
+  {
+    imgURL: IMAGES.landingImage,
+    title: "Image 7",
+    description: "This is the seventh image.",
   },
 ];
 
@@ -947,6 +1020,7 @@ export const NAVLINKS: Links[] = [
   { name: "About us", route: ROUTES.aboutUs, icon: FaAddressBook },
   { name: "Services", route: ROUTES.services, icon: FaGear },
   { name: "Our Team", route: ROUTES.ourteam, icon: FaPeopleGroup },
+  { name: "Gallery", route: ROUTES.gallery, icon: FaPhotoVideo },
   { name: "News", route: ROUTES.news, icon: FaNewspaper },
   { name: "Connect", route: ROUTES.contactUs, icon: BsMailbox },
 ];
