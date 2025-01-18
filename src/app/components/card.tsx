@@ -14,7 +14,7 @@ export const Card = ({ card, index }: CardProps) => {
         <div className="flex flex-col justify-center items-center w-[95%] mt-8 mb-4">
           <h2 className="text-3xl font-bold">{card.heading}</h2>
           <div
-            className={`flex flex-wrap justify-center items-stretch mt-2 gap-4 border-y-2 border-secondary-500 md:border-y-0 ${
+            className={`flex flex-wrap justify-center items-stretch mt-2 gap-4 border-y-2 border-secondary-600 md:border-y-0 ${
               index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
             }`}
           >
@@ -34,7 +34,7 @@ export const Card = ({ card, index }: CardProps) => {
               ))}
             </div>
             <div
-              className={`w-full lg:w-[50%] h-auto bg-cover md:bg-fixed bg-center py-40 lg:py-10 bg-no-repeat bg-secondary-800 bg-blend-lighten`}
+              className={`w-full lg:w-[50%] h-auto bg-cover md:bg-fixed bg-center py-40 lg:py-10 bg-no-repeat bg-secondary-600`}
               style={{
                 backgroundImage: `url(${card.imageUrl})`,
               }}

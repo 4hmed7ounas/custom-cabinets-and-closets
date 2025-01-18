@@ -96,7 +96,7 @@ export default function ContactForm() {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="John Doe"
-                  className="mt-1 block w-full py-2 border-b-2 border-secondary-700 text-secondary-900 bg-primary-100 focus:outline-none"
+                  className="mt-1 block w-full py-2 border-b-2 border-secondary-700 text-secondary-900 bg-secondary-50 focus:outline-none"
                   required
                 />
               </div>
@@ -114,7 +114,7 @@ export default function ContactForm() {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="example@gmail.com"
-                  className="mt-1 block w-full py-2 border-b-2 border-secondary-700 text-secondary-900 bg-primary-100 focus:outline-none"
+                  className="mt-1 block w-full py-2 border-b-2 border-secondary-700 text-secondary-900 bg-secondary-50 focus:outline-none"
                   required
                 />
               </div>
@@ -132,7 +132,7 @@ export default function ContactForm() {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="Phone Number"
-                  className="mt-1 block w-full py-2 border-b-2 border-secondary-700 text-secondary-900 bg-primary-100 focus:outline-none"
+                  className="mt-1 block w-full py-2 border-b-2 border-secondary-700 text-secondary-900 bg-secondary-50 focus:outline-none"
                 />
               </div>
               <div className="mb-4">
@@ -147,7 +147,7 @@ export default function ContactForm() {
                   name="projectType"
                   value={formData.projectType}
                   onChange={handleChange}
-                  className="mt-1 block w-full py-2 border-b-2 border-secondary-700 text-secondary-900 bg-primary-100 focus:outline-none"
+                  className="mt-1 block w-full py-2 border-b-2 border-secondary-700 text-secondary-900 bg-secondary-50 focus:outline-none"
                 >
                   <option value="">Select Project Type</option>
                   <option value="Kitchen Design & Storage">
@@ -178,7 +178,7 @@ export default function ContactForm() {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Tell us about your project"
-                  className="mt-1 block w-full py-2 border-b-2 border-secondary-700 text-secondary-900 bg-primary-100 focus:outline-none"
+                  className="mt-1 block w-full py-2 border-b-2 border-secondary-700 text-secondary-900 bg-secondary-50 focus:outline-none"
                   required
                 ></textarea>
               </div>

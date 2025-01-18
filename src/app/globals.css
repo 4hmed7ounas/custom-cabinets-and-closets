@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #f0ece4;
+  --background: #fdf2f6;
   --foreground: #171717;
 }
 
@@ -20,4 +20,19 @@ html {
 h2,
 h3 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fdf2f6;
+}
+::-webkit-scrollbar-thumb {
+  background: #82192e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #520c1a;
 }

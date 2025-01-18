@@ -12,9 +12,9 @@ export const TeamCard = () => {
           {TEAMDATA.map((member, index) => (
             <div
               key={index}
-              className="flex flex-col shadow-xl shadow-secondary-300 rounded-lg hover:shadow-xl hover:shadow-secondary-500 cursor-pointer transition-shadow duration-300 p-3"
+              className="flex flex-col shadow-md shadow-secondary-300 rounded-xl hover:shadow-lg hover:shadow-secondary-400 cursor-pointer transition-shadow duration-300 p-3"
             >
-              <div className="flex items-end">
+              <div className="flex items-end gap-2">
                 <Image
                   src={member.picture}
                   alt={member.name}

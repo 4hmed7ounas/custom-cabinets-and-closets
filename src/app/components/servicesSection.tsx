@@ -50,7 +50,7 @@ export default function ServiceSection() {
                           backgroundImage: `url(${service.imageUrl})`,
                           backgroundSize: "cover",
                           backgroundPosition: "center",
-                          backgroundColor: "#4b4238",
+                          backgroundColor: "#4f0816",
                           backgroundBlendMode: "lighten",
                         }
                       : {}
