@@ -19,13 +19,13 @@ export const ServicesHome = () => {
 
   return (
     <section className="flex justify-center mt-4 text-secondary-900">
-      <div className="w-[95%] md:w-[89%] my-2">
-        <div className="flex flex-col-reverse md:flex-row gap-3">
+      <div className="w-[95%] md:w-full my-2">
+        <div className="flex flex-col md:flex-row gap-3">
           <div
             className={`lg:w-full h-auto bg-cover md:bg-fixed bg-center py-40 lg:py-10 bg-no-repeat bg-secondary-600`}
             style={{
               backgroundImage: `url(${
-                isMobile ? IMAGES.aboutImage : IMAGES.serviceImage
+                isMobile ? IMAGES.servicesImg1 : IMAGES.servicesImg1
               })`,
             }}
           ></div>
@@ -45,7 +45,7 @@ export const ServicesHome = () => {
             className={`w-full h-auto bg-cover md:bg-fixed bg-center py-40 lg:py-10 bg-no-repeat bg-secondary-600`}
             style={{
               backgroundImage: `url(${
-                isMobile ? IMAGES.serviceImage : IMAGES.serviceImage
+                isMobile ? IMAGES.servicesImg2 : IMAGES.servicesImg1
               })`,
             }}
           ></div>

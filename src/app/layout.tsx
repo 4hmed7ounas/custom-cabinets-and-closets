@@ -80,7 +80,12 @@ export default function RootLayout({
         />
         <meta
           property="og:image"
-          content={posterImage || IMAGES.landingImage || IMAGES.logo}
+          content={
+            posterImage ||
+            IMAGES.landingImage ||
+            IMAGES.logo ||
+            "https://luxekitchencabinets.ca/logo.svg"
+          }
         />
         <meta property="og:url" content={pathname} />
         <meta property="og:type" content="website" />
@@ -93,7 +98,7 @@ export default function RootLayout({
         )}
         <meta property="og:updated_time" content={new Date().toISOString()} />
         <meta name="author" content="Ahmed Younas" />
-        <link rel="icon" href={IMAGES.logo} />
+        <link rel="icon" href={IMAGES.logo} type="image/x-icon" />
       </head>
       <body className={`${lora.className} ${montserrat.className} antialiased`}>
         {isServicePage && <ServiceNav />}
