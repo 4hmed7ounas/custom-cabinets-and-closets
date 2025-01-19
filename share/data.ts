@@ -197,13 +197,9 @@ export const HOMECARDSECTION: cardSection[] = [
       "Transform Your Space with Luxe Kitchen Cabinets - Calgary's Premier Cabinet Builders",
     titles: [
       '"Luxe Kitchen Cabinets" - 13+ Years of Custom Cabinetry Excellence in Calgary',
-      "",
-      "",
     ],
     descriptions: [
-      "Luxe Kitchen Cabinets has been crafting custom kitchen cabinets in Calgary, Alberta, for over 13 years. We are proud to be a trusted name in cabinet making and building in Calgary, offering bespoke solutions that reflect your unique taste and lifestyle.",
-      "From luxurious bathroom cabinets in Calgary to functional office cabinets, our team combines advanced techniques with attention to detail to bring your vision to life. Our locally owned and operated shop provides personalized service, ensuring every cabinet meets your specific needs and enhances your space.",
-      "Whether you're renovating your kitchen, organizing your closet, or upgrading your office, Luxe Kitchen Cabinets has you covered. With innovative designs and expert craftsmanship, we are the go-to choice for custom cabinets in Calgary and surrounding areas. <a href='/contact-us'><b>Contact us today</b></a> to start your transformation.",
+      "Luxe Kitchen Cabinets has been crafting custom kitchen cabinets in Calgary, Alberta, for over 13 years. We are proud to be a trusted name in cabinet making and building in Calgary, offering bespoke solutions that reflect your unique taste and lifestyle. From luxurious bathroom cabinets in Calgary to functional office cabinets, our team combines advanced techniques with attention to detail to bring your vision to life. Our locally owned and operated shop provides personalized service, ensuring every cabinet meets your specific needs and enhances your space. Whether you're renovating your kitchen, organizing your closet, or upgrading your office, Luxe Kitchen Cabinets has you covered. With innovative designs and expert craftsmanship, we are the go-to choice for custom cabinets in Calgary and surrounding areas. <a href='/contact-us'><b>Contact us today</b></a> to start your transformation.",
     ],
     imageUrl: IMAGES.servicesImg4,
   },
