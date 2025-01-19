@@ -56,42 +56,42 @@ export const dummyData = {
 };
 
 export const ROUTES_TITLES: routeTitles = {
-  "/": "Luxe Kitchen Cabinets - Personalized Cabinetry for Stylish Spaces",
+  "/": "Luxe Kitchen Cabinets - Personalized Cabinetry",
   "/contact-us":
-    "Contact Us - Luxe Kitchen Cabinets - Personalized Cabinetry for Stylish Spaces",
+    "Contact Us - Luxe Kitchen Cabinets - Personalized Cabinetry",
   "/news":
-    "News - Luxe Kitchen Cabinets - Personalized Cabinetry for Stylish Spaces",
+    "News - Luxe Kitchen Cabinets - Personalized Cabinetry",
   "/our-team":
-    "Our Team - Luxe Kitchen Cabinets - Personalized Cabinetry for Stylish Spaces",
+    "Our Team - Luxe Kitchen Cabinets - Personalized Cabinetry",
   "/gallery":
-    "Gallery - Luxe Kitchen Cabinets - Personalized Cabinetry for Stylish Spaces",
+    "Gallery - Luxe Kitchen Cabinets - Personalized Cabinetry",
   "/services":
-    "Our Services - Luxe Kitchen Cabinets - Personalized Cabinetry for Stylish Spaces",
+    "Our Services - Luxe Kitchen Cabinets - Personalized Cabinetry",
   "/about-us":
-    "About Us - Luxe Kitchen Cabinets - Personalized Cabinetry for Stylish Spaces",
+    "About Us - Luxe Kitchen Cabinets - Personalized Cabinetry",
   "/services/kitchen":
-    "Kitchen Cabinets - Luxe Kitchen Cabinets - Personalized Cabinetry for Stylish Spaces",
+    "Kitchen Cabinets - Luxe Kitchen Cabinets - Personalized Cabinetry",
   "/services/bathroom-storage":
-    "Bathroom Storage - Luxe Kitchen Cabinets - Personalized Cabinetry for Stylish Spaces",
+    "Bathroom Storage - Luxe Kitchen Cabinets - Personalized Cabinetry",
   "/services/built-in":
-    "Built-in Cabinets - Luxe Kitchen Cabinets - Personalized Cabinetry for Stylish Spaces",
+    "Built-in Cabinets - Luxe Kitchen Cabinets - Personalized Cabinetry",
   "/services/cabinets":
-    "Custom & Commercial Cabinets - Luxe Kitchen Cabinets - Personalized Cabinetry for Stylish Spaces",
+    "Custom & Commercial Cabinets - Luxe Kitchen Cabinets - Personalized Cabinetry",
   "/services/closets":
-    "Closets - Luxe Kitchen Cabinets - Personalized Cabinetry for Stylish Spaces",
+    "Closets - Luxe Kitchen Cabinets - Personalized Cabinetry",
   "/services/home-organization":
-    "Home Organization - Luxe Kitchen Cabinets - Personalized Cabinetry for Stylish Spaces",
+    "Home Organization - Luxe Kitchen Cabinets - Personalized Cabinetry",
   "/services/laundry-storage":
-    "Laundry Storage - Luxe Kitchen Cabinets - Personalized Cabinetry for Stylish Spaces",
+    "Laundry Storage - Luxe Kitchen Cabinets - Personalized Cabinetry",
   "/services/wet-bars":
-    "Wet Bars - Luxe Kitchen Cabinets - Personalized Cabinetry for Stylish Spaces",
+    "Wet Bars - Luxe Kitchen Cabinets - Personalized Cabinetry",
 };
 
 export const MAINPOSTERCONTENT: mainPosterData = {
   "/": {
-    title: "Luxe Kitchen Cabinets - Personalized Cabinetry for Stylish Spaces",
+    title: "Luxe Kitchen Cabinets - Personalized Cabinetry",
     description:
-      "Transform your home with Luxe Kitchen Cabinets' custom cabinetry in Calgary. We specialize in custom kitchen cabinets, bathroom storage, custom closets, built-in furniture, and commercial cabinets. Our expert team designs functional and stylish solutions tailored to your space, using premium materials and innovative features. Whether it's a wet bar, laundry storage, or custom cabinets, we ensure each project maximizes space and enhances your home's style.",
+      "Transform your home with Luxe Kitchen Cabinets - custom cabinetry in Calgary. We specialize in custom kitchen cabinets, bathroom storage, custom closets, built-in furniture, and commercial cabinets. Our expert team designs functional and stylish solutions tailored to your space, using premium materials and innovative features. Whether it's a wet bar, laundry storage, or custom cabinets, we ensure each project maximizes space and enhances your home's style.",
     imageUrl: IMAGES.landingImage,
   },
   "/contact-us": {
