@@ -36,7 +36,7 @@ import {
 } from "./types";
 
 const contactEmail: string = "luxekitchencabinets@gmail.com";
-const contactNo: string = "+1 403-870-7426";
+const contactNo: string = "+1403-796-7399";
 const contactAddress: string = "#116 - 8 heatherglen pl, Rocky View AB";
 export const CONTACT_MAP = "https://maps.app.goo.gl/DJonswjCub4mKbZWA";
 
