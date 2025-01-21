@@ -29,11 +29,11 @@ export default function RootLayout({
   const pathname = usePathname();
   const dynamicTitle =
     ROUTES_TITLES[pathname] ||
-    "Luxe Kitchen Cabinets - Personalized Cabinetry for Stylish Spaces";
+    "Luxe Kitchen Cabinets - Custom Closets, Vanities & Kitchen Renovation";
 
   const posterTitle =
     MAINPOSTERCONTENT[pathname]?.title ||
-    "Luxe Kitchen Cabinets - Personalized Cabinetry for Stylish Spaces";
+    "Luxe Kitchen Cabinets - Custom Closets, Vanities & Kitchen Renovation";
   const posterDescription =
     MAINPOSTERCONTENT[pathname]?.description ||
     "At Luxe Kitchen Cabinets, we specialize in creating premium, custom-designed cabinets and closets that reflect your unique style. Our expert craftsmanship and innovative designs are tailored to optimize space and enhance the beauty and functionality of your home.";
@@ -60,11 +60,11 @@ export default function RootLayout({
         <title>{dynamicTitle}</title>
         <meta
           name="description"
-          content="Transform your home with Luxe Kitchen Cabinets. We design and build premium custom cabinets, closets, and tailored storage solutions to enhance style and functionality."
+          content="Discover custom cabinets, vanities, wet bars, high-gloss cabinets, and pre-finished kitchen cabinets at Luxe Kitchen Cabinets Calgary, Canada. Specializing in kitchen renovation, bathroom renovation, and home renovation, we offer white shaker kitchens, shaker-style kitchen cabinets, and custom storage solutions tailored to your needs."
         />
         <meta
           name="keywords"
-          content="Luxe, Luxe Kitchen, Luxe Cabinets, Luxe Kitchen Cabinets, Luxe Kitchen Cabinets Calgary, Canada, Luxe Kitchen Cabinets Calgary Canada, Custom Cabinets Calgary, Custom Closets Calgary, Custom cabinets, Custom closets, Home Organization Calgary, Kitchen Storage Solutions Calgary, Interior Design Calgary, Luxury Cabinet Makers Calgary, Closet Designers Calgary, Premium Storage Systems Calgary, Kitchen Remodeling Calgary, Bathroom Cabinets Calgary, Custom Storage Solutions Calgary, Modern Kitchen Cabinets Calgary, kitchen cabinets calgary, kitchen cabinets in calgary alberta, bathroom cabinets calgary, alberta cabinets calgary, cabinet makers calgary alberta, cabinets calgary, office cabinets calgary, cabinet builders calgary, cabinet makers calgary, cabinet painting calgary, calgary kitchen cabinets,   Luxury Home Cabinets Calgary, Custom Closets Design Calgary, Built-In Cabinets Calgary, Space Optimization Calgary, Custom Furniture Calgary, Cabinet Installation Calgary, Storage Systems Calgary, Stylish Kitchen Storage Calgary, Elegant Closet Designs Calgary, Sustainable Cabinets Calgary, Smart Storage Solutions Calgary, Kitchen Renovation Calgary, Home Storage Ideas Calgary, Personalized Cabinet Designs Calgary, Tailored storage solutions, Premium cabinetry, Bespoke cabinets, Kitchen design, Closet organization, Modern cabinets, Luxury storage solutions"
+          content="Luxe, Luxe Kitchen, Luxe Cabinets, Luxe Kitchen Cabinets, Luxe Kitchen Cabinets Calgary, Canada, Luxe Kitchen Cabinets Calgary Canada, Custom Cabinets Calgary, Custom Closets Calgary, Custom cabinets, Custom closets, Home Organization Calgary, Kitchen Storage Solutions Calgary, Interior Design Calgary, Luxury Cabinet Makers Calgary, Closet Designers Calgary, Premium Storage Systems Calgary, Kitchen Remodeling Calgary, Bathroom Cabinets Calgary, Custom Storage Solutions Calgary, Modern Kitchen Cabinets Calgary, kitchen cabinets calgary, kitchen cabinets in calgary alberta, bathroom cabinets calgary, alberta cabinets calgary, cabinet makers calgary alberta, cabinets calgary, office cabinets calgary, cabinet builders calgary, cabinet makers calgary, cabinet painting calgary, calgary kitchen cabinets,   Luxury Home Cabinets Calgary, Custom Closets Design Calgary, Built-In Cabinets Calgary, Space Optimization Calgary, Custom Furniture Calgary, Cabinet Installation Calgary, Storage Systems Calgary, Stylish Kitchen Storage Calgary, Elegant Closet Designs Calgary, Sustainable Cabinets Calgary, Smart Storage Solutions Calgary, Kitchen Renovation Calgary, Home Storage Ideas Calgary, Personalized Cabinet Designs Calgary, Tailored storage solutions, Premium cabinetry, Bespoke cabinets, Kitchen design, Closet organization, Modern cabinets, Luxury storage solutions, Vanity, Vanities, Wet bars, Closets, Custom closets, High gloss cabinets, Painted kitchen cabinets, Custom kitchen cabinets, Kitchen renovation, Bathroom renovation, Home renovation, White Shaker kitchen, Shaker style kitchen cabinets, Pre finished kitchen, Pre finished kitchen cabinets"
         />
         <meta
           name="google-site-verification"
@@ -75,7 +75,7 @@ export default function RootLayout({
           property="og:description"
           content={
             MAINPOSTERCONTENT[pathname]?.description ||
-            "Luxe Kitchen Cabinets crafts premium, custom cabinets and closets in Calgary with expert design to reflect your style, maximize space, and enhance your home's functionality."
+            "Discover custom cabinets, vanities, wet bars, high-gloss cabinets, and pre-finished kitchen cabinets at Luxe Kitchen Cabinets Calgary, Canada. Specializing in kitchen renovation, bathroom renovation, and home renovation, we offer white shaker kitchens, shaker-style kitchen cabinets, and custom storage solutions tailored to your needs."
           }
         />
         <meta

@@ -1,3 +1,4 @@
 User-agent: *
-Disallow:
-Sitemap: https://www.luxekitchencabinets.ca/sitemap.xml
+Allow: /
+
+Sitemap: https://luxekitchencabinets.ca/sitemap.xml

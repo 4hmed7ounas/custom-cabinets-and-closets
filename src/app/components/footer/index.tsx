@@ -13,7 +13,7 @@ import { responsiveTextClass, transitionClass500 } from "../styles/classes";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-secondary-500 to-secondary-600 text-primary-50 pt-8">
+    <footer className="bg-gradient-to-r from-secondary-600 to-secondary-500 text-primary-50 pt-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {/* Quick Links */}
