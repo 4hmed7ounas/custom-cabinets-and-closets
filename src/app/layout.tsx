@@ -62,6 +62,7 @@ export default function RootLayout({
           name="google-site-verification"
           content="cdTSMqlmtw9BJzEQEYkvpSMNME7DjolssocY0hxBGWg"
         />
+        <meta name="msvalidate.01" content="219244B7E668A9DA617369C3FFE71406" />
         <title>{dynamicTitle}</title>
         <meta
           name="description"
