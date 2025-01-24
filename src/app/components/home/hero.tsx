@@ -11,11 +11,12 @@ export default function Hero() {
           </h2>
           <div className="text-center flex gap-4">
             <p className={`${responsiveTextClass}`}>
-              With over 13 years of experience, we proudly specialize in
-              crafting custom cabinetry solutions for homes and offices in
-              Calgary and surrounding areas, combining expert craftsmanship,
-              innovative designs, and personalized service to create functional
-              and stylish spaces tailored to your unique needs.
+              With over 13 years of experience, Luxe Kitchen Cabinets proudly
+              specialize in crafting custom cabinetry solutions for homes and
+              offices in Calgary and surrounding areas, combining expert
+              craftsmanship, innovative designs, and personalized service to
+              create functional and stylish spaces tailored to your unique
+              needs.
             </p>
           </div>
         </div>

@@ -13,7 +13,7 @@ import { responsiveTextClass, transitionClass500 } from "../styles/classes";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-secondary-800 to-secondary-700 text-primary-50 pt-8">
+    <footer className="bg-gradient-to-r from-secondary-600 to-secondary-500 text-primary-50 pt-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {/* Quick Links */}
@@ -28,7 +28,7 @@ export default function Footer() {
                     onClick={() =>
                       window.scrollTo({ top: 0, behavior: "smooth" })
                     }
-                    className={`${responsiveTextClass} text-primary-50 hover:text-secondary-300 ${transitionClass500}`}
+                    className={`${responsiveTextClass} text-primary-50 hover:text-white ${transitionClass500}`}
                   >
                     <span className="flex items-center gap-2">
                       <link.icon /> {link.name}
@@ -50,7 +50,7 @@ export default function Footer() {
                     onClick={() =>
                       window.scrollTo({ top: 0, behavior: "smooth" })
                     }
-                    className={`${responsiveTextClass} text-primary-50 hover:text-secondary-500 ${transitionClass500}`}
+                    className={`${responsiveTextClass} text-primary-50 hover:text-white ${transitionClass500}`}
                   >
                     <span className="flex items-center gap-2">
                       <link.icon /> {link.name}
@@ -71,7 +71,7 @@ export default function Footer() {
                     rel="preload noopener noreferrer"
                     href={info.url}
                     target="_blank"
-                    className={`${responsiveTextClass} text-primary-50 hover:text-secondary-500 ${transitionClass500}`}
+                    className={`${responsiveTextClass} text-primary-50 hover:text-white ${transitionClass500}`}
                   >
                     {info.value}
                   </Link>
@@ -115,9 +115,9 @@ export default function Footer() {
       </div>
 
       {/* Copyright */}
-      <div className="bg-secondary-900 w-full text-center text-primary-50 py-4">
+      <div className="bg-secondary-600 w-full text-center text-primary-50 py-4">
         <p className={`${responsiveTextClass}`}>
-          &copy; {CURR_YEAR} Luxe Kitchen Cabinets. All rights reserved.
+          &copy; 2011 - {CURR_YEAR} Luxe Kitchen Cabinets. All rights reserved.
         </p>
       </div>
     </footer>

@@ -47,7 +47,7 @@ export default function MainPoster({
       {!noLogoPaths.includes(pathname) && (
         <>
           <div
-            className="pt-4 lg:py-10 flex flex-col items-center bg-secondary-950 bg-blend-lighten bg-fixed bg-cover bg-center h-auto min-h-[100%]"
+            className="pt-4 lg:py-10 flex flex-col items-center bg-secondary-600 bg-fixed bg-cover bg-center h-auto min-h-[100%]"
             style={{ backgroundImage: `url(${image})` }}
           >
             <Image
@@ -56,10 +56,10 @@ export default function MainPoster({
               src={IMAGES.logoMain}
               width={100}
               height={400}
-              className="w-[75%] sm:w-[45%] xl:w-[35%] 2xl:w-[30%]"
+              className="w-[75%] sm:w-[45%] xl:w-[35%] 2xl:w-[30%] drop-shadow-lg shadow-secondary-50"
               priority
             />
-            <div className="bg-secondary-50 bg-opacity-60 mt-6 p-4 shadow-secondary-900 w-full lg:w-[70%] 2xl:w-[90%]">
+            <div className="bg-secondary-50 bg-opacity-60 mt-6 p-4 shadow-secondary-600 w-full lg:w-[70%] 2xl:w-[90%]">
               <h1 className="text-3xl font-bold font-calibri">{title}</h1>
               <p className={`text-justify ${responsiveTextClass}`}>
                 {description}
