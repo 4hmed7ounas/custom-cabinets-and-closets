@@ -7,7 +7,6 @@ import { galleryItem } from "../../../../share/types";
 import { GALLERYITEMS } from "../../../../share/data";
 
 export default function Gallery() {
-  // Explicitly define state type
   const [selectedImage, setSelectedImage] = useState<galleryItem | null>(null);
 
   return (
@@ -39,10 +38,9 @@ export default function Gallery() {
         ))}
       </div>
 
-      {/* Modal Popup */}
       {selectedImage && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 backdrop-blur-sm">
-          <div className="bg-secondary-50 w-[90%] text-secondary-950 px-5 py-2 rounded-lg shadow-lg max-w-2xl relative">
+          <div className="bg-secondary-50 w-[90%] max-h-[500px] text-secondary-950 px-5 py-2 rounded-lg shadow-lg max-w-2xl relative">
             <div className="flex justify-between items-center mb-2">
               <h2 className="text-3xl font-bold">Details</h2>
               <button
@@ -57,7 +55,7 @@ export default function Gallery() {
               alt={selectedImage.title}
               width={1600}
               height={1400}
-              className="w-full h-auto rounded-md"
+              className="w-full rounded-md max-h-[350px] object-cover"
             />
             <h3 className="text-2xl font-bold mt-4">{selectedImage.title}</h3>
             <p className="text-gray-700">{selectedImage.desc}</p>
