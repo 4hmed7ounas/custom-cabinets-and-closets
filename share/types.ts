@@ -20,11 +20,18 @@ export interface gallerySection {
   description: string;
 }
 
+export interface galleryItem {
+  src: string;
+  title: string;
+  desc: string;
+}
+
 export interface cardSection {
   heading: string;
   imageUrl: string;
   titles: string[];
   descriptions: string[];
+  mainDesc?: string;
 }
 
 export interface Links {
