@@ -103,13 +103,13 @@ export const MAINPOSTERCONTENT: mainPosterData = {
     title: "Contact Us",
     description:
       "Have questions or need expert advice? Reach out to us for personalized assistance in creating your dream space with Luxe Kitchen Cabinets. Our team in Calgary is here to guide you through every step of your cabinetry journey, ensuring your satisfaction. Whether you're ready to start a project or need more information, we're always happy to help.",
-    imageUrl: IMAGES.landingImage,
+    imageUrl: IMAGES.g25,
   },
   "/blogs": {
     title: "Blogs",
     description:
       "Stay inspired with our latest blogs on kitchen design, cabinetry trends, and expert tips. Explore creative ideas, practical advice, and industry insights to help you transform your space with Luxe Kitchen Cabinets. Whether you're looking for renovation inspiration or expert guidance, our blog has everything you need to bring your dream kitchen to life.",
-    imageUrl: IMAGES.landingImage,
+    imageUrl: IMAGES.g27,
   },
   // "/news": {
   //   title: "News",
@@ -121,13 +121,13 @@ export const MAINPOSTERCONTENT: mainPosterData = {
     title: "Gallery",
     description:
       "Explore our gallery to see the exceptional craftsmanship and design excellence of Luxe Kitchen Cabinets. From kitchens to closets, our completed projects showcase the quality, functionality, and style that define our work. Get inspired for your next cabinetry project in Calgary.",
-    imageUrl: IMAGES.landingImage,
+    imageUrl: IMAGES.builtImg4,
   },
   "/our-team": {
     title: "Our Team",
     description:
       "Meet the skilled craftsmen and designers behind Luxe Kitchen Cabinets' solutions in Calgary. With years of experience and a dedication to excellence, our team ensures every project meets the highest standards of quality and precision. We pride ourselves on our attention to detail and our commitment to creating spaces that exceed client expectations.",
-    imageUrl: IMAGES.landingImage,
+    imageUrl: IMAGES.g19,
   },
   "/services": {
     title: "Our Services",
@@ -312,7 +312,7 @@ export const ABOUTCARDSECTION: cardSection[] = [
       "Over the years, we've expanded from a small team of dedicated artisans to a full-scale operation, serving homes and offices in Calgary with innovative and personalized cabinetry solutions.",
       "Our passion lies in creating timeless designs that blend functionality with aesthetics, ensuring every project tells a unique story. From kitchen cabinets in Calgary to bathroom cabinets and office cabinets, we cater to diverse needs.",
     ],
-    imageUrl: IMAGES.cardImg1,
+    imageUrl: IMAGES.g26,
   },
   {
     heading: "Our Expertise",
@@ -330,7 +330,7 @@ export const ABOUTCARDSECTION: cardSection[] = [
       "From built-in furniture to wet bars, we craft unique, integrated pieces that complement your living spaces, offering both beauty and functionality. Our custom-built furniture ensures that every piece fits seamlessly into your home.",
       "Our home organization systems are designed to simplify your life. We create storage solutions that help you maintain a clutter-free and organized home, making it easier to manage everyday tasks. Explore our range of custom cabinets and home organization solutions in Calgary.",
     ],
-    imageUrl: IMAGES.serviceImage,
+    imageUrl: IMAGES.g33,
   },
   {
     heading: "Why Choose Luxe Kitchen Cabinets",
@@ -340,7 +340,7 @@ export const ABOUTCARDSECTION: cardSection[] = [
       "We use only the finest materials, ensuring durability, longevity, and an elegant finish in every project we undertake. Our commitment to quality makes us a preferred choice for custom cabinets and cabinetry solutions in Calgary.",
       "Customer satisfaction is our top priority. From consultation to installation, we ensure every step is seamless and every expectation is exceeded. Our dedication to excellence has earned us a reputation as one of the best cabinet makers in Calgary.",
     ],
-    imageUrl: IMAGES.cardImg1,
+    imageUrl: IMAGES.g29,
   },
   {
     heading: "Our Process",
@@ -350,7 +350,7 @@ export const ABOUTCARDSECTION: cardSection[] = [
       "Our expert designers then create tailored designs that blend functionality, style, and your unique personality.",
       "With precision and care, our team executes the installation process, ensuring every detail aligns with the design plan.",
     ],
-    imageUrl: IMAGES.cardImg1,
+    imageUrl: IMAGES.g30,
   },
 ];
 
@@ -367,7 +367,7 @@ export const TEAMCARDSECTION: cardSection[] = [
       "Their commitment to innovation and quality ensures that Luxe Kitchen Cabinets remains at the forefront of design excellence. By fostering a culture of collaboration, they inspire the team to consistently deliver outstanding results tailored to our clients' needs.",
       "This dedication to quality and craftsmanship is reflected in our work, as we continuously strive to exceed client expectations. With a focus on innovation, we create solutions that enhance both functionality and beauty, making every project a true masterpiece.",
     ],
-    imageUrl: IMAGES.cardImg1,
+    imageUrl: IMAGES.g26,
   },
   {
     heading: "Design Experts",
@@ -377,7 +377,7 @@ export const TEAMCARDSECTION: cardSection[] = [
       "By collaborating throughout the entire design process, they ensure that each decision aligns with your vision. Their expertise turns ideas into reality, crafting spaces that are both beautiful and purposeful, enhancing your everyday living experience.",
       "With a focus on craftsmanship, our experts ensure that each element is thoughtfully executed to perfection. This meticulous approach guarantees that every project not only meets but surpasses the highest standards of quality and design.",
     ],
-    imageUrl: IMAGES.cardImg1,
+    imageUrl: IMAGES.g34,
   },
   {
     heading: "Skilled Craftsmen",
@@ -387,7 +387,7 @@ export const TEAMCARDSECTION: cardSection[] = [
       "Their expertise in craftsmanship guarantees that each creation is both durable and aesthetically pleasing, blending timeless design with modern functionality. This commitment to quality ensures that every project remains as beautiful and practical for years to come.",
       "By carefully managing every stage of the process, they ensure that all aspects of the project are delivered on time and to the highest standards. Their attention to detail and focus on client satisfaction make for an exceptional experience and a flawless result.",
     ],
-    imageUrl: IMAGES.cardImg1,
+    imageUrl: IMAGES.g27,
   },
   {
     heading: "Customer Success Team",
@@ -397,7 +397,7 @@ export const TEAMCARDSECTION: cardSection[] = [
       "We ensure transparency and open dialogue throughout the project, so you're always on the same page. Our goal is to make the process as collaborative as possible, ensuring that your ideas are heard and incorporated.",
       "We go above and beyond to exceed your expectations, delivering results that reflect your vision and needs. Your satisfaction is our top priority, and we make sure every detail is perfect, from start to finish.",
     ],
-    imageUrl: IMAGES.cardImg1,
+    imageUrl: IMAGES.g25,
   },
 ];
 
@@ -425,102 +425,124 @@ export const TEAMDATA: teamData[] = [
   },
 ];
 
-export const GALLERYSECTION: gallerySection[] = [
-  {
-    imgURL: IMAGES.landingImage,
-    title: "Image 1",
-    description: "This is the first image.",
-  },
-  {
-    imgURL: IMAGES.landingImage,
-    title: "Image 2",
-    description: "This is the second image.",
-  },
-  {
-    imgURL: IMAGES.landingImage,
-    title: "Image 3",
-    description: "This is the third image.",
-  },
-  {
-    imgURL: IMAGES.landingImage,
-    title: "Image 4",
-    description: "This is the fourth image.",
-  },
-  {
-    imgURL: IMAGES.landingImage,
-    title: "Image 5",
-    description: "This is the fifth image.",
-  },
-  {
-    imgURL: IMAGES.landingImage,
-    title: "Image 6",
-    description: "This is the sixth image.",
-  },
-  {
-    imgURL: IMAGES.landingImage,
-    title: "Image 7",
-    description: "This is the seventh image.",
-  },
-];
-
 export const GALLERYITEMS: galleryItem[] = [
   {
-    src: IMAGES.aboutImage,
+    src: IMAGES.g1,
     title: "Modern Kitchen",
     desc: "A sleek and stylish modern kitchen setup.",
   },
   {
-    src: IMAGES.bathroomImg1,
+    src: IMAGES.g2,
     title: "Luxury Bathroom",
     desc: "Elegant bathroom design with wooden accents.",
   },
   {
-    src: IMAGES.bathroomImg2,
+    src: IMAGES.g3,
     title: "Minimalist Bathroom",
     desc: "A clean and minimalist white-themed bathroom.",
   },
   {
-    src: IMAGES.bathroomImg3,
+    src: IMAGES.g4,
     title: "Vintage Bathroom",
     desc: "Classic vintage-style bathroom decor.",
   },
   {
-    src: IMAGES.bathroomImg4,
+    src: IMAGES.g5,
     title: "Modern Bathtub",
     desc: "Spacious bathtub with warm lighting.",
   },
   {
-    src: IMAGES.blogImg1,
+    src: IMAGES.g6,
     title: "Wooden Cabinets",
     desc: "Custom-made wooden cabinets for storage.",
   },
   {
-    src: IMAGES.blogImg2,
+    src: IMAGES.g7,
     title: "Home Organization",
     desc: "Optimized space-saving home organization.",
   },
   {
-    src: IMAGES.blogImg3,
+    src: IMAGES.g8,
     title: "Closet Design",
     desc: "Stylish walk-in closet with modern lighting.",
   },
   {
-    src: IMAGES.cabinetsImg3,
+    src: IMAGES.g9,
     title: "Modular Kitchen",
     desc: "Smart modular kitchen setup for efficiency.",
   },
   {
-    src: IMAGES.closetsImg2,
+    src: IMAGES.g10,
     title: "Open Wardrobe",
     desc: "Open wardrobe design for accessibility.",
   },
   {
-    src: IMAGES.closetsImg3,
+    src: IMAGES.g11,
     title: "Luxury Walk-in Closet",
     desc: "Spacious luxury closet with wooden panels.",
   },
   {
-    src: IMAGES.closetsImg3,
+    src: IMAGES.g12,
+    title: "Luxury Walk-in Closet",
+    desc: "Spacious luxury closet with wooden panels.",
+  },
+  {
+    src: IMAGES.g13,
+    title: "Luxury Walk-in Closet",
+    desc: "Spacious luxury closet with wooden panels.",
+  },
+  {
+    src: IMAGES.g14,
+    title: "Luxury Walk-in Closet",
+    desc: "Spacious luxury closet with wooden panels.",
+  },
+  {
+    src: IMAGES.g15,
+    title: "Luxury Walk-in Closet",
+    desc: "Spacious luxury closet with wooden panels.",
+  },
+  {
+    src: IMAGES.g16,
+    title: "Luxury Walk-in Closet",
+    desc: "Spacious luxury closet with wooden panels.",
+  },
+  {
+    src: IMAGES.g17,
+    title: "Luxury Walk-in Closet",
+    desc: "Spacious luxury closet with wooden panels.",
+  },
+  {
+    src: IMAGES.g18,
+    title: "Luxury Walk-in Closet",
+    desc: "Spacious luxury closet with wooden panels.",
+  },
+  {
+    src: IMAGES.g19,
+    title: "Luxury Walk-in Closet",
+    desc: "Spacious luxury closet with wooden panels.",
+  },
+  {
+    src: IMAGES.g20,
+    title: "Luxury Walk-in Closet",
+    desc: "Spacious luxury closet with wooden panels.",
+  },
+  {
+    src: IMAGES.g21,
+    title: "Luxury Walk-in Closet",
+    desc: "Spacious luxury closet with wooden panels.",
+  },
+  {
+    src: IMAGES.g22,
+    title: "Luxury Walk-in Closet",
+    desc: "Spacious luxury closet with wooden panels.",
+  },
+  {
+    src: IMAGES.g23,
+    title: "Luxury Walk-in Closet",
+    desc: "Spacious luxury closet with wooden panels.",
+  },
+  {
+    src: IMAGES.g24,
     title: "Luxury Walk-in Closet",
     desc: "Spacious luxury closet with wooden panels.",
   },
@@ -688,7 +710,7 @@ export const BUILTINCARDSECTION: cardSection[] = [
       "Maximize your storage potential with innovative designs that optimize every inch of available space. Whether you're working with a small area or a larger room, our custom solutions help you make the most of your space.",
       "Enjoy a cohesive and integrated look that enhances the overall aesthetic of your home. Our built-in designs ensure that your cabinetry blends harmoniously with your existing décor, adding elegance and functionality.",
     ],
-    imageUrl: IMAGES.cardImg1,
+    imageUrl: IMAGES.builtImg1,
   },
   {
     heading: "Entertainment Units",
@@ -698,7 +720,7 @@ export const BUILTINCARDSECTION: cardSection[] = [
       "Our designs combine style and functionality to provide optimal storage and a clean, organized look. From sleek shelving to hidden compartments, every detail is designed to maintain a clutter-free environment.",
       "Modern aesthetics ensure your entertainment unit becomes a centerpiece in your living room. With sleek lines and contemporary materials, our designs exude sophistication and style.",
     ],
-    imageUrl: IMAGES.cardImg1,
+    imageUrl: IMAGES.builtImg2,
   },
   {
     heading: "Home Office Solutions",
@@ -708,7 +730,7 @@ export const BUILTINCARDSECTION: cardSection[] = [
       "Custom shelving and smart storage solutions keep your workspace tidy and functional. Our designs ensure everything has its place, helping you stay organized and focused throughout your day.",
       "Ergonomic designs ensure comfort and efficiency, even during long hours of work. Our home office solutions are tailored to provide you with a functional space that boosts productivity.",
     ],
-    imageUrl: IMAGES.cardImg1,
+    imageUrl: IMAGES.builtImg3,
   },
   {
     heading: "Bedroom Wardrobes",
@@ -718,17 +740,17 @@ export const BUILTINCARDSECTION: cardSection[] = [
       "Keep your clothes, shoes, and accessories organized with a layout tailored to your lifestyle. Whether you need more hanging space, shelves, or drawers, our wardrobes are designed to suit your specific needs.",
       "Elegant finishes and premium craftsmanship add sophistication to your bedroom space. We combine functionality with style, creating wardrobes that elevate the overall look of your room.",
     ],
-    imageUrl: IMAGES.cardImg1,
+    imageUrl: IMAGES.builtImg4,
   },
   {
     heading: "Library & Shelving Units",
     titles: ["Personal Libraries", "Creative Displays", "Organized Spaces"],
     descriptions: [
-      "Design a personal library or shelving unit that perfectly complements your space. Our custom designs help you display your books, artwork, or decorative pieces with creativity and style.",
+      "Design a personal library or shelving unit that perfectly complements your space. Our custom designs help you display your books, artwork, or decorative pieces with creativity and style. Each piece is crafted to maximize functionality while enhancing your room’s aesthetics. Let us bring your vision to life with bespoke shelving solutions tailored just for you.",
       "Showcase your book collection, décor, and keepsakes with creative built-in displays. We design units that add personality and charm to your living area while keeping everything organized.",
       "Our designs ensure a balance of style, functionality, and organization. Whether you're organizing a library, display area, or collection, our solutions help you maintain a tidy yet stylish space.",
     ],
-    imageUrl: IMAGES.cardImg1,
+    imageUrl: IMAGES.builtImg5,
   },
 ];
 
@@ -807,7 +829,7 @@ export const HOMEORGCARDSECTION: cardSection[] = [
       "Custom shelving ensures every item has its designated space. From spices to bulk groceries, everything is arranged for easy access and visibility. Say goodbye to clutter and wasted space.",
       "Our designs make your pantry both functional and visually appealing. With adjustable shelves and clever compartments, your pantry becomes a perfect blend of style and practicality.",
     ],
-    imageUrl: IMAGES.cardImg1,
+    imageUrl: IMAGES.homeOrg1,
   },
   {
     heading: "Garage Storage",
@@ -817,7 +839,7 @@ export const HOMEORGCARDSECTION: cardSection[] = [
       "Custom cabinets and tool organization systems keep clutter at bay. Every tool has its place, ensuring easy access and efficient workflows for your projects. Stay focused with a tidy workspace.",
       "Make the most of your garage with smart design solutions. Vertical storage, custom shelving, and multi-functional spaces ensure every corner serves a purpose. Experience unmatched efficiency and organization.",
     ],
-    imageUrl: IMAGES.cardImg1,
+    imageUrl: IMAGES.homeOrg2,
   },
   {
     heading: "Laundry Room Organization",
@@ -827,7 +849,7 @@ export const HOMEORGCARDSECTION: cardSection[] = [
       "Custom storage solutions keep detergents and supplies neatly arranged. Every item has its place, reducing mess and improving accessibility. Keep your laundry room clean and clutter-free.",
       "Functional designs ensure your laundry room is both efficient and stylish. Thoughtfully placed shelves, cabinets, and counters make every task seamless. Turn your laundry room into a space you'll love to use.",
     ],
-    imageUrl: IMAGES.cardImg1,
+    imageUrl: IMAGES.homeOrg3,
   },
 ];
 
@@ -840,7 +862,7 @@ export const WETBARSCARDSECTION: cardSection[] = [
       "Our wet bar designs combine style and functionality, creating the perfect hosting space. From sleek counters to optimized storage, every element is thoughtfully designed for ease of use and sophistication.",
       "Crafted from premium materials, our wet bars are built to impress and last. Durable finishes and high-quality construction ensure your wet bar stands the test of time while maintaining its luxurious appeal.",
     ],
-    imageUrl: IMAGES.cardImg1,
+    imageUrl: IMAGES.g10,
   },
   {
     heading: "Compact Wet Bars",
@@ -850,7 +872,7 @@ export const WETBARSCARDSECTION: cardSection[] = [
       "Efficient layouts ensure you have everything you need in an organized space. From glass holders to bottle storage, every detail enhances usability and convenience. Stay organized, even in compact settings.",
       "Modern designs blend seamlessly with your home décor. Whether minimalist or bold, our wet bars integrate effortlessly into your living space, enhancing both style and functionality.",
     ],
-    imageUrl: IMAGES.cardImg1,
+    imageUrl: IMAGES.wet2,
   },
   {
     heading: "Luxury Wet Bars",
@@ -860,7 +882,7 @@ export const WETBARSCARDSECTION: cardSection[] = [
       "High-end finishes and tailored features make every detail exceptional. From built-in lighting to custom shelving, every feature enhances both style and practicality.",
       "Designed for entertainment, your guests will love the experience. A well-planned wet bar ensures everything you need is within reach, making hosting seamless and enjoyable. Cheers to unforgettable moments!",
     ],
-    imageUrl: IMAGES.cardImg1,
+    imageUrl: IMAGES.wet3,
   },
 ];
 
@@ -873,7 +895,7 @@ export const LAUNDRYCARDSECTION: cardSection[] = [
       "Custom shelving ensures easy access to all your laundry essentials. From detergents to baskets, each item has a dedicated spot for maximum convenience. Our shelving solutions are designed to keep your workspace tidy and functional.",
       "Built with durable materials, our cabinets withstand daily use. Resistant to wear and tear, they maintain their quality and finish even in high-traffic areas. Invest in solutions that are built to last.",
     ],
-    imageUrl: IMAGES.cardImg1,
+    imageUrl: IMAGES.laundryImg1,
   },
   {
     heading: "Functional Laundry Spaces",
@@ -883,7 +905,7 @@ export const LAUNDRYCARDSECTION: cardSection[] = [
       "Maximized storage keeps detergents, baskets, and tools neatly arranged. Smart compartments and adjustable shelves ensure every item has its place. Say goodbye to clutter and hello to smooth organization.",
       "Easy-to-maintain finishes ensure long-lasting cleanliness and style. Resistant to stains and easy to wipe clean, our surfaces stay fresh and polished with minimal effort.",
     ],
-    imageUrl: IMAGES.cardImg1,
+    imageUrl: IMAGES.laundryImg3,
   },
   {
     heading: "Modern Laundry Rooms",
@@ -893,7 +915,7 @@ export const LAUNDRYCARDSECTION: cardSection[] = [
       "Ergonomic layouts make laundry tasks easier and more efficient. With strategically placed shelves, baskets, and counters, every movement feels natural and effortless. Experience comfort in every task.",
       "Seamlessly integrate style and practicality into your daily routine. Our laundry room solutions balance aesthetics and functionality, creating a space that works for you while looking stunning.",
     ],
-    imageUrl: IMAGES.cardImg1,
+    imageUrl: IMAGES.laundryImg2,
   },
 ];
 
@@ -1042,7 +1064,7 @@ export const CONTACTCARDSECTION: cardSection[] = [
       "Whether you're working on a current project or need help refining your ideas, our dedicated support team is here to assist. We're committed to making your experience smooth and successful every step of the way.",
       "We're always open to new opportunities and ideas! If you're interested in partnering with Luxe Kitchen Cabinets, let's connect and explore how we can create extraordinary solutions together.",
     ],
-    imageUrl: IMAGES.cardImg1,
+    imageUrl: IMAGES.g1,
   },
   {
     heading: "Visit Our Showroom",
@@ -1056,26 +1078,17 @@ export const CONTACTCARDSECTION: cardSection[] = [
       "Schedule a one-on-one consultation with our design experts to discuss your needs and aspirations. We'll guide you through the process and present tailored solutions that align with your vision.",
       "Discover the endless possibilities available to you. Our showroom features a variety of finishes, styles, and configurations, allowing you to visualize how our designs will enhance your space.",
     ],
-    imageUrl: IMAGES.cardImg1,
+    imageUrl: IMAGES.g16,
   },
-  // {
-  //   heading: "Contact Information",
-  //   titles: ["Office Address", "Phone & Email", "Working Hours"],
-  //   descriptions: [
-  //     "Address: 123 Luxe Street, Design City, CA 98765.",
-  //     "Phone: +1 (123) 456-7890 | Email: info@luxekitchencabinets.com",
-  //     "Mon - Fri: 9:00 AM - 6:00 PM | Sat: 10:00 AM - 4:00 PM | Sun: Closed.",
-  //   ],
-  //   imageUrl: IMAGES.cardImg1,
-  // },
   {
     heading: "Connect With Us",
-    titles: ["Follow Us Online On", "Share Your Experience"],
+    titles: ["Follow Us Online On", "Share Your Experience", "Working Hours"],
     descriptions: [
       "<a target='_blank' rel='preload noopener noreferrer' href='https://www.facebook.com/share/HxGstcCJkD1h5TqB/?mibextid=wwXIfr'><b>Facebook</b></a>, <a target='_blank'rel='preload noopener noreferrer' href='https://www.instagram.com/bellacraftsofficial?igsh=ZDNoaW15ZmFjNXVy&utm_source=qr'><b>Instagram</b></a> & <a target='_blank' rel='preload noopener noreferrer' href='https://x.com/bellacrafts01?s=11'><b>X</b></a> to stay updated with our latest projects, designs, and offers. Join our online community and be part of our design journey. Get inspired by behind-the-scenes content and success stories.",
       "We value your feedback! Share your experience with Luxe Kitchen Cabinets and help us improve. Your reviews inspire us to continually raise our standards. Connect with us and let your voice shape our future projects.",
+      "Mon - Fri: 9:00 AM - 6:00 PM <br> Sat: 10:00 AM - 4:00 PM <br> Sun: Closed.",
     ],
-    imageUrl: IMAGES.cardImg1,
+    imageUrl: IMAGES.g17,
   },
 ];
 
