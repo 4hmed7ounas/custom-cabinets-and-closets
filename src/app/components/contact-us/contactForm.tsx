@@ -4,7 +4,6 @@ import emailjs from "emailjs-com";
 import Button from "../button";
 import { responsiveTextClass } from "../styles/classes";
 import { MdConnectWithoutContact } from "react-icons/md";
-import Image from "next/image";
 import { IMAGES } from "../../../../share/assets";
 
 export default function ContactForm() {
