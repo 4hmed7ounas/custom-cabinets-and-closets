@@ -16,7 +16,6 @@ export default function Footer() {
     <footer className="bg-gradient-to-r from-secondary-600 to-secondary-500 text-primary-50 pt-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {/* Quick Links */}
           <div>
             <h2 className="text-lg font-semibold mb-4">Quick Links</h2>
             <ul className="w-1/3 sm:w-1/2">
@@ -41,7 +40,7 @@ export default function Footer() {
 
           <div>
             <h2 className="text-lg font-semibold mb-4">Services</h2>
-            <ul className="w-[45%] sm:w-[70%] md:w-[85%] lg:w-[80%]">
+            <ul className="w-[65%] sm:w-[70%] md:w-[85%] lg:w-[80%]">
               {SERVICELINKS.map((link, index) => (
                 <li key={index}>
                   <Link
@@ -80,7 +79,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Follow Us */}
           <div>
             <h2 className="text-lg font-semibold mb-4">Follow Us</h2>
             <div className="flex space-x-4">
