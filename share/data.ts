@@ -1154,13 +1154,13 @@ export const SERVICESECTION: serviceSection[] = [
     imageUrl: IMAGES.serviceCloset,
   },
   {
-    url: ROUTES.cabinets,
+    url: ROUTES.wetBars,
     icon: FaSink,
     label: "Wet Bars",
     imageUrl: IMAGES.g10,
   },
   {
-    url: ROUTES.cabinets,
+    url: ROUTES.wetBars,
     icon: FaSink,
     label: "Wet Bars",
     imageUrl: IMAGES.g10,
