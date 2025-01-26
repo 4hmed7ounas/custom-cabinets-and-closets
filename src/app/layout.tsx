@@ -66,18 +66,18 @@ export default function RootLayout({
         <title>{dynamicTitle}</title>
         <meta
           name="description"
-          content="At Luxe Kitchen Cabinets discover best custom cabinets, vanities, wet bars, high-gloss cabinets, and pre-finished kitchen cabinets in Calgary, Alberta, Canada. Specializing in kitchen renovation, bathroom renovation, and home renovation, we offer white shaker kitchens, shaker-style kitchen cabinets, and custom storage solutions tailored to your needs."
+          content="Discover Luxe Kitchen Cabinets in Calgary, offering custom cabinets, vanities, high-gloss & shaker-style kitchen cabinets, home renovation & tailored storage solutions."
         />
         <meta
           name="keywords"
-          content="Luxe, Luxe Kitchen, Luxe Cabinets, Luxe Kitchen Cabinets, Luxe Kitchen Cabinets Calgary, Alberta, Canada, Luxe Kitchen Cabinets Calgary Canada, Custom Cabinets Calgary, Custom Closets Calgary, Custom cabinets, Custom closets, Home Organization Calgary, Kitchen Storage Solutions Calgary, Interior Design Calgary, Luxury Cabinet Makers Calgary, Closet Designers Calgary, Premium Storage Systems Calgary, Kitchen Remodeling Calgary, Bathroom Cabinets Calgary, Custom Storage Solutions Calgary, Modern Kitchen Cabinets Calgary, kitchen cabinets calgary, kitchen cabinets in calgary alberta, bathroom cabinets calgary, alberta cabinets calgary, cabinet makers calgary alberta, cabinets calgary, office cabinets calgary, cabinet builders calgary, cabinet makers calgary, cabinet painting calgary, calgary kitchen cabinets,   Luxury Home Cabinets Calgary, Custom Closets Design Calgary, Built-In Cabinets Calgary, Space Optimization Calgary, Custom Furniture Calgary, Cabinet Installation Calgary, Storage Systems Calgary, Stylish Kitchen Storage Calgary, Elegant Closet Designs Calgary, Sustainable Cabinets Calgary, Smart Storage Solutions Calgary, Kitchen Renovation Calgary, Home Storage Ideas Calgary, Personalized Cabinet Designs Calgary, Tailored storage solutions, Premium cabinetry, Bespoke cabinets, Kitchen design, Closet organization, Modern cabinets, Luxury storage solutions, Vanity, Vanities, Wet bars, Closets, Custom closets, High gloss cabinets, Painted kitchen cabinets, Custom kitchen cabinets, Kitchen renovation, Bathroom renovation, Home renovation, White Shaker kitchen, Shaker style kitchen cabinets, Pre finished kitchen, Pre finished kitchen cabinets"
+          content="Custom Cabinets Calgary, Kitchen Cabinets Calgary, Bathroom Cabinets Calgary, Cabinet Makers Calgary, Kitchen Renovation Calgary, Custom Closets Calgary, Kitchen Remodeling Calgary, Cabinet Installation Calgary, Modern Kitchen Cabinets Calgary, Custom Storage Solutions Calgary, Luxe Kitchen, Luxe Cabinets, Luxe Kitchen Cabinets, Luxury Home Cabinets Calgary, Shaker Style Kitchen Cabinets, High Gloss Cabinets, Custom Kitchen Cabinets, Wet Bars, Vanities, Pre-finished Kitchen Cabinets, Home Renovation Alberta, Custom Cabinets Alberta, Kitchen Renovation Alberta, Bathroom Cabinets Alberta, Cabinet Installation Alberta, Custom Closets Alberta"
         />
+
         <meta property="og:title" content={dynamicTitle} />
         <meta
           property="og:description"
           content={
-            MAINPOSTERCONTENT[pathname]?.description ||
-            "At Luxe Kitchen Cabinets discover best custom cabinets, vanities, wet bars, high-gloss cabinets, and pre-finished kitchen cabinets in Calgary, Alberta, Canada. Specializing in kitchen renovation, bathroom renovation, and home renovation, we offer white shaker kitchens, shaker-style kitchen cabinets, and custom storage solutions tailored to your needs."
+            "Discover Luxe Kitchen Cabinets in Calgary, offering custom cabinets, vanities, high-gloss & shaker-style kitchen cabinets, home renovation & tailored storage solutions."
           }
         />
         <meta
@@ -85,7 +85,6 @@ export default function RootLayout({
           content={
             posterImage ||
             IMAGES.landingImage ||
-            IMAGES.logo ||
             "https://luxekitchencabinets.ca/logo.svg"
           }
         />
@@ -111,7 +110,7 @@ export default function RootLayout({
               url: "https://luxekitchencabinets.ca",
               logo: "https://luxekitchencabinets.ca/logo.svg",
               description:
-                "At Luxe Kitchen Cabinets discover best custom cabinets, vanities, wet bars, high-gloss cabinets, and pre-finished kitchen cabinets in Calgary, Alberta, Canada. Specializing in kitchen renovation, bathroom renovation, and home renovation, we offer white shaker kitchens, shaker-style kitchen cabinets, and custom storage solutions tailored to your needs.",
+                "Discover Luxe Kitchen Cabinets in Calgary, offering custom cabinets, vanities, high-gloss & shaker-style kitchen cabinets, home renovation & tailored storage solutions.",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "#116 - 8 heatherglen pl, Rocky View AB",

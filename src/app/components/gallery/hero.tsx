@@ -40,7 +40,7 @@ export default function Gallery() {
 
       {selectedImage && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 backdrop-blur-sm">
-          <div className="bg-secondary-50 w-[90%] max-h-[500px] text-secondary-950 px-5 py-2 rounded-lg shadow-lg max-w-2xl relative">
+          <div className="bg-secondary-50 w-[90%] max-h-[540px] text-secondary-950 px-5 py-2 rounded-lg shadow-lg max-w-2xl overflow-x-hidden">
             <div className="flex justify-between items-center mb-2">
               <h2 className="text-3xl font-bold">Details</h2>
               <button

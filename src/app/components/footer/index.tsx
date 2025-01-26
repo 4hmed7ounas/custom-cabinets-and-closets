@@ -108,6 +108,7 @@ export default function Footer() {
             src={EMBED_MAP}
             className="w-full h-72"
             loading="lazy"
+            referrerPolicy="origin"
           ></iframe>
         </div>
       </div>
