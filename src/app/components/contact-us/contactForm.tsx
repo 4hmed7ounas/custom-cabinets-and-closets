@@ -4,7 +4,6 @@ import emailjs from "emailjs-com";
 import Button from "../button";
 import { responsiveTextClass } from "../styles/classes";
 import { MdConnectWithoutContact } from "react-icons/md";
-import Image from "next/image";
 import { IMAGES } from "../../../../share/assets";
 
 export default function ContactForm() {
@@ -80,6 +79,12 @@ export default function ContactForm() {
           and one of our experts will get in touch with you shortly.
         </p>
         <div className="flex flex-col lg:flex-row my-4 items-center">
+          <div
+            className={`hidden lg:block lg:w-[50%] h-auto bg-fixed bg-cover bg-center py-40 lg:py-64 bg-no-repeat bg-secondary-50`}
+            style={{
+              backgroundImage: `url(${IMAGES.aboutImage})`,
+            }}
+          ></div>
           <div className="px-4 lg:px-20 lg:w-1/2 lg:h-full flex">
             <form onSubmit={handleSubmit} className="w-full">
               <div className="mb-4">
@@ -188,16 +193,6 @@ export default function ContactForm() {
                 className="hover:bg-secondary-600 hover:text-white"
               />
             </form>
-          </div>
-
-          <div className="hidden lg:block lg:w-1/2 lg:h-full">
-            <Image
-              src={IMAGES.aboutImage}
-              alt="Showroom"
-              width={1000}
-              height={1000}
-              className="w-full h-[520px] object-cover"
-            />
           </div>
         </div>
 

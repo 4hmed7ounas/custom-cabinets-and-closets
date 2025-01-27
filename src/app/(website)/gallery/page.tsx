@@ -1,4 +1,3 @@
-// import { GallerySection } from "@/app/components/gallery/gallerySection";
 import Hero from "@/app/components/gallery/hero";
 
 export default function Gallery() {
@@ -7,7 +6,6 @@ export default function Gallery() {
       <hr className="border-2 border-secondary-50" />
       <Hero />
       <hr className="border-2 border-secondary-50" />
-      {/* <GallerySection /> */}
     </div>
   );
 }

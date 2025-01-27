@@ -3,7 +3,6 @@ export const ROUTES = {
   contactUs: "/contact-us",
   makeConnect: "#get-started",
   gallery: "/gallery",
-  // news: "/news",
   blogs: "/blogs",
   ourteam: "/our-team",
   services: "/services",

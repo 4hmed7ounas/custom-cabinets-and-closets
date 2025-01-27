@@ -59,7 +59,7 @@ export default function MainPoster({
               className="w-[75%] sm:w-[45%] xl:w-[35%] 2xl:w-[30%] drop-shadow-lg shadow-secondary-50"
               priority
             />
-            <div className="bg-secondary-50 bg-opacity-60 mt-6 p-4 shadow-secondary-600 w-full lg:w-[70%] 2xl:w-[90%]">
+            <div className="bg-secondary-100 bg-opacity-50 backdrop-blur-sm mt-6 p-4 shadow-secondary-600 w-full lg:w-[70%] 2xl:w-[90%]">
               <h1 className="text-3xl font-bold font-calibri">{title}</h1>
               <p className={`text-justify ${responsiveTextClass}`}>
                 {description}
@@ -84,14 +84,14 @@ export default function MainPoster({
       )}
       {noLogoPaths.includes(pathname) && (
         <div
-          className="py-4 lg:pt-28 flex flex-col bg-gradient-to-tr from-tertiary-900 to-secondary-950 bg-blend-luminosity items-center bg-cover bg-center bg-no-repeat"
+          className="pt-4 lg:pb-4 lg:pt-20 flex flex-col bg-gradient-to-tr from-tertiary-900 to-secondary-950 bg-blend-luminosity items-center bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: `url(${image})`,
             backgroundSize: "cover",
             backgroundAttachment: "fixed",
           }}
         >
-          <div className=" mt-6 p-4 text-secondary-50 w-full lg:w-[70%] 2xl:w-[90%]">
+          <div className=" mt-6 p-4 text-secondary-100 bg-secondary-900 bg-opacity-50 backdrop-blur-sm w-full lg:w-[70%] 2xl:w-[90%]">
             <h1 className="text-3xl font-bold font-calibri">{title}</h1>
             <p className={`text-justify ${responsiveTextClass}`}>
               {description}

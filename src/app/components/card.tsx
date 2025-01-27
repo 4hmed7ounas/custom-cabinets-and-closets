@@ -14,7 +14,9 @@ export const Card = ({ card, index }: CardProps) => {
         <div className="flex flex-col justify-center items-center w-[95%] mt-8 mb-4">
           <h2 className="text-3xl font-bold">{card.heading}</h2>
           {card.mainDesc && (
-            <p className={`${responsiveTextClass} text-center`}>{card.mainDesc}</p>
+            <p className={`${responsiveTextClass} text-center`}>
+              {card.mainDesc}
+            </p>
           )}
 
           <div
@@ -38,7 +40,7 @@ export const Card = ({ card, index }: CardProps) => {
               ))}
             </div>
             <div
-              className={`w-full lg:w-[50%] h-auto bg-cover md:bg-fixed bg-center py-40 lg:py-10 bg-no-repeat bg-secondary-600`}
+              className={`w-full lg:w-[50%] h-auto bg-cover bg-center py-40 lg:py-10 bg-no-repeat bg-secondary-50`}
               style={{
                 backgroundImage: `url(${card.imageUrl})`,
               }}
