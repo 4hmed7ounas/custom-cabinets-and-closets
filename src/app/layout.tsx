@@ -1,5 +1,4 @@
 "use client";
-import { Lora, Montserrat } from "next/font/google";
 import { IMAGES } from "../../share/assets";
 import { MAINPOSTERCONTENT, ROUTES_TITLES } from "../../share/data";
 import Footer from "./components/footer";
@@ -12,15 +11,6 @@ import { ScrollToTopButton } from "./components/scrollToTopButton";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-const lora = Lora({
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const montserrat = Montserrat({
-  subsets: ["latin"],
-});
-
 export default function RootLayout({
   children,
 }: {
@@ -30,11 +20,11 @@ export default function RootLayout({
   const baseUrl = "https://luxekitchencabinets.ca";
   const dynamicTitle =
     ROUTES_TITLES[pathname] ||
-    "Luxe Kitchen Cabinets - Custom Closets, Vanities & Kitchen Renovation";
+    "Luxe Kitchen Cabinets Calgary - Custom Cabinetry and Closets";
 
   const posterTitle =
     MAINPOSTERCONTENT[pathname]?.title ||
-    "Luxe Kitchen Cabinets - Custom Closets, Vanities & Kitchen Renovation";
+    "Luxe Kitchen Cabinets Calgary - Custom Cabinetry and Closets";
   const posterDescription =
     MAINPOSTERCONTENT[pathname]?.description ||
     "Luxe Kitchen Cabinets is specialized in creating premium, custom-designed cabinets and closets that reflect your unique style. Our expert craftsmanship and innovative designs are tailored to optimize space and enhance the beauty and functionality of your home.";
@@ -58,9 +48,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta
+        {/* <meta
           name="google-site-verification"
           content="cdTSMqlmtw9BJzEQEYkvpSMNME7DjolssocY0hxBGWg"
+        /> */}
+
+        <meta
+          name="google-site-verification"
+          content="jPjajA69QjGVLKYn-cfOeBw9DokhSb8Jjgi4f9rYnCE"
         />
         <meta name="msvalidate.01" content="219244B7E668A9DA617369C3FFE71406" />
         <title>{dynamicTitle}</title>
@@ -97,7 +92,7 @@ export default function RootLayout({
         <meta property="og:site_name" content="Luxe Kitchen Cabinets" />
         <meta property="og:updated_time" content={new Date().toISOString()} />
         <meta name="author" content="Ahmed Younas" />
-        <link rel="icon" href={IMAGES.logo} type="image/x-icon" />
+        <link rel="icon" href={IMAGES.favicon} type="image/x-icon" />
         <link rel="icon" href="https://luxekitchencabinets.ca/favicon.ico" />
 
         <script
@@ -108,7 +103,7 @@ export default function RootLayout({
               "@type": "Organization",
               name: "Luxe Kitchen Cabinets",
               url: "https://luxekitchencabinets.ca",
-              logo: "https://luxekitchencabinets.ca/logo.svg",
+              logo: "https://luxekitchencabinets.ca/favicon.svg",
               description:
                 "Discover Luxe Kitchen Cabinets in Calgary, offering custom cabinets, vanities, high-gloss & shaker-style kitchen cabinets, home renovation & tailored storage solutions.",
               address: {
@@ -135,7 +130,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${lora.className} ${montserrat.className} antialiased`}>
+      <body className={`antialiased`}>
         {isServicePage && <ServiceNav />}
         <main className="min-h-[80vh]">
           <MainPoster

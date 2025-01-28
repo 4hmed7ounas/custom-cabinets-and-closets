@@ -1,6 +1,7 @@
 import { ASSETS_BASE_URL } from "./config";
 
 export const IMAGES = {
+  favicon: `${ASSETS_BASE_URL}/favicon.svg`,
   logo: `${ASSETS_BASE_URL}/logo.svg`,
   landingImage: `${ASSETS_BASE_URL}/landing-image.svg`,
   aboutImage: `${ASSETS_BASE_URL}/about-image.svg`,
