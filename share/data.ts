@@ -58,41 +58,41 @@ export const dummyData: cardSection = {
 };
 
 export const ROUTES_TITLES: routeTitles = {
-  "/": "Luxe Kitchen Cabinets - Custom Closets, Vanities & Kitchen Renovation",
+  "/": "Luxe Kitchen Cabinets Calgary - Custom Cabinetry and Closets",
   "/contact-us":
-    "Contact Us - Luxe Kitchen Cabinets - Custom Closets, Vanities & Kitchen Renovation",
+    "Contact Us - Luxe Kitchen Cabinets Calgary - Custom Cabinetry and Closets",
   "/blogs":
-    "Blogs - Luxe Kitchen Cabinets - Custom Closets, Vanities & Kitchen Renovation",
+    "Blogs - Luxe Kitchen Cabinets Calgary - Custom Cabinetry and Closets",
   "/our-team":
-    "Our Team - Luxe Kitchen Cabinets - Custom Closets, Vanities & Kitchen Renovation",
+    "Our Team - Luxe Kitchen Cabinets Calgary - Custom Cabinetry and Closets",
   "/gallery":
-    "Gallery - Luxe Kitchen Cabinets - Custom Closets, Vanities & Kitchen Renovation",
+    "Gallery - Luxe Kitchen Cabinets Calgary - Custom Cabinetry and Closets",
   "/services":
-    "Our Services - Luxe Kitchen Cabinets - Custom Closets, Vanities & Kitchen Renovation",
+    "Our Services - Luxe Kitchen Cabinets Calgary - Custom Cabinetry and Closets",
   "/about-us":
-    "About Us - Luxe Kitchen Cabinets - Custom Closets, Vanities & Kitchen Renovation",
+    "About Us - Luxe Kitchen Cabinets Calgary - Custom Cabinetry and Closets",
   "/services/kitchen":
-    "Kitchen Cabinets - Luxe Kitchen Cabinets - Custom Closets, Vanities & Kitchen Renovation",
+    "Kitchen Cabinets - Luxe Kitchen Cabinets Calgary - Custom Cabinetry and Closets",
   "/services/bathroom-storage":
-    "Bathroom Storage - Luxe Kitchen Cabinets - Custom Closets, Vanities & Kitchen Renovation",
+    "Bathroom Storage - Luxe Kitchen Cabinets Calgary - Custom Cabinetry and Closets",
   "/services/built-in":
-    "Built-in Cabinets - Luxe Kitchen Cabinets - Custom Closets, Vanities & Kitchen Renovation",
+    "Built-in Cabinets - Luxe Kitchen Cabinets Calgary - Custom Cabinetry and Closets",
   "/services/cabinets":
-    "Custom & Commercial Cabinets - Luxe Kitchen Cabinets - Custom Closets, Vanities & Kitchen Renovation",
+    "Custom & Commercial Cabinets - Luxe Kitchen Cabinets Calgary - Custom Cabinetry and Closets",
   "/services/closets":
-    "Closets - Luxe Kitchen Cabinets - Custom Closets, Vanities & Kitchen Renovation",
+    "Closets - Luxe Kitchen Cabinets Calgary - Custom Cabinetry and Closets",
   "/services/home-organization":
-    "Home Organization - Luxe Kitchen Cabinets - Custom Closets, Vanities & Kitchen Renovation",
+    "Home Organization - Luxe Kitchen Cabinets Calgary - Custom Cabinetry and Closets",
   "/services/laundry-storage":
-    "Laundry Storage - Luxe Kitchen Cabinets - Custom Closets, Vanities & Kitchen Renovation",
+    "Laundry Storage - Luxe Kitchen Cabinets Calgary - Custom Cabinetry and Closets",
   "/services/wet-bars":
-    "Wet Bars - Luxe Kitchen Cabinets - Custom Closets, Vanities & Kitchen Renovation",
+    "Wet Bars - Luxe Kitchen Cabinets Calgary - Custom Cabinetry and Closets",
 };
 
 export const MAINPOSTERCONTENT: mainPosterData = {
   "/": {
     title:
-      "Luxe Kitchen Cabinets - Custom Closets, Vanities & Kitchen Renovation",
+      "Luxe Kitchen Cabinets Calgary - Custom Cabinetry and Closets",
     description:
       "Transform your home with Luxe Kitchen Cabinets, the leading provider of custom cabinetry in Calgary. We specialize in custom kitchen cabinets, bathroom storage, custom closets, built-in furniture, and commercial cabinets. Our expert team designs functional, stylish, and innovative solutions tailored to your space. Whether it’s creating a wet bar, enhancing laundry storage, or installing custom cabinets, we maximize space and improve your home's style with premium materials and superior craftsmanship.",
     imageUrl: IMAGES.landingImage,
@@ -435,6 +435,11 @@ export const TEAMDATA: teamData[] = [
 ];
 
 export const GALLERYITEMS: galleryItem[] = [
+  {
+    src: IMAGES.g35,
+    title: "Modern Kitchen Cabinets Calgary - Luxe Kitchen Cabinets",
+    desc: "Explore this sleek and stylish modern kitchen with custom kitchen cabinets designed for both aesthetics and functionality in Calgary.",
+  },
   {
     src: IMAGES.g1,
     title: "Modern Kitchen Cabinets Calgary - Luxe Kitchen Cabinets",
@@ -932,7 +937,7 @@ export const BLOGSCARDSECTION: cardSection[] = [
   {
     heading: "How to Choose the Best Custom Closets for Your Home",
     mainDesc:
-      "A well-designed custom closet can transform your home by providing optimal storage, improving organization, and enhancing aesthetics. Whether you need a walk-in closet, a reach-in wardrobe, or a luxurious dressing room, selecting the right custom closet involves several factors. Luxe Kitchen Cabinets - Custom Closets, Vanities & Kitchen Renovation offers premium custom closet solutions tailored to your needs.",
+      "A well-designed custom closet can transform your home by providing optimal storage, improving organization, and enhancing aesthetics. Whether you need a walk-in closet, a reach-in wardrobe, or a luxurious dressing room, selecting the right custom closet involves several factors. Luxe Kitchen Cabinets Calgary - Custom Cabinetry and Closets offers premium custom closet solutions tailored to your needs.",
     titles: [
       "Assess Your Storage Needs",
       "Choose the Right Style and Materials",
@@ -946,7 +951,7 @@ export const BLOGSCARDSECTION: cardSection[] = [
       "Select materials that complement your home's décor. Popular options include high-gloss finishes, wood veneer, and laminated surfaces. Consider classic white shaker-style designs for a timeless look. Luxe Kitchen Cabinets specializes in crafting high-quality custom closets that fit your style and preferences.",
       "Enhance functionality with features like adjustable shelves, pull-out drawers, hidden compartments, and LED lighting. Custom solutions can maximize space efficiency, even in small areas.",
       "A well-designed custom closet should not only be functional but also stylish. Glass doors, mirrored panels, and elegant handles can add sophistication to your closet. Luxe Kitchen Cabinets provides expert craftsmanship to elevate your home's interior.",
-      "Consulting a professional closet designer ensures precision, durability, and a tailored approach to your storage solutions. Luxe Kitchen Cabinets - Custom Closets, Vanities & Kitchen Renovation guarantees expertly designed closets that meet your expectations.",
+      "Consulting a professional closet designer ensures precision, durability, and a tailored approach to your storage solutions. Luxe Kitchen Cabinets Calgary - Custom Cabinetry and Closets guarantees expertly designed closets that meet your expectations.",
       "Investing in a custom closet enhances your home's value while offering a clutter-free, organized space. Luxe Kitchen Cabinets is your go-to source for high-end, personalized storage solutions.",
     ],
     imageUrl: IMAGES.blogImg1,
@@ -954,7 +959,7 @@ export const BLOGSCARDSECTION: cardSection[] = [
   {
     heading: "Vanity vs. Vanities: Which One Suits Your Bathroom?",
     mainDesc:
-      "When renovating a bathroom, choosing between a single vanity and multiple vanities is crucial. Your decision will depend on space, functionality, and style preferences. Luxe Kitchen Cabinets - Custom Closets, Vanities & Kitchen Renovation provides expertly crafted vanities to enhance your bathroom.",
+      "When renovating a bathroom, choosing between a single vanity and multiple vanities is crucial. Your decision will depend on space, functionality, and style preferences. Luxe Kitchen Cabinets Calgary - Custom Cabinetry and Closets provides expertly crafted vanities to enhance your bathroom.",
     titles: [
       "What is a Vanity?",
       "What Are Vanities?",
@@ -969,14 +974,14 @@ export const BLOGSCARDSECTION: cardSection[] = [
       "Single vanities work well in compact bathrooms, while double vanities require a larger area.",
       "If multiple users need simultaneous access, double vanities are more convenient.",
       "Modern high-gloss cabinets or painted kitchen cabinets used in vanity designs can enhance bathroom elegance. Luxe Kitchen Cabinets offers a range of styles to match your vision.",
-      "Whether you choose a single vanity or double vanities, ensure it aligns with your bathroom's layout and your lifestyle needs. Luxe Kitchen Cabinets - Custom Closets, Vanities & Kitchen Renovation ensures your bathroom is both stylish and functional.",
+      "Whether you choose a single vanity or double vanities, ensure it aligns with your bathroom's layout and your lifestyle needs. Luxe Kitchen Cabinets Calgary - Custom Cabinetry and Closets ensures your bathroom is both stylish and functional.",
     ],
     imageUrl: IMAGES.blogImg2,
   },
   {
     heading: "Kitchen Renovation Tips with Pre-Finished Kitchen Cabinets",
     mainDesc:
-      "Pre-finished kitchen cabinets offer a practical and stylish solution for homeowners looking to renovate their kitchens efficiently. They come pre-painted or laminated, reducing installation time and costs. Luxe Kitchen Cabinets - Custom Closets, Vanities & Kitchen Renovation provides top-quality pre-finished kitchen cabinets for seamless renovations.",
+      "Pre-finished kitchen cabinets offer a practical and stylish solution for homeowners looking to renovate their kitchens efficiently. They come pre-painted or laminated, reducing installation time and costs. Luxe Kitchen Cabinets Calgary - Custom Cabinetry and Closets provides top-quality pre-finished kitchen cabinets for seamless renovations.",
     titles: [
       "Benefits of Pre-Finished Kitchen Cabinets",
       "Choose the Right Cabinet Style",
@@ -989,7 +994,7 @@ export const BLOGSCARDSECTION: cardSection[] = [
       "<b>White Shaker Kitchen Cabinets:</b> Classic and timeless, perfect for modern and traditional homes. <br> <b>High-Gloss Cabinets:</b> Sleek and contemporary, ideal for a minimalist aesthetic. <br> <b>Custom Kitchen Cabinets:</b> If you need tailored storage solutions, custom pre-finished cabinets can be designed to fit your space. Luxe Kitchen Cabinets specializes in high-quality finishes and premium designs.",
       "Ensure an efficient workflow by placing cabinets strategically near work areas such as the sink, stove, and refrigerator. This enhances functionality and convenience.",
       "Pairing pre-finished cabinets with high-quality countertops and backsplashes can elevate the overall look of your kitchen. Consider quartz or granite countertops for a luxurious touch. Luxe Kitchen Cabinets provides expert recommendations for a cohesive kitchen design.",
-      "Pre-finished kitchen cabinets simplify renovations, offering a balance of affordability, style, and durability. Luxe Kitchen Cabinets - Custom Closets, Vanities & Kitchen Renovation ensures a flawless finish, making your dream kitchen a reality.",
+      "Pre-finished kitchen cabinets simplify renovations, offering a balance of affordability, style, and durability. Luxe Kitchen Cabinets Calgary - Custom Cabinetry and Closets ensures a flawless finish, making your dream kitchen a reality.",
     ],
     imageUrl: IMAGES.blogImg3,
   },
