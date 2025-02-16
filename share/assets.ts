@@ -84,6 +84,7 @@ export const IMAGES = {
   g32: `${ASSETS_BASE_URL}/g32.png`,
   g33: `${ASSETS_BASE_URL}/g33.png`,
   g34: `${ASSETS_BASE_URL}/g34.png`,
+  g35: `${ASSETS_BASE_URL}/g35.jpg`,
   contactImg1: `${ASSETS_BASE_URL}/contact-1.png`,
   contactImg2: `${ASSETS_BASE_URL}/contact-2.png`,
   ArsalanAnwar: `${ASSETS_BASE_URL}/shani.jpg`,

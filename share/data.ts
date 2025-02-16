@@ -436,6 +436,11 @@ export const TEAMDATA: teamData[] = [
 
 export const GALLERYITEMS: galleryItem[] = [
   {
+    src: IMAGES.g35,
+    title: "Modern Kitchen Cabinets Calgary - Luxe Kitchen Cabinets",
+    desc: "Explore this sleek and stylish modern kitchen with custom kitchen cabinets designed for both aesthetics and functionality in Calgary.",
+  },
+  {
     src: IMAGES.g1,
     title: "Modern Kitchen Cabinets Calgary - Luxe Kitchen Cabinets",
     desc: "Explore this sleek and stylish modern kitchen with custom kitchen cabinets designed for both aesthetics and functionality in Calgary.",
