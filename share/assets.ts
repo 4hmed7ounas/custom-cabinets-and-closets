@@ -85,6 +85,28 @@ export const IMAGES = {
   g33: `${ASSETS_BASE_URL}/g33.png`,
   g34: `${ASSETS_BASE_URL}/g34.png`,
   g35: `${ASSETS_BASE_URL}/g35.jpg`,
+  g36: `${ASSETS_BASE_URL}/g36.jpg`,
+  g37: `${ASSETS_BASE_URL}/g37.jpg`,
+  g38: `${ASSETS_BASE_URL}/g38.jpg`,
+  g39: `${ASSETS_BASE_URL}/g39.jpg`,
+  g40: `${ASSETS_BASE_URL}/g40.jpg`,
+  g41: `${ASSETS_BASE_URL}/g41.jpg`,
+  g42: `${ASSETS_BASE_URL}/g42.jpg`,
+  g43: `${ASSETS_BASE_URL}/g43.jpg`,
+  g44: `${ASSETS_BASE_URL}/g44.jpg`,
+  g45: `${ASSETS_BASE_URL}/g45.jpg`,
+  g46: `${ASSETS_BASE_URL}/g46.jpg`,
+  g47: `${ASSETS_BASE_URL}/g47.jpg`,
+  g48: `${ASSETS_BASE_URL}/g48.jpg`,
+  g49: `${ASSETS_BASE_URL}/g49.jpg`,
+  g50: `${ASSETS_BASE_URL}/g50.jpg`,
+  g51: `${ASSETS_BASE_URL}/g51.jpg`,
+  g52: `${ASSETS_BASE_URL}/g52.jpg`,
+  
+
+
+
+  
   contactImg1: `${ASSETS_BASE_URL}/contact-1.png`,
   contactImg2: `${ASSETS_BASE_URL}/contact-2.png`,
   ArsalanAnwar: `${ASSETS_BASE_URL}/shani.jpg`,
